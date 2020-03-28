@@ -1,0 +1,3 @@
+[submodule "jhu_csse_covid19"]
+	path = jhu_csse_covid19
+	url = https://github.com/CSSEGISandData/COVID-19
