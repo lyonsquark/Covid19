@@ -3,10 +3,14 @@
 #
 
 # Load in the packages
-using Covid19, StatsPlots, DataFramesMeta, 
+using Covid19, StatsPlots, DataFramesMeta
 using Lazy: @>
 
 plotlyjs()  # will spews lots of warnings - they're ok
+default(size=(1200,800))
+
+# Make sure we have the latest data
+updateJhuCSSE()
 
 # Get the confirmed global casses dataset
 confirmedCases = getJHUTimeSeriesDF(GlobalConfirmedCases, 30) # Start when at least 30 cases
@@ -66,3 +70,55 @@ p = @df confirmedCasesTopNoChina plot(:daysSince, :Value_new_rolling7, group=:Co
 p = @df confirmedCasesTop plot(:Value_rolling7, :Value_new_rolling7, group=:Country_Region, xaxis=:log10, yaxis=:log10, 
 	lw=lineWidths(topCountriesCases),
 	title="Trajectory of COVID-19 cases (7 day avg)", xlabel="Total confirmed cases (log)", ylabel="New cases (log)")
+
+# ----
+# Get deaths
+
+deaths = getJHUTimeSeriesDF(GlobalDeaths, 3)
+
+# Get the top few countries
+topCountriesDeaths = topCountries(deaths, 10)
+deathsTop = @where(deaths, in.(:Country_Region, [topCountriesDeaths]), :Value_new .> 0)
+
+p = @df deathsTop plot(:daysSince, :Value_new_rolling7, group=:Country_Region, 
+	yaxis=:log10, lw=lineWidths(topCountriesDeaths),
+	title="New Covid-19 Deaths per day (7 day rolling average)", 
+	xlabel="Number of days since 3 deaths first recorded",
+	ylabel="Number of deaths (log)")
+
+p = @df deathsTop plot(:Value_rolling7, :Value_new_rolling7, group=:Country_Region, xaxis=:log10, yaxis=:log10,
+	lw=lineWidths(topCountriesDeaths),
+	title="Trajectory of COVID-19 deaths (7 day avg)",
+	xlabel="Total deaths (log)", ylabel="New deaths (log)")
+
+# -----
+# Get country population data
+using CSV, DataFrames
+popDataPath = joinpath(@__DIR__, "../data", "country_populations.csv")
+# Header is line 5, data starts at line 6
+popData = CSV.File(popDataPath, header=5, skipto=6, select=["Country Name", "2018"]) |> DataFrame!
+rename!(x->Symbol(replace(string(x), " " => "")), popData)
+rename!(popData, Symbol("2018") => :pop)
+popData = @transform(popData, country=replace(:CountryName, "United States" => "US", "Iran, Islamic Rep." => "Iran"))
+
+# Join this with the confirmed cases top
+@where(popData, in.(:country, [topCountriesCases]))
+confirmedCasesTopPerCap = join(confirmedCasesTop, popData, on=:Country_Region=>:country)
+confirmedCasesTopPerCap = @transform(confirmedCasesTopPerCap, 
+	                         Value_rolling7_perCap = :Value_rolling7 ./ :pop,
+	                         Value_new_rolling7_perCap = :Value_new_rolling7 ./ :pop)
+
+p = @df confirmedCasesTopPerCap plot(:Value_rolling7_perCap, :Value_new_rolling7_perCap, group=:Country_Region, xaxis=:log10, yaxis=:log10, 
+	lw=lineWidths(topCountriesCases), 
+	title="Trajectory of COVID-19 cases (7 day avg per capita", xlabel="Total confirmed cases per capita (log)", ylabel="New cases per capita (log)")
+
+# Join with deaths
+@where(popData, in.(:country, [topCountriesDeaths]))
+deathsTopPerCap = join(deathsTop, popData, on=:Country_Region=>:country)
+deathsTopPerCap = @transform(deathsTopPerCap, 
+	                         Value_rolling7_perCap = :Value_rolling7 ./ :pop,
+	                         Value_new_rolling7_perCap = :Value_new_rolling7 ./ :pop)
+
+p = @df deathsTopPerCap plot(:Value_rolling7_perCap, :Value_new_rolling7_perCap, group=:Country_Region, xaxis=:log10, yaxis=:log10, 
+	lw=lineWidths(topCountriesCases), 
+	title="Trajectory of COVID-19 deaths (7 day avg) per capita", xlabel="Total deaths per capita (log)", ylabel="New deaths per capita (log)")

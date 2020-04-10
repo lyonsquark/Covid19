@@ -6,7 +6,6 @@ using DataFramesMeta, RollingFunctions, ShiftedArrays
 using Lazy: @>, @>>
 
 const jhu_csse_path = joinpath(@__DIR__, "../jhu_csse_covid19")
-const csvs = glob("*.csv", joinpath(jhu_csse_path, "csse_covid_19_data/csse_covid_19_daily_reports"))
 
 """
   Update the Johns Hopkins CSSE data
