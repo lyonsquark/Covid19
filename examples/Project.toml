@@ -2,6 +2,7 @@
 CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
 DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
 DataFramesMeta = "1313f7d8-7da2-5740-9ea0-a2ca25f37964"
+Gnuplot = "dc211083-a33a-5b79-959f-2ff34033469d"
 Interact = "c601a237-2ae4-5e1e-952c-7a85b0c7eef1"
 Lazy = "50d2b5c4-7a5e-59d5-8109-a42b560f39c0"
 ORCA = "47be7bcc-f1a6-5447-8b36-7eeeff7534fd"
