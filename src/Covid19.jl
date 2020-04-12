@@ -14,6 +14,8 @@ const jhu_csse_path = joinpath(@__DIR__, "../jhu_csse_covid19")
 """
 function updateJhuCSSE()
 	gitfile = joinpath(jhu_csse_path, ".git")
+	cmd = `git --git-dir=$(gitfile) reset --hard HEAD`
+	run(cmd)
 	cmd = `git --git-dir=$(gitfile) pull`
 	run(cmd)
 end
