@@ -13,10 +13,9 @@ const jhu_csse_path = joinpath(@__DIR__, "../jhu_csse_covid19")
   Will run git pull on the sub module
 """
 function updateJhuCSSE()
-	gitfile = joinpath(jhu_csse_path, ".git")
-	cmd = `git --git-dir=$(gitfile) reset --hard HEAD`
+	cmd = `git -C $(jhu_csse_path) reset --hard HEAD`
 	run(cmd)
-	cmd = `git --git-dir=$(gitfile) pull`
+	cmd = `git -C $(jhu_csse_path) pull`
 	run(cmd)
 end
 
