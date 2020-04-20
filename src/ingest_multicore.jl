@@ -6,7 +6,7 @@
 #
 # Prepare the workers. My laptop has six cores with two hyper-threads each. Let's just use one thread per core.
 
-const csvs = glob("*.csv", joinpath(jhu_csse_path, "csse_covid_19_data/csse_covid_19_daily_reports"))
+const csvs = glob("*.csv", joinpath(jhu_csse_path, "csse_covid_19_data", "csse_covid_19_daily_reports"))
 
 using Pkg
 

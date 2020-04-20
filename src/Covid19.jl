@@ -5,7 +5,7 @@ using Glob, CSV, DataFrames, Missings, Dates, JDF
 using DataFramesMeta, RollingFunctions, ShiftedArrays
 using Lazy: @>, @>>
 
-const jhu_csse_path = joinpath(@__DIR__, "../jhu_csse_covid19")
+const jhu_csse_path = joinpath(@__DIR__, "..", "jhu_csse_covid19")
 
 """
   Update the Johns Hopkins CSSE data
@@ -19,8 +19,9 @@ function updateJhuCSSE()
 	run(cmd)
 end
 
-export updateJhuCSSE, ingest, getJHUTimeSeriesDF
-export GlobalConfirmedCases, GlobalDeaths
+export updateJhuCSSE, ingest, getCovid19Data
+export CountryLevel, StateLevel, CountyLevel
+export ConfirmedCases, Deaths
 
 include("ingest_multicore.jl")
 include("ingest.jl")

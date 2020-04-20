@@ -12,17 +12,25 @@ default(size=(1200,800))
 # Make sure we have the latest data
 updateJhuCSSE()
 
-# Get the confirmed global casses dataset
+# Get the confirmed global cases dataset
 confirmedCases = getJHUTimeSeriesDF(GlobalConfirmedCases, 30) # Start when at least 30 cases
 
 # Just look at the US
 confirmedCasesUS = @where(confirmedCases, :Country_Region .== "US", :daysSince .>= 3)
 
 # Plot the growth of cases
-p = @df confirmedCasesUS plot(:daysSince, :Value_new_rolling7, yaxis=:log10, 
+p = @df confirmedCasesUS plot(:daysSince, :Value_new_rolling7, 
 	title="New Covid-19 cases per day in US (7 day rolling average)", 
 	xlabel="Number of days since 30 cases first recorded", 
+	ylabel="Number of new cases", label=nothing, lw=3)
+savefig("01confirmedCasesUSLin.png")
+
+p = @df confirmedCasesUS plot(:daysSince, :Value_new_rolling7, yaxis=:log10, 
+	title="New Covid-19 cases per day in US (7 day rolling average) semi-log", 
+	xlabel="Number of days since 30 cases first recorded", 
 	ylabel="Number of new cases (log)", label=nothing, lw=3)
+savefig("02confirmedCasesUS.png")
+
 
 # Let's look at the top few countries with cases
 
@@ -50,9 +58,10 @@ end
 
 p = @df confirmedCasesTop plot(:daysSince, :Value_new_rolling7, group=:Country_Region,  
 		     yaxis=:log10, lw=lineWidths(topCountriesCases),
-	         title="New Covid-19 cases per day (7 day rolling average)",
+	         title="New Covid-19 cases per day (7 day rolling average) semi-log",
 	         xlabel="Number of days since 30 cases first recorded",
-	         ylabel="Number of new cases(log)")
+	         ylabel="Number of new cases (log)")
+savefig("03confirmedCasesTop.png")
 
 # China tends to stretch out the plot, let's remove it
 confirmedCasesNoChina = @where(confirmedCases, :Country_Region .!= "China")
@@ -61,15 +70,18 @@ confirmedCasesTopNoChina = @where(confirmedCasesNoChina, in.(:Country_Region, [t
 
 p = @df confirmedCasesTopNoChina plot(:daysSince, :Value_new_rolling7, group=:Country_Region,  
 		     yaxis=:log10, lw=lineWidths(topCountriesCasesNoChina),
-	         title="New Covid-19 cases per day (7 day rolling average)",
+	         title="New Covid-19 cases per day (7 day rolling average) without China semi-log",
 	         xlabel="Number of days since 30 cases first recorded",
 	         ylabel="Number of new cases(log)")
+savefig("04confirmedCasesTopNoChina.png")
 
 # Plot new vs. current like https://aatishb.com/covidtrends/
 
 p = @df confirmedCasesTop plot(:Value_rolling7, :Value_new_rolling7, group=:Country_Region, xaxis=:log10, yaxis=:log10, 
 	lw=lineWidths(topCountriesCases),
-	title="Trajectory of COVID-19 cases (7 day avg)", xlabel="Total confirmed cases (log)", ylabel="New cases (log)")
+	title="Trajectory of COVID-19 cases (7 day avg) log-log", xlabel="Total confirmed cases (log)", ylabel="New cases (log)")
+savefig("05trajectoryConfirmedCasesTop.png")
+
 
 # ----
 # Get deaths
@@ -82,14 +94,16 @@ deathsTop = @where(deaths, in.(:Country_Region, [topCountriesDeaths]), :Value_ne
 
 p = @df deathsTop plot(:daysSince, :Value_new_rolling7, group=:Country_Region, 
 	yaxis=:log10, lw=lineWidths(topCountriesDeaths),
-	title="New Covid-19 Deaths per day (7 day rolling average)", 
+	title="New Covid-19 Deaths per day (7 day rolling average) semi-log", 
 	xlabel="Number of days since 3 deaths first recorded",
 	ylabel="Number of deaths (log)")
+savefig("06deathsTop.png")
 
 p = @df deathsTop plot(:Value_rolling7, :Value_new_rolling7, group=:Country_Region, xaxis=:log10, yaxis=:log10,
 	lw=lineWidths(topCountriesDeaths),
-	title="Trajectory of COVID-19 deaths (7 day avg)",
+	title="Trajectory of COVID-19 deaths (7 day avg) log-log",
 	xlabel="Total deaths (log)", ylabel="New deaths (log)")
+savefig("07trajectoryDeathsTop.png")
 
 # -----
 # Get country population data
@@ -110,7 +124,8 @@ confirmedCasesTopPerCap = @transform(confirmedCasesTopPerCap,
 
 p = @df confirmedCasesTopPerCap plot(:Value_rolling7_perCap, :Value_new_rolling7_perCap, group=:Country_Region, xaxis=:log10, yaxis=:log10, 
 	lw=lineWidths(topCountriesCases), 
-	title="Trajectory of COVID-19 cases (7 day avg per capita", xlabel="Total confirmed cases per capita (log)", ylabel="New cases per capita (log)")
+	title="Trajectory of COVID-19 cases (7 day avg) per capita log-log", xlabel="Total confirmed cases per capita (log)", ylabel="New cases per capita (log)")
+savefig("08trajectoryConfirmedPerCap.png")
 
 # Join with deaths
 @where(popData, in.(:country, [topCountriesDeaths]))
@@ -121,4 +136,5 @@ deathsTopPerCap = @transform(deathsTopPerCap,
 
 p = @df deathsTopPerCap plot(:Value_rolling7_perCap, :Value_new_rolling7_perCap, group=:Country_Region, xaxis=:log10, yaxis=:log10, 
 	lw=lineWidths(topCountriesCases), 
-	title="Trajectory of COVID-19 deaths (7 day avg) per capita", xlabel="Total deaths per capita (log)", ylabel="New deaths per capita (log)")
+	title="Trajectory of COVID-19 deaths (7 day avg) per capita log-log", xlabel="Total deaths per capita (log)", ylabel="New deaths per capita (log)")
+savefig("09trajectoryDeathsPerCap.png")
