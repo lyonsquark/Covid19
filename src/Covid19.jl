@@ -2,7 +2,7 @@ module Covid19
 
 using Distributed: addprocs, nworkers, workers, @everywhere, @distributed
 using Glob, CSV, DataFrames, Missings, Dates, JDF
-using DataFramesMeta, RollingFunctions, ShiftedArrays
+using DataFramesMeta, RollingFunctions, ShiftedArrays, Pipe
 using Lazy: @>, @>>
 
 const jhu_csse_path = joinpath(@__DIR__, "..", "jhu_csse_covid19")
