@@ -1,10 +1,21 @@
 #!/bin/bash
 
 ## Publish the notebooks
+## Use -e to execute
+
+execute=""
+
+if [ $# -gt 0 ]
+then
+    if [ "$1" == "-e" ]
+    then
+       execute="--execute"
+    fi
+fi
 
 ## Convert to html
-jupyter nbconvert --to html covidPlots.ipynb
-jupyter nbconvert --to html StateCountyPlots.ipynb
+jupyter nbconvert --to html $execute covidPlots.ipynb
+jupyter nbconvert --to html $execute StateCountyPlots.ipynb
 
 ## Add the plotly line
 sed -i bak '/<title>/a\
