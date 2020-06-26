@@ -193,9 +193,6 @@ lw = fill(2, (1,length(topCountriesCases))); lw[1] = 5;
                            title="New Covid-19 cases per day (7 day rolling average) (semi-log)")
 
 # %% [markdown]
-# Let's not include China to have everything on a reasonable scale
-
-# %% [markdown]
 # Plot trajectory like https://aatishb.com/covidtrends/
 
 # %%
@@ -219,7 +216,7 @@ deaths = getCovid19Data(Deaths, CountryLevel, 3);
 deathsUS = @where(deaths, :Country_Region.=="US" );
 
 # %%
-plotActualAnd7DayAvg(deathsUS, :Value_new, :Value_new_rolling7, "New deaths per day")
+plotActualAnd7DayAvg(deathsUS, :Value_new, :Value_new_rolling7, "New deaths per day", false, :left)
 
 # %%
 plotActualAnd7DayAvg(deathsUS, :Value_new, :Value_new_rolling7, "New deaths per day (log)", true, :right)

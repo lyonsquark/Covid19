@@ -3,7 +3,6 @@
 <head><meta charset="utf-8" />
 
 <title>StateCountyPlots</title>
-
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13113,7 +13112,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[81]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">updateJhuCSSE</span><span class="p">()</span>
@@ -13133,7 +13132,7 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>HEAD is now at 2c99a05 Merge pull request #2758 from CSSEGISandData/Update-6-25-Iowa
+<pre>HEAD is now at 999a788 automated update
 Already up to date.
 </pre>
 </div>
@@ -13141,7 +13140,7 @@ Already up to date.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[2]:</div>
+    <div class="prompt output_prompt">Out[81]:</div>
 
 
 
@@ -13158,7 +13157,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[82]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">confirmedByState</span> <span class="o">=</span> <span class="n">getCovid19Data</span><span class="p">(</span><span class="n">ConfirmedCases</span><span class="p">,</span> <span class="n">StateLevel</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
@@ -13176,13 +13175,13 @@ Already up to date.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[3]:</div>
+    <div class="prompt output_prompt">Out[82]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>5824</pre>
+<pre>5881</pre>
 </div>
 
 </div>
@@ -13193,7 +13192,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[83]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">deathsByState</span> <span class="o">=</span> <span class="n">getCovid19Data</span><span class="p">(</span><span class="n">Deaths</span><span class="p">,</span> <span class="n">StateLevel</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
@@ -13211,13 +13210,13 @@ Already up to date.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[4]:</div>
+    <div class="prompt output_prompt">Out[83]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>5009</pre>
+<pre>5064</pre>
 </div>
 
 </div>
@@ -13228,7 +13227,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[84]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">maximum</span><span class="p">(</span><span class="n">confirmedByState</span><span class="o">.</span><span class="kt">Date</span><span class="p">)</span>
@@ -13244,13 +13243,13 @@ Already up to date.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[5]:</div>
+    <div class="prompt output_prompt">Out[84]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>2020-06-24</pre>
+<pre>2020-06-25</pre>
 </div>
 
 </div>
@@ -13261,7 +13260,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[85]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">maximum</span><span class="p">(</span><span class="n">deathsByState</span><span class="o">.</span><span class="kt">Date</span><span class="p">)</span>
@@ -13277,13 +13276,13 @@ Already up to date.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[6]:</div>
+    <div class="prompt output_prompt">Out[85]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>2020-06-24</pre>
+<pre>2020-06-25</pre>
 </div>
 
 </div>
@@ -13301,7 +13300,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[86]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="k">function</span> <span class="n">topLevels</span><span class="p">(</span><span class="n">df</span><span class="o">::</span><span class="n">DataFrame</span><span class="p">,</span> <span class="n">n</span><span class="o">::</span><span class="kt">Int</span><span class="p">,</span> <span class="n">Level</span><span class="p">)</span>
@@ -13324,7 +13323,7 @@ Already up to date.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[7]:</div>
+    <div class="prompt output_prompt">Out[86]:</div>
 
 
 
@@ -13341,7 +13340,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[87]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">topStatesCases</span> <span class="o">=</span> <span class="n">topLevels</span><span class="p">(</span><span class="n">confirmedByState</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="o">:</span><span class="n">Province_State</span><span class="p">)</span>
@@ -13357,7 +13356,7 @@ Already up to date.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[48]:</div>
+    <div class="prompt output_prompt">Out[87]:</div>
 
 
 
@@ -13384,7 +13383,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[88]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">topStatesDeaths</span> <span class="o">=</span> <span class="n">topLevels</span><span class="p">(</span><span class="n">deathsByState</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="o">:</span><span class="n">Province_State</span><span class="p">)</span>
@@ -13400,7 +13399,7 @@ Already up to date.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[49]:</div>
+    <div class="prompt output_prompt">Out[88]:</div>
 
 
 
@@ -13427,7 +13426,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[89]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">push!</span><span class="p">(</span><span class="n">topStatesCases</span><span class="p">,</span> <span class="s">&quot;North Carolina&quot;</span><span class="p">);</span>  <span class="c"># Add NC and AZ</span>
@@ -13441,7 +13440,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[90]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">push!</span><span class="p">(</span><span class="n">topStatesDeaths</span><span class="p">,</span> <span class="s">&quot;North Carolina&quot;</span><span class="p">);</span>  <span class="c"># Add NC and AZ</span>
@@ -13455,7 +13454,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[91]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="c"># Restrict the datasets</span>
@@ -13470,7 +13469,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[92]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="c"># Deal with the levels</span>
@@ -13491,7 +13490,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[93]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="c"># Set up plotting</span>
@@ -13513,7 +13512,7 @@ Already up to date.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[54]:</div>
+    <div class="prompt output_prompt">Out[93]:</div>
 
 
 
@@ -13530,7 +13529,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[94]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">lw</span> <span class="o">=</span> <span class="n">fill</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">length</span><span class="p">(</span><span class="n">topStatesCases</span><span class="p">)))</span>
@@ -13550,7 +13549,7 @@ Already up to date.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[55]:</div>
+    <div class="prompt output_prompt">Out[94]:</div>
 
 
 
@@ -13568,7 +13567,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[95]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="nd">@df</span> <span class="n">confirmedByStateTop</span> <span class="n">plot</span><span class="p">(</span><span class="o">:</span><span class="n">daysSince</span><span class="p">,</span> <span class="o">:</span><span class="n">Value_new_rolling7</span><span class="p">,</span> <span class="n">group</span><span class="o">=:</span><span class="n">Province_State</span><span class="p">,</span>
@@ -13590,7 +13589,7 @@ Already up to date.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[57]:</div>
+    <div class="prompt output_prompt">Out[95]:</div>
 
 
 
@@ -13599,13 +13598,13 @@ Already up to date.
 <html>
     <head>
         <title>Plots.jl</title>
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <script src="https://cdn.plot.ly/plotly-1.54.2.min.js"></script>
     </head>
     <body>
-            <div id="7a04b78d-bc43-4bad-a310-0d5227f1769c" style="width:700px;height:400px;"></div>
+            <div id="97acd680-ca00-4b91-ac3c-5b768cf16a56" style="width:700px;height:400px;"></div>
     <script>
-    PLOT = document.getElementById('7a04b78d-bc43-4bad-a310-0d5227f1769c');
+    PLOT = document.getElementById('97acd680-ca00-4b91-ac3c-5b768cf16a56');
     Plotly.plot(PLOT, [
     {
         "xaxis": "x1",
@@ -13725,7 +13724,8 @@ Already up to date.
             109.0,
             110.0,
             111.0,
-            112.0
+            112.0,
+            113.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -13851,7 +13851,8 @@ Already up to date.
             658.8571428571429,
             649.1428571428571,
             644.2857142857143,
-            646.2857142857143
+            646.2857142857143,
+            665.0
         ],
         "type": "scatter"
     },
@@ -13978,7 +13979,8 @@ Already up to date.
             121.0,
             122.0,
             123.0,
-            124.0
+            124.0,
+            125.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -14109,7 +14111,8 @@ Already up to date.
             3749.4285714285716,
             4148.428571428572,
             4645.142857142857,
-            4732.428571428572
+            4732.428571428572,
+            4860.857142857143
         ],
         "type": "scatter"
     },
@@ -14225,7 +14228,8 @@ Already up to date.
             103.0,
             104.0,
             105.0,
-            106.0
+            106.0,
+            107.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -14345,7 +14349,8 @@ Already up to date.
             323.0,
             330.2857142857143,
             329.7142857142857,
-            312.7142857142857
+            312.7142857142857,
+            298.42857142857144
         ],
         "type": "scatter"
     },
@@ -14461,7 +14466,8 @@ Already up to date.
             103.0,
             104.0,
             105.0,
-            106.0
+            106.0,
+            107.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -14581,7 +14587,8 @@ Already up to date.
             602.7142857142857,
             601.1428571428571,
             598.0,
-            622.1428571428571
+            622.1428571428571,
+            665.1428571428571
         ],
         "type": "scatter"
     },
@@ -14699,7 +14706,8 @@ Already up to date.
             105.0,
             106.0,
             107.0,
-            108.0
+            108.0,
+            109.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -14821,7 +14829,8 @@ Already up to date.
             3488.714285714286,
             3939.8571428571427,
             4194.714285714285,
-            4347.571428571428
+            4347.571428571428,
+            4757.0
         ],
         "type": "scatter"
     },
@@ -14939,7 +14948,8 @@ Already up to date.
             105.0,
             106.0,
             107.0,
-            108.0
+            108.0,
+            109.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -15061,7 +15071,8 @@ Already up to date.
             3103.285714285714,
             3270.1428571428573,
             3342.0,
-            3756.4285714285716
+            3756.4285714285716,
+            4013.1428571428573
         ],
         "type": "scatter"
     },
@@ -15177,7 +15188,8 @@ Already up to date.
             105.0,
             106.0,
             107.0,
-            108.0
+            108.0,
+            109.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -15297,7 +15309,8 @@ Already up to date.
             208.28571428571428,
             217.14285714285714,
             222.0,
-            208.57142857142858
+            208.57142857142858,
+            202.14285714285714
         ],
         "type": "scatter"
     },
@@ -15412,7 +15425,8 @@ Already up to date.
             103.0,
             104.0,
             105.0,
-            106.0
+            106.0,
+            107.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -15531,7 +15545,8 @@ Already up to date.
             390.2857142857143,
             426.7142857142857,
             461.42857142857144,
-            485.14285714285717
+            485.14285714285717,
+            494.0
         ],
         "type": "scatter"
     },
@@ -15648,7 +15663,8 @@ Already up to date.
             104.0,
             105.0,
             106.0,
-            107.0
+            107.0,
+            108.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -15769,237 +15785,8 @@ Already up to date.
             1002.8571428571429,
             1073.4285714285713,
             1247.4285714285713,
-            1335.857142857143
-        ],
-        "type": "scatter"
-    },
-    {
-        "xaxis": "x1",
-        "colorbar": {
-            "title": ""
-        },
-        "yaxis": "y1",
-        "x": [
-            1.0,
-            2.0,
-            3.0,
-            4.0,
-            5.0,
-            6.0,
-            7.0,
-            8.0,
-            9.0,
-            10.0,
-            11.0,
-            12.0,
-            13.0,
-            14.0,
-            15.0,
-            16.0,
-            17.0,
-            18.0,
-            19.0,
-            20.0,
-            21.0,
-            22.0,
-            23.0,
-            24.0,
-            25.0,
-            26.0,
-            27.0,
-            28.0,
-            29.0,
-            30.0,
-            31.0,
-            32.0,
-            33.0,
-            34.0,
-            35.0,
-            36.0,
-            37.0,
-            38.0,
-            39.0,
-            40.0,
-            41.0,
-            42.0,
-            43.0,
-            44.0,
-            45.0,
-            46.0,
-            47.0,
-            48.0,
-            49.0,
-            50.0,
-            51.0,
-            52.0,
-            53.0,
-            54.0,
-            55.0,
-            56.0,
-            57.0,
-            58.0,
-            59.0,
-            60.0,
-            61.0,
-            62.0,
-            63.0,
-            64.0,
-            65.0,
-            66.0,
-            67.0,
-            68.0,
-            69.0,
-            70.0,
-            71.0,
-            72.0,
-            73.0,
-            74.0,
-            75.0,
-            76.0,
-            77.0,
-            78.0,
-            79.0,
-            80.0,
-            81.0,
-            82.0,
-            83.0,
-            84.0,
-            85.0,
-            86.0,
-            87.0,
-            88.0,
-            89.0,
-            90.0,
-            91.0,
-            92.0,
-            93.0,
-            94.0,
-            95.0,
-            96.0,
-            97.0,
-            98.0,
-            99.0,
-            100.0,
-            101.0,
-            102.0,
-            103.0
-        ],
-        "showlegend": true,
-        "mode": "lines",
-        "name": "Michigan",
-        "zmin": null,
-        "legendgroup": "Michigan",
-        "zmax": null,
-        "line": {
-            "color": "rgba(142, 151, 30, 1.000)",
-            "shape": "linear",
-            "dash": "solid",
-            "width": 2
-        },
-        "y": [
-            18.0,
-            15.0,
-            19.0,
-            18.0,
-            26.5,
-            44.857142857142854,
-            63.857142857142854,
-            84.14285714285714,
-            155.14285714285714,
-            196.85714285714286,
-            264.57142857142856,
-            329.85714285714283,
-            388.2857142857143,
-            482.42857142857144,
-            609.2857142857143,
-            660.2857142857143,
-            764.1428571428571,
-            858.4285714285714,
-            1035.5714285714287,
-            1171.142857142857,
-            1339.0,
-            1406.4285714285713,
-            1502.142857142857,
-            1573.857142857143,
-            1670.4285714285713,
-            1622.7142857142858,
-            1581.0,
-            1436.857142857143,
-            1395.0,
-            1273.5714285714287,
-            1257.4285714285713,
-            1199.7142857142858,
-            1152.5714285714287,
-            1095.5714285714287,
-            1135.142857142857,
-            1075.857142857143,
-            1072.142857142857,
-            957.4285714285714,
-            858.0,
-            894.2857142857143,
-            982.7142857142857,
-            1015.0,
-            965.4285714285714,
-            978.8571428571429,
-            958.5714285714286,
-            1016.8571428571429,
-            996.4285714285714,
-            947.5714285714286,
-            884.8571428571429,
-            947.8571428571429,
-            929.5714285714286,
-            902.0,
-            821.1428571428571,
-            765.5714285714286,
-            704.8571428571429,
-            663.7142857142857,
-            607.4285714285714,
-            577.0,
-            611.8571428571429,
-            621.2857142857143,
-            583.0,
-            679.2857142857143,
-            662.8571428571429,
-            662.7142857142857,
-            696.7142857142857,
-            746.2857142857143,
-            743.1428571428571,
-            786.1428571428571,
-            688.7142857142857,
-            676.1428571428571,
-            675.8571428571429,
-            633.1428571428571,
-            538.0,
-            501.2857142857143,
-            467.14285714285717,
-            446.85714285714283,
-            470.0,
-            454.14285714285717,
-            473.7142857142857,
-            472.42857142857144,
-            466.57142857142856,
-            437.85714285714283,
-            409.0,
-            426.85714285714283,
-            384.14285714285717,
-            322.57142857142856,
-            310.85714285714283,
-            275.2857142857143,
-            217.85714285714286,
-            210.0,
-            121.57142857142857,
-            131.71428571428572,
-            155.0,
-            140.14285714285714,
-            157.42857142857142,
-            187.85714285714286,
-            192.71428571428572,
-            203.57142857142858,
-            244.14285714285714,
-            236.71428571428572,
-            267.42857142857144,
-            275.42857142857144,
-            294.0
+            1335.857142857143,
+            1454.7142857142858
         ],
         "type": "scatter"
     },
@@ -16117,6 +15904,239 @@ Already up to date.
         ],
         "showlegend": true,
         "mode": "lines",
+        "name": "Michigan",
+        "zmin": null,
+        "legendgroup": "Michigan",
+        "zmax": null,
+        "line": {
+            "color": "rgba(142, 151, 30, 1.000)",
+            "shape": "linear",
+            "dash": "solid",
+            "width": 2
+        },
+        "y": [
+            18.0,
+            15.0,
+            19.0,
+            18.0,
+            26.5,
+            44.857142857142854,
+            63.857142857142854,
+            84.14285714285714,
+            155.14285714285714,
+            196.85714285714286,
+            264.57142857142856,
+            329.85714285714283,
+            388.2857142857143,
+            482.42857142857144,
+            609.2857142857143,
+            660.2857142857143,
+            764.1428571428571,
+            858.4285714285714,
+            1035.5714285714287,
+            1171.142857142857,
+            1339.0,
+            1406.4285714285713,
+            1502.142857142857,
+            1573.857142857143,
+            1670.4285714285713,
+            1622.7142857142858,
+            1581.0,
+            1436.857142857143,
+            1395.0,
+            1273.5714285714287,
+            1257.4285714285713,
+            1199.7142857142858,
+            1152.5714285714287,
+            1095.5714285714287,
+            1135.142857142857,
+            1075.857142857143,
+            1072.142857142857,
+            957.4285714285714,
+            858.0,
+            894.2857142857143,
+            982.7142857142857,
+            1015.0,
+            965.4285714285714,
+            978.8571428571429,
+            958.5714285714286,
+            1016.8571428571429,
+            996.4285714285714,
+            947.5714285714286,
+            884.8571428571429,
+            947.8571428571429,
+            929.5714285714286,
+            902.0,
+            821.1428571428571,
+            765.5714285714286,
+            704.8571428571429,
+            663.7142857142857,
+            607.4285714285714,
+            577.0,
+            611.8571428571429,
+            621.2857142857143,
+            583.0,
+            679.2857142857143,
+            662.8571428571429,
+            662.7142857142857,
+            696.7142857142857,
+            746.2857142857143,
+            743.1428571428571,
+            786.1428571428571,
+            688.7142857142857,
+            676.1428571428571,
+            675.8571428571429,
+            633.1428571428571,
+            538.0,
+            501.2857142857143,
+            467.14285714285717,
+            446.85714285714283,
+            470.0,
+            454.14285714285717,
+            473.7142857142857,
+            472.42857142857144,
+            466.57142857142856,
+            437.85714285714283,
+            409.0,
+            426.85714285714283,
+            384.14285714285717,
+            322.57142857142856,
+            310.85714285714283,
+            275.2857142857143,
+            217.85714285714286,
+            210.0,
+            121.57142857142857,
+            131.71428571428572,
+            155.0,
+            140.14285714285714,
+            157.42857142857142,
+            187.85714285714286,
+            192.71428571428572,
+            203.57142857142858,
+            244.14285714285714,
+            236.71428571428572,
+            267.42857142857144,
+            275.42857142857144,
+            294.0,
+            313.0
+        ],
+        "type": "scatter"
+    },
+    {
+        "xaxis": "x1",
+        "colorbar": {
+            "title": ""
+        },
+        "yaxis": "y1",
+        "x": [
+            1.0,
+            2.0,
+            3.0,
+            4.0,
+            5.0,
+            6.0,
+            7.0,
+            8.0,
+            9.0,
+            10.0,
+            11.0,
+            12.0,
+            13.0,
+            14.0,
+            15.0,
+            16.0,
+            17.0,
+            18.0,
+            19.0,
+            20.0,
+            21.0,
+            22.0,
+            23.0,
+            24.0,
+            25.0,
+            26.0,
+            27.0,
+            28.0,
+            29.0,
+            30.0,
+            31.0,
+            32.0,
+            33.0,
+            34.0,
+            35.0,
+            36.0,
+            37.0,
+            38.0,
+            39.0,
+            40.0,
+            41.0,
+            42.0,
+            43.0,
+            44.0,
+            45.0,
+            46.0,
+            47.0,
+            48.0,
+            49.0,
+            50.0,
+            51.0,
+            52.0,
+            53.0,
+            54.0,
+            55.0,
+            56.0,
+            57.0,
+            58.0,
+            59.0,
+            60.0,
+            61.0,
+            62.0,
+            63.0,
+            64.0,
+            65.0,
+            66.0,
+            67.0,
+            68.0,
+            69.0,
+            70.0,
+            71.0,
+            72.0,
+            73.0,
+            74.0,
+            75.0,
+            76.0,
+            77.0,
+            78.0,
+            79.0,
+            80.0,
+            81.0,
+            82.0,
+            83.0,
+            84.0,
+            85.0,
+            86.0,
+            87.0,
+            88.0,
+            89.0,
+            90.0,
+            91.0,
+            92.0,
+            93.0,
+            94.0,
+            95.0,
+            96.0,
+            97.0,
+            98.0,
+            99.0,
+            100.0,
+            101.0,
+            102.0,
+            103.0,
+            104.0,
+            105.0
+        ],
+        "showlegend": true,
+        "mode": "lines",
         "name": "North Carolina",
         "zmin": null,
         "legendgroup": "North Carolina",
@@ -16231,7 +16251,8 @@ Already up to date.
             1219.5714285714287,
             1264.2857142857142,
             1247.4285714285713,
-            1370.4285714285713
+            1370.4285714285713,
+            1329.2857142857142
         ],
         "type": "scatter"
     },
@@ -16342,7 +16363,8 @@ Already up to date.
             99.0,
             100.0,
             101.0,
-            102.0
+            102.0,
+            103.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -16457,7 +16479,8 @@ Already up to date.
             2412.1428571428573,
             2536.4285714285716,
             2741.8571428571427,
-            2750.4285714285716
+            2750.4285714285716,
+            2833.714285714286
         ],
         "type": "scatter"
     }
@@ -16477,7 +16500,7 @@ Already up to date.
         "ticks": "inside",
         "range": [
             0.0,
-            161.20000000000002
+            162.5
         ],
         "domain": [
             0.10364016997875265,
@@ -16633,7 +16656,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[96]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="nd">@df</span> <span class="n">filter</span><span class="p">(</span><span class="o">:</span><span class="n">Province_State</span> <span class="o">=&gt;</span> <span class="o">!=</span><span class="p">(</span><span class="s">&quot;New York&quot;</span><span class="p">),</span> <span class="n">confirmedByStateTop</span><span class="p">)</span> <span class="n">plot</span><span class="p">(</span><span class="o">:</span><span class="n">daysSince</span><span class="p">,</span> <span class="o">:</span><span class="n">Value_new_rolling7</span><span class="p">,</span> <span class="n">group</span><span class="o">=:</span><span class="n">Province_State</span><span class="p">,</span>
@@ -16654,7 +16677,7 @@ Already up to date.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[58]:</div>
+    <div class="prompt output_prompt">Out[96]:</div>
 
 
 
@@ -16663,13 +16686,13 @@ Already up to date.
 <html>
     <head>
         <title>Plots.jl</title>
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <script src="https://cdn.plot.ly/plotly-1.54.2.min.js"></script>
     </head>
     <body>
-            <div id="87b1c136-606b-4eaa-a0e2-dd9c8f486f5f" style="width:700px;height:400px;"></div>
+            <div id="9832a767-490e-4463-bf32-b24d96573a16" style="width:700px;height:400px;"></div>
     <script>
-    PLOT = document.getElementById('87b1c136-606b-4eaa-a0e2-dd9c8f486f5f');
+    PLOT = document.getElementById('9832a767-490e-4463-bf32-b24d96573a16');
     Plotly.plot(PLOT, [
     {
         "xaxis": "x1",
@@ -16794,7 +16817,8 @@ Already up to date.
             121.0,
             122.0,
             123.0,
-            124.0
+            124.0,
+            125.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -16925,7 +16949,8 @@ Already up to date.
             3749.4285714285716,
             4148.428571428572,
             4645.142857142857,
-            4732.428571428572
+            4732.428571428572,
+            4860.857142857143
         ],
         "type": "scatter"
     },
@@ -17041,7 +17066,8 @@ Already up to date.
             103.0,
             104.0,
             105.0,
-            106.0
+            106.0,
+            107.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -17161,7 +17187,8 @@ Already up to date.
             323.0,
             330.2857142857143,
             329.7142857142857,
-            312.7142857142857
+            312.7142857142857,
+            298.42857142857144
         ],
         "type": "scatter"
     },
@@ -17277,7 +17304,8 @@ Already up to date.
             103.0,
             104.0,
             105.0,
-            106.0
+            106.0,
+            107.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -17397,7 +17425,8 @@ Already up to date.
             602.7142857142857,
             601.1428571428571,
             598.0,
-            622.1428571428571
+            622.1428571428571,
+            665.1428571428571
         ],
         "type": "scatter"
     },
@@ -17515,7 +17544,8 @@ Already up to date.
             105.0,
             106.0,
             107.0,
-            108.0
+            108.0,
+            109.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -17637,7 +17667,8 @@ Already up to date.
             3488.714285714286,
             3939.8571428571427,
             4194.714285714285,
-            4347.571428571428
+            4347.571428571428,
+            4757.0
         ],
         "type": "scatter"
     },
@@ -17755,7 +17786,8 @@ Already up to date.
             105.0,
             106.0,
             107.0,
-            108.0
+            108.0,
+            109.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -17877,7 +17909,8 @@ Already up to date.
             3103.285714285714,
             3270.1428571428573,
             3342.0,
-            3756.4285714285716
+            3756.4285714285716,
+            4013.1428571428573
         ],
         "type": "scatter"
     },
@@ -17993,7 +18026,8 @@ Already up to date.
             105.0,
             106.0,
             107.0,
-            108.0
+            108.0,
+            109.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -18113,7 +18147,8 @@ Already up to date.
             208.28571428571428,
             217.14285714285714,
             222.0,
-            208.57142857142858
+            208.57142857142858,
+            202.14285714285714
         ],
         "type": "scatter"
     },
@@ -18228,7 +18263,8 @@ Already up to date.
             103.0,
             104.0,
             105.0,
-            106.0
+            106.0,
+            107.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -18347,7 +18383,8 @@ Already up to date.
             390.2857142857143,
             426.7142857142857,
             461.42857142857144,
-            485.14285714285717
+            485.14285714285717,
+            494.0
         ],
         "type": "scatter"
     },
@@ -18464,7 +18501,8 @@ Already up to date.
             104.0,
             105.0,
             106.0,
-            107.0
+            107.0,
+            108.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -18585,237 +18623,8 @@ Already up to date.
             1002.8571428571429,
             1073.4285714285713,
             1247.4285714285713,
-            1335.857142857143
-        ],
-        "type": "scatter"
-    },
-    {
-        "xaxis": "x1",
-        "colorbar": {
-            "title": ""
-        },
-        "yaxis": "y1",
-        "x": [
-            1.0,
-            2.0,
-            3.0,
-            4.0,
-            5.0,
-            6.0,
-            7.0,
-            8.0,
-            9.0,
-            10.0,
-            11.0,
-            12.0,
-            13.0,
-            14.0,
-            15.0,
-            16.0,
-            17.0,
-            18.0,
-            19.0,
-            20.0,
-            21.0,
-            22.0,
-            23.0,
-            24.0,
-            25.0,
-            26.0,
-            27.0,
-            28.0,
-            29.0,
-            30.0,
-            31.0,
-            32.0,
-            33.0,
-            34.0,
-            35.0,
-            36.0,
-            37.0,
-            38.0,
-            39.0,
-            40.0,
-            41.0,
-            42.0,
-            43.0,
-            44.0,
-            45.0,
-            46.0,
-            47.0,
-            48.0,
-            49.0,
-            50.0,
-            51.0,
-            52.0,
-            53.0,
-            54.0,
-            55.0,
-            56.0,
-            57.0,
-            58.0,
-            59.0,
-            60.0,
-            61.0,
-            62.0,
-            63.0,
-            64.0,
-            65.0,
-            66.0,
-            67.0,
-            68.0,
-            69.0,
-            70.0,
-            71.0,
-            72.0,
-            73.0,
-            74.0,
-            75.0,
-            76.0,
-            77.0,
-            78.0,
-            79.0,
-            80.0,
-            81.0,
-            82.0,
-            83.0,
-            84.0,
-            85.0,
-            86.0,
-            87.0,
-            88.0,
-            89.0,
-            90.0,
-            91.0,
-            92.0,
-            93.0,
-            94.0,
-            95.0,
-            96.0,
-            97.0,
-            98.0,
-            99.0,
-            100.0,
-            101.0,
-            102.0,
-            103.0
-        ],
-        "showlegend": true,
-        "mode": "lines",
-        "name": "Michigan",
-        "zmin": null,
-        "legendgroup": "Michigan",
-        "zmax": null,
-        "line": {
-            "color": "rgba(0, 169, 141, 1.000)",
-            "shape": "linear",
-            "dash": "solid",
-            "width": 2
-        },
-        "y": [
-            18.0,
-            15.0,
-            19.0,
-            18.0,
-            26.5,
-            44.857142857142854,
-            63.857142857142854,
-            84.14285714285714,
-            155.14285714285714,
-            196.85714285714286,
-            264.57142857142856,
-            329.85714285714283,
-            388.2857142857143,
-            482.42857142857144,
-            609.2857142857143,
-            660.2857142857143,
-            764.1428571428571,
-            858.4285714285714,
-            1035.5714285714287,
-            1171.142857142857,
-            1339.0,
-            1406.4285714285713,
-            1502.142857142857,
-            1573.857142857143,
-            1670.4285714285713,
-            1622.7142857142858,
-            1581.0,
-            1436.857142857143,
-            1395.0,
-            1273.5714285714287,
-            1257.4285714285713,
-            1199.7142857142858,
-            1152.5714285714287,
-            1095.5714285714287,
-            1135.142857142857,
-            1075.857142857143,
-            1072.142857142857,
-            957.4285714285714,
-            858.0,
-            894.2857142857143,
-            982.7142857142857,
-            1015.0,
-            965.4285714285714,
-            978.8571428571429,
-            958.5714285714286,
-            1016.8571428571429,
-            996.4285714285714,
-            947.5714285714286,
-            884.8571428571429,
-            947.8571428571429,
-            929.5714285714286,
-            902.0,
-            821.1428571428571,
-            765.5714285714286,
-            704.8571428571429,
-            663.7142857142857,
-            607.4285714285714,
-            577.0,
-            611.8571428571429,
-            621.2857142857143,
-            583.0,
-            679.2857142857143,
-            662.8571428571429,
-            662.7142857142857,
-            696.7142857142857,
-            746.2857142857143,
-            743.1428571428571,
-            786.1428571428571,
-            688.7142857142857,
-            676.1428571428571,
-            675.8571428571429,
-            633.1428571428571,
-            538.0,
-            501.2857142857143,
-            467.14285714285717,
-            446.85714285714283,
-            470.0,
-            454.14285714285717,
-            473.7142857142857,
-            472.42857142857144,
-            466.57142857142856,
-            437.85714285714283,
-            409.0,
-            426.85714285714283,
-            384.14285714285717,
-            322.57142857142856,
-            310.85714285714283,
-            275.2857142857143,
-            217.85714285714286,
-            210.0,
-            121.57142857142857,
-            131.71428571428572,
-            155.0,
-            140.14285714285714,
-            157.42857142857142,
-            187.85714285714286,
-            192.71428571428572,
-            203.57142857142858,
-            244.14285714285714,
-            236.71428571428572,
-            267.42857142857144,
-            275.42857142857144,
-            294.0
+            1335.857142857143,
+            1454.7142857142858
         ],
         "type": "scatter"
     },
@@ -18933,6 +18742,239 @@ Already up to date.
         ],
         "showlegend": true,
         "mode": "lines",
+        "name": "Michigan",
+        "zmin": null,
+        "legendgroup": "Michigan",
+        "zmax": null,
+        "line": {
+            "color": "rgba(0, 169, 141, 1.000)",
+            "shape": "linear",
+            "dash": "solid",
+            "width": 2
+        },
+        "y": [
+            18.0,
+            15.0,
+            19.0,
+            18.0,
+            26.5,
+            44.857142857142854,
+            63.857142857142854,
+            84.14285714285714,
+            155.14285714285714,
+            196.85714285714286,
+            264.57142857142856,
+            329.85714285714283,
+            388.2857142857143,
+            482.42857142857144,
+            609.2857142857143,
+            660.2857142857143,
+            764.1428571428571,
+            858.4285714285714,
+            1035.5714285714287,
+            1171.142857142857,
+            1339.0,
+            1406.4285714285713,
+            1502.142857142857,
+            1573.857142857143,
+            1670.4285714285713,
+            1622.7142857142858,
+            1581.0,
+            1436.857142857143,
+            1395.0,
+            1273.5714285714287,
+            1257.4285714285713,
+            1199.7142857142858,
+            1152.5714285714287,
+            1095.5714285714287,
+            1135.142857142857,
+            1075.857142857143,
+            1072.142857142857,
+            957.4285714285714,
+            858.0,
+            894.2857142857143,
+            982.7142857142857,
+            1015.0,
+            965.4285714285714,
+            978.8571428571429,
+            958.5714285714286,
+            1016.8571428571429,
+            996.4285714285714,
+            947.5714285714286,
+            884.8571428571429,
+            947.8571428571429,
+            929.5714285714286,
+            902.0,
+            821.1428571428571,
+            765.5714285714286,
+            704.8571428571429,
+            663.7142857142857,
+            607.4285714285714,
+            577.0,
+            611.8571428571429,
+            621.2857142857143,
+            583.0,
+            679.2857142857143,
+            662.8571428571429,
+            662.7142857142857,
+            696.7142857142857,
+            746.2857142857143,
+            743.1428571428571,
+            786.1428571428571,
+            688.7142857142857,
+            676.1428571428571,
+            675.8571428571429,
+            633.1428571428571,
+            538.0,
+            501.2857142857143,
+            467.14285714285717,
+            446.85714285714283,
+            470.0,
+            454.14285714285717,
+            473.7142857142857,
+            472.42857142857144,
+            466.57142857142856,
+            437.85714285714283,
+            409.0,
+            426.85714285714283,
+            384.14285714285717,
+            322.57142857142856,
+            310.85714285714283,
+            275.2857142857143,
+            217.85714285714286,
+            210.0,
+            121.57142857142857,
+            131.71428571428572,
+            155.0,
+            140.14285714285714,
+            157.42857142857142,
+            187.85714285714286,
+            192.71428571428572,
+            203.57142857142858,
+            244.14285714285714,
+            236.71428571428572,
+            267.42857142857144,
+            275.42857142857144,
+            294.0,
+            313.0
+        ],
+        "type": "scatter"
+    },
+    {
+        "xaxis": "x1",
+        "colorbar": {
+            "title": ""
+        },
+        "yaxis": "y1",
+        "x": [
+            1.0,
+            2.0,
+            3.0,
+            4.0,
+            5.0,
+            6.0,
+            7.0,
+            8.0,
+            9.0,
+            10.0,
+            11.0,
+            12.0,
+            13.0,
+            14.0,
+            15.0,
+            16.0,
+            17.0,
+            18.0,
+            19.0,
+            20.0,
+            21.0,
+            22.0,
+            23.0,
+            24.0,
+            25.0,
+            26.0,
+            27.0,
+            28.0,
+            29.0,
+            30.0,
+            31.0,
+            32.0,
+            33.0,
+            34.0,
+            35.0,
+            36.0,
+            37.0,
+            38.0,
+            39.0,
+            40.0,
+            41.0,
+            42.0,
+            43.0,
+            44.0,
+            45.0,
+            46.0,
+            47.0,
+            48.0,
+            49.0,
+            50.0,
+            51.0,
+            52.0,
+            53.0,
+            54.0,
+            55.0,
+            56.0,
+            57.0,
+            58.0,
+            59.0,
+            60.0,
+            61.0,
+            62.0,
+            63.0,
+            64.0,
+            65.0,
+            66.0,
+            67.0,
+            68.0,
+            69.0,
+            70.0,
+            71.0,
+            72.0,
+            73.0,
+            74.0,
+            75.0,
+            76.0,
+            77.0,
+            78.0,
+            79.0,
+            80.0,
+            81.0,
+            82.0,
+            83.0,
+            84.0,
+            85.0,
+            86.0,
+            87.0,
+            88.0,
+            89.0,
+            90.0,
+            91.0,
+            92.0,
+            93.0,
+            94.0,
+            95.0,
+            96.0,
+            97.0,
+            98.0,
+            99.0,
+            100.0,
+            101.0,
+            102.0,
+            103.0,
+            104.0,
+            105.0
+        ],
+        "showlegend": true,
+        "mode": "lines",
         "name": "North Carolina",
         "zmin": null,
         "legendgroup": "North Carolina",
@@ -19047,7 +19089,8 @@ Already up to date.
             1219.5714285714287,
             1264.2857142857142,
             1247.4285714285713,
-            1370.4285714285713
+            1370.4285714285713,
+            1329.2857142857142
         ],
         "type": "scatter"
     },
@@ -19158,7 +19201,8 @@ Already up to date.
             99.0,
             100.0,
             101.0,
-            102.0
+            102.0,
+            103.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -19273,7 +19317,8 @@ Already up to date.
             2412.1428571428573,
             2536.4285714285716,
             2741.8571428571427,
-            2750.4285714285716
+            2750.4285714285716,
+            2833.714285714286
         ],
         "type": "scatter"
     }
@@ -19293,7 +19338,7 @@ Already up to date.
         "ticks": "inside",
         "range": [
             0.0,
-            161.20000000000002
+            162.5
         ],
         "domain": [
             0.09094175728033996,
@@ -19364,13 +19409,14 @@ Already up to date.
             1000.0,
             2000.0,
             3000.0,
-            4000.0
+            4000.0,
+            5000.0
         ],
         "visible": true,
         "ticks": "inside",
         "range": [
-            -141.67857142857142,
-            4874.392857142857
+            -145.53142857142856,
+            5006.674285714286
         ],
         "domain": [
             0.07581474190726165,
@@ -19395,7 +19441,8 @@ Already up to date.
             "1,000",
             "2,000",
             "3,000",
-            "4,000"
+            "4,000",
+            "5,000"
         ],
         "zeroline": false,
         "type": "-",
@@ -19441,7 +19488,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="prompt input_prompt">In&nbsp;[97]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="nd">@df</span> <span class="n">confirmedByStateTop</span> <span class="n">plot</span><span class="p">(</span><span class="o">:</span><span class="n">daysSince</span><span class="p">,</span> <span class="o">:</span><span class="n">Value_new_rolling7</span><span class="p">,</span> <span class="n">group</span><span class="o">=:</span><span class="n">Province_State</span><span class="p">,</span>
@@ -19463,7 +19510,7 @@ Already up to date.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[59]:</div>
+    <div class="prompt output_prompt">Out[97]:</div>
 
 
 
@@ -19472,13 +19519,13 @@ Already up to date.
 <html>
     <head>
         <title>Plots.jl</title>
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <script src="https://cdn.plot.ly/plotly-1.54.2.min.js"></script>
     </head>
     <body>
-            <div id="33b3fbab-d2bf-410a-a98a-3135076ee503" style="width:700px;height:400px;"></div>
+            <div id="4ad38dd8-c9ef-4e46-964f-1c397d1779e9" style="width:700px;height:400px;"></div>
     <script>
-    PLOT = document.getElementById('33b3fbab-d2bf-410a-a98a-3135076ee503');
+    PLOT = document.getElementById('4ad38dd8-c9ef-4e46-964f-1c397d1779e9');
     Plotly.plot(PLOT, [
     {
         "xaxis": "x1",
@@ -19598,7 +19645,8 @@ Already up to date.
             109.0,
             110.0,
             111.0,
-            112.0
+            112.0,
+            113.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -19724,7 +19772,8 @@ Already up to date.
             658.8571428571429,
             649.1428571428571,
             644.2857142857143,
-            646.2857142857143
+            646.2857142857143,
+            665.0
         ],
         "type": "scatter"
     },
@@ -19851,7 +19900,8 @@ Already up to date.
             121.0,
             122.0,
             123.0,
-            124.0
+            124.0,
+            125.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -19982,7 +20032,8 @@ Already up to date.
             3749.4285714285716,
             4148.428571428572,
             4645.142857142857,
-            4732.428571428572
+            4732.428571428572,
+            4860.857142857143
         ],
         "type": "scatter"
     },
@@ -20098,7 +20149,8 @@ Already up to date.
             103.0,
             104.0,
             105.0,
-            106.0
+            106.0,
+            107.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -20218,7 +20270,8 @@ Already up to date.
             323.0,
             330.2857142857143,
             329.7142857142857,
-            312.7142857142857
+            312.7142857142857,
+            298.42857142857144
         ],
         "type": "scatter"
     },
@@ -20334,7 +20387,8 @@ Already up to date.
             103.0,
             104.0,
             105.0,
-            106.0
+            106.0,
+            107.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -20454,7 +20508,8 @@ Already up to date.
             602.7142857142857,
             601.1428571428571,
             598.0,
-            622.1428571428571
+            622.1428571428571,
+            665.1428571428571
         ],
         "type": "scatter"
     },
@@ -20572,7 +20627,8 @@ Already up to date.
             105.0,
             106.0,
             107.0,
-            108.0
+            108.0,
+            109.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -20694,7 +20750,8 @@ Already up to date.
             3488.714285714286,
             3939.8571428571427,
             4194.714285714285,
-            4347.571428571428
+            4347.571428571428,
+            4757.0
         ],
         "type": "scatter"
     },
@@ -20812,7 +20869,8 @@ Already up to date.
             105.0,
             106.0,
             107.0,
-            108.0
+            108.0,
+            109.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -20934,7 +20992,8 @@ Already up to date.
             3103.285714285714,
             3270.1428571428573,
             3342.0,
-            3756.4285714285716
+            3756.4285714285716,
+            4013.1428571428573
         ],
         "type": "scatter"
     },
@@ -21050,7 +21109,8 @@ Already up to date.
             105.0,
             106.0,
             107.0,
-            108.0
+            108.0,
+            109.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -21170,7 +21230,8 @@ Already up to date.
             208.28571428571428,
             217.14285714285714,
             222.0,
-            208.57142857142858
+            208.57142857142858,
+            202.14285714285714
         ],
         "type": "scatter"
     },
@@ -21285,7 +21346,8 @@ Already up to date.
             103.0,
             104.0,
             105.0,
-            106.0
+            106.0,
+            107.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -21404,7 +21466,8 @@ Already up to date.
             390.2857142857143,
             426.7142857142857,
             461.42857142857144,
-            485.14285714285717
+            485.14285714285717,
+            494.0
         ],
         "type": "scatter"
     },
@@ -21521,7 +21584,8 @@ Already up to date.
             104.0,
             105.0,
             106.0,
-            107.0
+            107.0,
+            108.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -21642,237 +21706,8 @@ Already up to date.
             1002.8571428571429,
             1073.4285714285713,
             1247.4285714285713,
-            1335.857142857143
-        ],
-        "type": "scatter"
-    },
-    {
-        "xaxis": "x1",
-        "colorbar": {
-            "title": ""
-        },
-        "yaxis": "y1",
-        "x": [
-            1.0,
-            2.0,
-            3.0,
-            4.0,
-            5.0,
-            6.0,
-            7.0,
-            8.0,
-            9.0,
-            10.0,
-            11.0,
-            12.0,
-            13.0,
-            14.0,
-            15.0,
-            16.0,
-            17.0,
-            18.0,
-            19.0,
-            20.0,
-            21.0,
-            22.0,
-            23.0,
-            24.0,
-            25.0,
-            26.0,
-            27.0,
-            28.0,
-            29.0,
-            30.0,
-            31.0,
-            32.0,
-            33.0,
-            34.0,
-            35.0,
-            36.0,
-            37.0,
-            38.0,
-            39.0,
-            40.0,
-            41.0,
-            42.0,
-            43.0,
-            44.0,
-            45.0,
-            46.0,
-            47.0,
-            48.0,
-            49.0,
-            50.0,
-            51.0,
-            52.0,
-            53.0,
-            54.0,
-            55.0,
-            56.0,
-            57.0,
-            58.0,
-            59.0,
-            60.0,
-            61.0,
-            62.0,
-            63.0,
-            64.0,
-            65.0,
-            66.0,
-            67.0,
-            68.0,
-            69.0,
-            70.0,
-            71.0,
-            72.0,
-            73.0,
-            74.0,
-            75.0,
-            76.0,
-            77.0,
-            78.0,
-            79.0,
-            80.0,
-            81.0,
-            82.0,
-            83.0,
-            84.0,
-            85.0,
-            86.0,
-            87.0,
-            88.0,
-            89.0,
-            90.0,
-            91.0,
-            92.0,
-            93.0,
-            94.0,
-            95.0,
-            96.0,
-            97.0,
-            98.0,
-            99.0,
-            100.0,
-            101.0,
-            102.0,
-            103.0
-        ],
-        "showlegend": true,
-        "mode": "lines",
-        "name": "Michigan",
-        "zmin": null,
-        "legendgroup": "Michigan",
-        "zmax": null,
-        "line": {
-            "color": "rgba(142, 151, 30, 1.000)",
-            "shape": "linear",
-            "dash": "solid",
-            "width": 2
-        },
-        "y": [
-            18.0,
-            15.0,
-            19.0,
-            18.0,
-            26.5,
-            44.857142857142854,
-            63.857142857142854,
-            84.14285714285714,
-            155.14285714285714,
-            196.85714285714286,
-            264.57142857142856,
-            329.85714285714283,
-            388.2857142857143,
-            482.42857142857144,
-            609.2857142857143,
-            660.2857142857143,
-            764.1428571428571,
-            858.4285714285714,
-            1035.5714285714287,
-            1171.142857142857,
-            1339.0,
-            1406.4285714285713,
-            1502.142857142857,
-            1573.857142857143,
-            1670.4285714285713,
-            1622.7142857142858,
-            1581.0,
-            1436.857142857143,
-            1395.0,
-            1273.5714285714287,
-            1257.4285714285713,
-            1199.7142857142858,
-            1152.5714285714287,
-            1095.5714285714287,
-            1135.142857142857,
-            1075.857142857143,
-            1072.142857142857,
-            957.4285714285714,
-            858.0,
-            894.2857142857143,
-            982.7142857142857,
-            1015.0,
-            965.4285714285714,
-            978.8571428571429,
-            958.5714285714286,
-            1016.8571428571429,
-            996.4285714285714,
-            947.5714285714286,
-            884.8571428571429,
-            947.8571428571429,
-            929.5714285714286,
-            902.0,
-            821.1428571428571,
-            765.5714285714286,
-            704.8571428571429,
-            663.7142857142857,
-            607.4285714285714,
-            577.0,
-            611.8571428571429,
-            621.2857142857143,
-            583.0,
-            679.2857142857143,
-            662.8571428571429,
-            662.7142857142857,
-            696.7142857142857,
-            746.2857142857143,
-            743.1428571428571,
-            786.1428571428571,
-            688.7142857142857,
-            676.1428571428571,
-            675.8571428571429,
-            633.1428571428571,
-            538.0,
-            501.2857142857143,
-            467.14285714285717,
-            446.85714285714283,
-            470.0,
-            454.14285714285717,
-            473.7142857142857,
-            472.42857142857144,
-            466.57142857142856,
-            437.85714285714283,
-            409.0,
-            426.85714285714283,
-            384.14285714285717,
-            322.57142857142856,
-            310.85714285714283,
-            275.2857142857143,
-            217.85714285714286,
-            210.0,
-            121.57142857142857,
-            131.71428571428572,
-            155.0,
-            140.14285714285714,
-            157.42857142857142,
-            187.85714285714286,
-            192.71428571428572,
-            203.57142857142858,
-            244.14285714285714,
-            236.71428571428572,
-            267.42857142857144,
-            275.42857142857144,
-            294.0
+            1335.857142857143,
+            1454.7142857142858
         ],
         "type": "scatter"
     },
@@ -21990,6 +21825,239 @@ Already up to date.
         ],
         "showlegend": true,
         "mode": "lines",
+        "name": "Michigan",
+        "zmin": null,
+        "legendgroup": "Michigan",
+        "zmax": null,
+        "line": {
+            "color": "rgba(142, 151, 30, 1.000)",
+            "shape": "linear",
+            "dash": "solid",
+            "width": 2
+        },
+        "y": [
+            18.0,
+            15.0,
+            19.0,
+            18.0,
+            26.5,
+            44.857142857142854,
+            63.857142857142854,
+            84.14285714285714,
+            155.14285714285714,
+            196.85714285714286,
+            264.57142857142856,
+            329.85714285714283,
+            388.2857142857143,
+            482.42857142857144,
+            609.2857142857143,
+            660.2857142857143,
+            764.1428571428571,
+            858.4285714285714,
+            1035.5714285714287,
+            1171.142857142857,
+            1339.0,
+            1406.4285714285713,
+            1502.142857142857,
+            1573.857142857143,
+            1670.4285714285713,
+            1622.7142857142858,
+            1581.0,
+            1436.857142857143,
+            1395.0,
+            1273.5714285714287,
+            1257.4285714285713,
+            1199.7142857142858,
+            1152.5714285714287,
+            1095.5714285714287,
+            1135.142857142857,
+            1075.857142857143,
+            1072.142857142857,
+            957.4285714285714,
+            858.0,
+            894.2857142857143,
+            982.7142857142857,
+            1015.0,
+            965.4285714285714,
+            978.8571428571429,
+            958.5714285714286,
+            1016.8571428571429,
+            996.4285714285714,
+            947.5714285714286,
+            884.8571428571429,
+            947.8571428571429,
+            929.5714285714286,
+            902.0,
+            821.1428571428571,
+            765.5714285714286,
+            704.8571428571429,
+            663.7142857142857,
+            607.4285714285714,
+            577.0,
+            611.8571428571429,
+            621.2857142857143,
+            583.0,
+            679.2857142857143,
+            662.8571428571429,
+            662.7142857142857,
+            696.7142857142857,
+            746.2857142857143,
+            743.1428571428571,
+            786.1428571428571,
+            688.7142857142857,
+            676.1428571428571,
+            675.8571428571429,
+            633.1428571428571,
+            538.0,
+            501.2857142857143,
+            467.14285714285717,
+            446.85714285714283,
+            470.0,
+            454.14285714285717,
+            473.7142857142857,
+            472.42857142857144,
+            466.57142857142856,
+            437.85714285714283,
+            409.0,
+            426.85714285714283,
+            384.14285714285717,
+            322.57142857142856,
+            310.85714285714283,
+            275.2857142857143,
+            217.85714285714286,
+            210.0,
+            121.57142857142857,
+            131.71428571428572,
+            155.0,
+            140.14285714285714,
+            157.42857142857142,
+            187.85714285714286,
+            192.71428571428572,
+            203.57142857142858,
+            244.14285714285714,
+            236.71428571428572,
+            267.42857142857144,
+            275.42857142857144,
+            294.0,
+            313.0
+        ],
+        "type": "scatter"
+    },
+    {
+        "xaxis": "x1",
+        "colorbar": {
+            "title": ""
+        },
+        "yaxis": "y1",
+        "x": [
+            1.0,
+            2.0,
+            3.0,
+            4.0,
+            5.0,
+            6.0,
+            7.0,
+            8.0,
+            9.0,
+            10.0,
+            11.0,
+            12.0,
+            13.0,
+            14.0,
+            15.0,
+            16.0,
+            17.0,
+            18.0,
+            19.0,
+            20.0,
+            21.0,
+            22.0,
+            23.0,
+            24.0,
+            25.0,
+            26.0,
+            27.0,
+            28.0,
+            29.0,
+            30.0,
+            31.0,
+            32.0,
+            33.0,
+            34.0,
+            35.0,
+            36.0,
+            37.0,
+            38.0,
+            39.0,
+            40.0,
+            41.0,
+            42.0,
+            43.0,
+            44.0,
+            45.0,
+            46.0,
+            47.0,
+            48.0,
+            49.0,
+            50.0,
+            51.0,
+            52.0,
+            53.0,
+            54.0,
+            55.0,
+            56.0,
+            57.0,
+            58.0,
+            59.0,
+            60.0,
+            61.0,
+            62.0,
+            63.0,
+            64.0,
+            65.0,
+            66.0,
+            67.0,
+            68.0,
+            69.0,
+            70.0,
+            71.0,
+            72.0,
+            73.0,
+            74.0,
+            75.0,
+            76.0,
+            77.0,
+            78.0,
+            79.0,
+            80.0,
+            81.0,
+            82.0,
+            83.0,
+            84.0,
+            85.0,
+            86.0,
+            87.0,
+            88.0,
+            89.0,
+            90.0,
+            91.0,
+            92.0,
+            93.0,
+            94.0,
+            95.0,
+            96.0,
+            97.0,
+            98.0,
+            99.0,
+            100.0,
+            101.0,
+            102.0,
+            103.0,
+            104.0,
+            105.0
+        ],
+        "showlegend": true,
+        "mode": "lines",
         "name": "North Carolina",
         "zmin": null,
         "legendgroup": "North Carolina",
@@ -22104,7 +22172,8 @@ Already up to date.
             1219.5714285714287,
             1264.2857142857142,
             1247.4285714285713,
-            1370.4285714285713
+            1370.4285714285713,
+            1329.2857142857142
         ],
         "type": "scatter"
     },
@@ -22215,7 +22284,8 @@ Already up to date.
             99.0,
             100.0,
             101.0,
-            102.0
+            102.0,
+            103.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -22330,7 +22400,8 @@ Already up to date.
             2412.1428571428573,
             2536.4285714285716,
             2741.8571428571427,
-            2750.4285714285716
+            2750.4285714285716,
+            2833.714285714286
         ],
         "type": "scatter"
     }
@@ -22350,7 +22421,7 @@ Already up to date.
         "ticks": "inside",
         "range": [
             0.0,
-            161.20000000000002
+            162.5
         ],
         "domain": [
             0.10364016997875265,
@@ -22498,7 +22569,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[98]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="c"># A linear plot doesn&#39;t make much sense since NY dominates</span>
@@ -22519,7 +22590,7 @@ Already up to date.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[19]:</div>
+    <div class="prompt output_prompt">Out[98]:</div>
 
 
 
@@ -22528,13 +22599,13 @@ Already up to date.
 <html>
     <head>
         <title>Plots.jl</title>
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <script src="https://cdn.plot.ly/plotly-1.54.2.min.js"></script>
     </head>
     <body>
-            <div id="f07daf62-3966-4cb9-aa4c-4c2da8ae0eed" style="width:700px;height:400px;"></div>
+            <div id="d1139788-842b-4af1-a133-e49f0847e72d" style="width:700px;height:400px;"></div>
     <script>
-    PLOT = document.getElementById('f07daf62-3966-4cb9-aa4c-4c2da8ae0eed');
+    PLOT = document.getElementById('d1139788-842b-4af1-a133-e49f0847e72d');
     Plotly.plot(PLOT, [
     {
         "xaxis": "x1",
@@ -22643,7 +22714,8 @@ Already up to date.
             99.0,
             100.0,
             101.0,
-            102.0
+            102.0,
+            103.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -22758,7 +22830,8 @@ Already up to date.
             42.857142857142854,
             45.714285714285715,
             46.142857142857146,
-            45.42857142857143
+            45.42857142857143,
+            46.714285714285715
         ],
         "type": "scatter"
     },
@@ -22867,7 +22940,8 @@ Already up to date.
             96.0,
             97.0,
             98.0,
-            99.0
+            99.0,
+            100.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -22980,7 +23054,8 @@ Already up to date.
             40.0,
             38.0,
             33.285714285714285,
-            34.42857142857143
+            34.42857142857143,
+            286.14285714285717
         ],
         "type": "scatter"
     },
@@ -23081,7 +23156,8 @@ Already up to date.
             91.0,
             92.0,
             93.0,
-            94.0
+            94.0,
+            95.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -23186,7 +23262,8 @@ Already up to date.
             33.285714285714285,
             32.285714285714285,
             32.142857142857146,
-            29.142857142857142
+            29.142857142857142,
+            27.571428571428573
         ],
         "type": "scatter"
     },
@@ -23293,7 +23370,8 @@ Already up to date.
             94.0,
             95.0,
             96.0,
-            97.0
+            97.0,
+            98.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -23404,7 +23482,8 @@ Already up to date.
             48.42857142857143,
             49.285714285714285,
             44.142857142857146,
-            40.714285714285715
+            40.714285714285715,
+            39.0
         ],
         "type": "scatter"
     },
@@ -23508,7 +23587,8 @@ Already up to date.
             91.0,
             92.0,
             93.0,
-            94.0
+            94.0,
+            95.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -23616,7 +23696,8 @@ Already up to date.
             29.714285714285715,
             26.142857142857142,
             26.857142857142858,
-            28.428571428571427
+            28.428571428571427,
+            28.0
         ],
         "type": "scatter"
     },
@@ -23722,7 +23803,8 @@ Already up to date.
             93.0,
             94.0,
             95.0,
-            96.0
+            96.0,
+            97.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -23832,7 +23914,8 @@ Already up to date.
             10.571428571428571,
             11.285714285714286,
             10.714285714285714,
-            11.142857142857142
+            11.142857142857142,
+            10.285714285714286
         ],
         "type": "scatter"
     },
@@ -23944,7 +24027,8 @@ Already up to date.
             102.0,
             103.0,
             104.0,
-            105.0
+            105.0,
+            106.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -24060,7 +24144,8 @@ Already up to date.
             59.42857142857143,
             64.57142857142857,
             60.857142857142854,
-            64.85714285714286
+            64.85714285714286,
+            64.42857142857143
         ],
         "type": "scatter"
     },
@@ -24165,7 +24250,8 @@ Already up to date.
             94.0,
             95.0,
             96.0,
-            97.0
+            97.0,
+            98.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -24274,7 +24360,8 @@ Already up to date.
             8.428571428571429,
             8.428571428571429,
             9.571428571428571,
-            9.714285714285714
+            9.714285714285714,
+            10.285714285714286
         ],
         "type": "scatter"
     },
@@ -24382,7 +24469,8 @@ Already up to date.
             98.0,
             99.0,
             100.0,
-            101.0
+            101.0,
+            102.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -24494,7 +24582,8 @@ Already up to date.
             32.857142857142854,
             33.57142857142857,
             35.0,
-            37.57142857142857
+            37.57142857142857,
+            38.0
         ],
         "type": "scatter"
     },
@@ -24600,7 +24689,8 @@ Already up to date.
             97.0,
             98.0,
             99.0,
-            100.0
+            100.0,
+            101.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -24710,7 +24800,8 @@ Already up to date.
             13.0,
             14.142857142857142,
             13.142857142857142,
-            12.857142857142858
+            12.857142857142858,
+            14.571428571428571
         ],
         "type": "scatter"
     },
@@ -24807,7 +24898,8 @@ Already up to date.
             87.0,
             88.0,
             89.0,
-            90.0
+            90.0,
+            91.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -24908,7 +25000,206 @@ Already up to date.
             13.0,
             19.714285714285715,
             18.142857142857142,
-            20.571428571428573
+            20.571428571428573,
+            21.142857142857142
+        ],
+        "type": "scatter"
+    },
+    {
+        "xaxis": "x1",
+        "colorbar": {
+            "title": ""
+        },
+        "yaxis": "y1",
+        "x": [
+            1.0,
+            2.0,
+            3.0,
+            4.0,
+            5.0,
+            6.0,
+            7.0,
+            8.0,
+            9.0,
+            10.0,
+            11.0,
+            12.0,
+            13.0,
+            14.0,
+            15.0,
+            16.0,
+            17.0,
+            18.0,
+            19.0,
+            20.0,
+            21.0,
+            22.0,
+            23.0,
+            24.0,
+            26.0,
+            27.0,
+            28.0,
+            29.0,
+            30.0,
+            31.0,
+            32.0,
+            33.0,
+            36.0,
+            37.0,
+            38.0,
+            40.0,
+            42.0,
+            43.0,
+            44.0,
+            45.0,
+            46.0,
+            47.0,
+            48.0,
+            49.0,
+            50.0,
+            51.0,
+            52.0,
+            53.0,
+            54.0,
+            55.0,
+            56.0,
+            57.0,
+            58.0,
+            59.0,
+            60.0,
+            62.0,
+            63.0,
+            64.0,
+            65.0,
+            66.0,
+            67.0,
+            68.0,
+            69.0,
+            70.0,
+            71.0,
+            72.0,
+            73.0,
+            74.0,
+            75.0,
+            76.0,
+            77.0,
+            78.0,
+            79.0,
+            80.0,
+            81.0,
+            82.0,
+            83.0,
+            84.0,
+            85.0,
+            86.0,
+            87.0,
+            88.0,
+            89.0,
+            90.0,
+            91.0,
+            92.0,
+            93.0
+        ],
+        "showlegend": true,
+        "mode": "lines",
+        "name": "Arizona",
+        "zmin": null,
+        "legendgroup": "Arizona",
+        "zmax": null,
+        "line": {
+            "color": "rgba(155, 127, 233, 1.000)",
+            "shape": "linear",
+            "dash": "solid",
+            "width": 2
+        },
+        "y": [
+            3.0,
+            2.6666666666666665,
+            3.25,
+            3.0,
+            2.8333333333333335,
+            2.857142857142857,
+            2.857142857142857,
+            3.7142857142857144,
+            3.857142857142857,
+            4.428571428571429,
+            5.285714285714286,
+            6.714285714285714,
+            6.428571428571429,
+            6.857142857142857,
+            8.142857142857142,
+            9.0,
+            8.857142857142858,
+            9.285714285714286,
+            8.714285714285714,
+            9.571428571428571,
+            10.0,
+            9.428571428571429,
+            9.428571428571429,
+            11.0,
+            8.428571428571429,
+            8.428571428571429,
+            9.285714285714286,
+            10.857142857142858,
+            12.142857142857142,
+            11.857142857142858,
+            13.285714285714286,
+            13.0,
+            11.0,
+            10.142857142857142,
+            9.142857142857142,
+            12.428571428571429,
+            17.142857142857142,
+            16.857142857142858,
+            18.571428571428573,
+            26.714285714285715,
+            28.857142857142858,
+            24.857142857142858,
+            25.714285714285715,
+            23.857142857142858,
+            24.142857142857142,
+            24.857142857142858,
+            19.142857142857142,
+            21.0,
+            20.571428571428573,
+            20.714285714285715,
+            20.428571428571427,
+            21.714285714285715,
+            20.0,
+            17.714285714285715,
+            17.428571428571427,
+            17.142857142857142,
+            15.0,
+            12.428571428571429,
+            13.714285714285714,
+            15.857142857142858,
+            14.714285714285714,
+            15.142857142857142,
+            15.857142857142858,
+            19.0,
+            21.285714285714285,
+            19.857142857142858,
+            18.428571428571427,
+            19.857142857142858,
+            20.571428571428573,
+            19.285714285714285,
+            19.0,
+            16.857142857142858,
+            19.428571428571427,
+            20.142857142857142,
+            20.857142857142858,
+            20.0,
+            21.428571428571427,
+            21.714285714285715,
+            21.142857142857142,
+            21.142857142857142,
+            23.571428571428573,
+            22.428571428571427,
+            22.571428571428573,
+            21.142857142857142,
+            24.0,
+            31.142857142857142,
+            30.285714285714285
         ],
         "type": "scatter"
     }
@@ -24931,7 +25222,7 @@ Already up to date.
         "ticks": "inside",
         "range": [
             0.0,
-            136.5
+            137.8
         ],
         "domain": [
             0.09094175728033996,
@@ -25080,7 +25371,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="prompt input_prompt">In&nbsp;[99]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="nd">@df</span> <span class="n">confirmedByStateTop</span> <span class="n">plot</span><span class="p">(</span><span class="o">:</span><span class="n">Value_rolling7</span><span class="p">,</span> <span class="o">:</span><span class="n">Value_new_rolling7</span><span class="p">,</span> <span class="n">group</span><span class="o">=:</span><span class="n">Province_State</span><span class="p">,</span> 
@@ -25100,7 +25391,7 @@ Already up to date.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[60]:</div>
+    <div class="prompt output_prompt">Out[99]:</div>
 
 
 
@@ -25109,13 +25400,13 @@ Already up to date.
 <html>
     <head>
         <title>Plots.jl</title>
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <script src="https://cdn.plot.ly/plotly-1.54.2.min.js"></script>
     </head>
     <body>
-            <div id="316a2a12-6114-4933-8cf6-7a7185a02398" style="width:700px;height:400px;"></div>
+            <div id="753c7d6d-4544-465f-a4fb-d03a13105c9a" style="width:700px;height:400px;"></div>
     <script>
-    PLOT = document.getElementById('316a2a12-6114-4933-8cf6-7a7185a02398');
+    PLOT = document.getElementById('753c7d6d-4544-465f-a4fb-d03a13105c9a');
     Plotly.plot(PLOT, [
     {
         "xaxis": "x1",
@@ -25235,7 +25526,8 @@ Already up to date.
             385883.5714285714,
             386532.71428571426,
             387177.0,
-            387823.28571428574
+            387823.28571428574,
+            388488.28571428574
         ],
         "showlegend": true,
         "mode": "lines",
@@ -25361,7 +25653,8 @@ Already up to date.
             658.8571428571429,
             649.1428571428571,
             644.2857142857143,
-            646.2857142857143
+            646.2857142857143,
+            665.0
         ],
         "type": "scatter"
     },
@@ -25488,7 +25781,8 @@ Already up to date.
             167027.42857142858,
             171175.85714285713,
             175821.0,
-            180553.42857142858
+            180553.42857142858,
+            185414.2857142857
         ],
         "showlegend": true,
         "mode": "lines",
@@ -25619,7 +25913,8 @@ Already up to date.
             3749.4285714285716,
             4148.428571428572,
             4645.142857142857,
-            4732.428571428572
+            4732.428571428572,
+            4860.857142857143
         ],
         "type": "scatter"
     },
@@ -25735,7 +26030,8 @@ Already up to date.
             168115.85714285713,
             168446.14285714287,
             168775.85714285713,
-            169088.57142857142
+            169088.57142857142,
+            169387.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -25855,7 +26151,8 @@ Already up to date.
             323.0,
             330.2857142857143,
             329.7142857142857,
-            312.7142857142857
+            312.7142857142857,
+            298.42857142857144
         ],
         "type": "scatter"
     },
@@ -25971,7 +26268,8 @@ Already up to date.
             134850.57142857142,
             135451.7142857143,
             136049.7142857143,
-            136671.85714285713
+            136671.85714285713,
+            137337.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -26091,7 +26389,8 @@ Already up to date.
             602.7142857142857,
             601.1428571428571,
             598.0,
-            622.1428571428571
+            622.1428571428571,
+            665.1428571428571
         ],
         "type": "scatter"
     },
@@ -26209,7 +26508,8 @@ Already up to date.
             101522.42857142857,
             105462.28571428571,
             109657.0,
-            114004.57142857143
+            114004.57142857143,
+            118761.57142857143
         ],
         "showlegend": true,
         "mode": "lines",
@@ -26331,7 +26631,8 @@ Already up to date.
             3488.714285714286,
             3939.8571428571427,
             4194.714285714285,
-            4347.571428571428
+            4347.571428571428,
+            4757.0
         ],
         "type": "scatter"
     },
@@ -26449,7 +26750,8 @@ Already up to date.
             86702.28571428571,
             89972.42857142857,
             93314.42857142857,
-            97070.85714285714
+            97070.85714285714,
+            101084.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -26571,7 +26873,8 @@ Already up to date.
             3103.285714285714,
             3270.1428571428573,
             3342.0,
-            3756.4285714285716
+            3756.4285714285716,
+            4013.1428571428573
         ],
         "type": "scatter"
     },
@@ -26687,7 +26990,8 @@ Already up to date.
             106399.28571428571,
             106616.42857142857,
             106838.42857142857,
-            107047.0
+            107047.0,
+            107249.14285714286
         ],
         "showlegend": true,
         "mode": "lines",
@@ -26807,7 +27111,8 @@ Already up to date.
             208.28571428571428,
             217.14285714285714,
             222.0,
-            208.57142857142858
+            208.57142857142858,
+            202.14285714285714
         ],
         "type": "scatter"
     },
@@ -26922,7 +27227,8 @@ Already up to date.
             84751.85714285714,
             85178.57142857143,
             85640.0,
-            86125.14285714286
+            86125.14285714286,
+            86619.14285714286
         ],
         "showlegend": true,
         "mode": "lines",
@@ -27041,7 +27347,8 @@ Already up to date.
             390.2857142857143,
             426.7142857142857,
             461.42857142857144,
-            485.14285714285717
+            485.14285714285717,
+            494.0
         ],
         "type": "scatter"
     },
@@ -27158,7 +27465,8 @@ Already up to date.
             61279.0,
             62352.42857142857,
             63599.857142857145,
-            64935.71428571428
+            64935.71428571428,
+            66390.42857142857
         ],
         "showlegend": true,
         "mode": "lines",
@@ -27279,7 +27587,8 @@ Already up to date.
             1002.8571428571429,
             1073.4285714285713,
             1247.4285714285713,
-            1335.857142857143
+            1335.857142857143,
+            1454.7142857142858
         ],
         "type": "scatter"
     },
@@ -27392,7 +27701,8 @@ Already up to date.
             66857.42857142857,
             67124.85714285714,
             67400.28571428571,
-            67694.28571428571
+            67694.28571428571,
+            68007.28571428571
         ],
         "showlegend": true,
         "mode": "lines",
@@ -27509,7 +27819,8 @@ Already up to date.
             236.71428571428572,
             267.42857142857144,
             275.42857142857144,
-            294.0
+            294.0,
+            313.0
         ],
         "type": "scatter"
     },
@@ -27623,7 +27934,8 @@ Already up to date.
             48585.42857142857,
             49849.71428571428,
             51097.142857142855,
-            52467.57142857143
+            52467.57142857143,
+            53796.857142857145
         ],
         "showlegend": true,
         "mode": "lines",
@@ -27741,7 +28053,8 @@ Already up to date.
             1219.5714285714287,
             1264.2857142857142,
             1247.4285714285713,
-            1370.4285714285713
+            1370.4285714285713,
+            1329.2857142857142
         ],
         "type": "scatter"
     },
@@ -27852,7 +28165,8 @@ Already up to date.
             44291.28571428572,
             46827.71428571428,
             49569.57142857143,
-            52320.0
+            52320.0,
+            55153.71428571428
         ],
         "showlegend": true,
         "mode": "lines",
@@ -27967,7 +28281,8 @@ Already up to date.
             2412.1428571428573,
             2536.4285714285716,
             2741.8571428571427,
-            2750.4285714285716
+            2750.4285714285716,
+            2833.714285714286
         ],
         "type": "scatter"
     }
@@ -27988,7 +28303,7 @@ Already up to date.
         "ticks": "inside",
         "range": [
             1.0061603087048185,
-            6.764725140522496
+            6.765469186886703
         ],
         "domain": [
             0.07824334458192725,
@@ -28144,7 +28459,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[100]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="k">using</span> <span class="n">CSV</span><span class="p">,</span> <span class="n">DataFrames</span>
@@ -28157,7 +28472,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="prompt input_prompt">In&nbsp;[101]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">popDataPath</span> <span class="o">=</span> <span class="n">joinpath</span><span class="p">(</span><span class="nd">@__DIR__</span><span class="p">,</span> <span class="s">&quot;../data&quot;</span><span class="p">,</span> <span class="s">&quot;nst-est2019-alldata.csv&quot;</span><span class="p">)</span>
@@ -28172,7 +28487,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="prompt input_prompt">In&nbsp;[102]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">confirmedByStatePerCap</span> <span class="o">=</span> <span class="n">innerjoin</span><span class="p">(</span><span class="n">confirmedByState</span><span class="p">,</span> <span class="n">popData</span><span class="p">,</span> <span class="n">on</span><span class="o">=:</span><span class="n">Province_State</span><span class="o">=&gt;:</span><span class="n">NAME</span><span class="p">);</span>
@@ -28186,7 +28501,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[103]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">nrow</span><span class="p">(</span><span class="n">deathsByStatePerCap</span><span class="p">)</span>
@@ -28202,13 +28517,13 @@ Already up to date.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[66]:</div>
+    <div class="prompt output_prompt">Out[103]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>4780</pre>
+<pre>4832</pre>
 </div>
 
 </div>
@@ -28219,7 +28534,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="prompt input_prompt">In&nbsp;[104]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">confirmedByStatePerCap</span> <span class="o">=</span> <span class="nd">@transform</span><span class="p">(</span><span class="n">confirmedByStatePerCap</span><span class="p">,</span>
@@ -28247,7 +28562,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[69]:</div>
+<div class="prompt input_prompt">In&nbsp;[105]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">topStatesCasesPerCap</span> <span class="o">=</span> <span class="n">topLevels</span><span class="p">(</span><span class="n">confirmedByStatePerCap</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="o">:</span><span class="n">Province_State</span><span class="p">);</span>
@@ -28264,7 +28579,7 @@ Already up to date.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[69]:</div>
+    <div class="prompt output_prompt">Out[105]:</div>
 
 
 
@@ -28293,7 +28608,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[70]:</div>
+<div class="prompt input_prompt">In&nbsp;[106]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">topStatesDeathsPerCap</span> <span class="o">=</span> <span class="n">topLevels</span><span class="p">(</span><span class="n">deathsByStatePerCap</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="o">:</span><span class="n">Province_State</span><span class="p">);</span>
@@ -28310,7 +28625,7 @@ Already up to date.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[70]:</div>
+    <div class="prompt output_prompt">Out[106]:</div>
 
 
 
@@ -28339,7 +28654,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[71]:</div>
+<div class="prompt input_prompt">In&nbsp;[107]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="c"># Restrict the datasets</span>
@@ -28354,7 +28669,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[72]:</div>
+<div class="prompt input_prompt">In&nbsp;[108]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="c"># Deal with levels</span>
@@ -28369,7 +28684,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[73]:</div>
+<div class="prompt input_prompt">In&nbsp;[109]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="nd">@df</span> <span class="n">confirmedByStateTopPerCap</span> <span class="n">plot</span><span class="p">(</span><span class="o">:</span><span class="n">daysSince</span><span class="p">,</span> <span class="o">:</span><span class="n">Value_new_rolling7_perCap</span><span class="p">,</span> <span class="n">group</span><span class="o">=:</span><span class="n">Province_State</span><span class="p">,</span>
@@ -28391,7 +28706,7 @@ Already up to date.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[73]:</div>
+    <div class="prompt output_prompt">Out[109]:</div>
 
 
 
@@ -28400,13 +28715,13 @@ Already up to date.
 <html>
     <head>
         <title>Plots.jl</title>
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <script src="https://cdn.plot.ly/plotly-1.54.2.min.js"></script>
     </head>
     <body>
-            <div id="3897abc7-0789-4d4f-8307-6548ed695311" style="width:700px;height:400px;"></div>
+            <div id="c57875e2-c332-421f-8e10-cbe5c1ad9eaa" style="width:700px;height:400px;"></div>
     <script>
-    PLOT = document.getElementById('3897abc7-0789-4d4f-8307-6548ed695311');
+    PLOT = document.getElementById('c57875e2-c332-421f-8e10-cbe5c1ad9eaa');
     Plotly.plot(PLOT, [
     {
         "xaxis": "x1",
@@ -28526,7 +28841,8 @@ Already up to date.
             109.0,
             110.0,
             111.0,
-            112.0
+            112.0,
+            113.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -28652,7 +28968,8 @@ Already up to date.
             3.3868202477538323,
             3.336884476538034,
             3.311916590930135,
-            3.322197485003976
+            3.322197485003976,
+            3.418397279552057
         ],
         "type": "scatter"
     },
@@ -28779,7 +29096,8 @@ Already up to date.
             121.0,
             122.0,
             123.0,
-            124.0
+            124.0,
+            125.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -28910,7 +29228,8 @@ Already up to date.
             9.489287837408114,
             10.499101939742978,
             11.756217454894545,
-            11.977125588273207
+            11.977125588273207,
+            12.302160632311535
         ],
         "type": "scatter"
     },
@@ -29026,7 +29345,8 @@ Already up to date.
             103.0,
             104.0,
             105.0,
-            106.0
+            106.0,
+            107.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -29146,7 +29466,8 @@ Already up to date.
             3.6364905501908873,
             3.7185166528267724,
             3.712083233012193,
-            3.5206889935284624
+            3.5206889935284624,
+            3.3598534981639827
         ],
         "type": "scatter"
     },
@@ -29262,7 +29583,8 @@ Already up to date.
             103.0,
             104.0,
             105.0,
-            106.0
+            106.0,
+            107.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -29382,7 +29704,8 @@ Already up to date.
             4.756335223755809,
             4.743934254933502,
             4.719132317288889,
-            4.909656292831608
+            4.909656292831608,
+            5.248991894242012
         ],
         "type": "scatter"
     },
@@ -29500,7 +29823,8 @@ Already up to date.
             105.0,
             106.0,
             107.0,
-            108.0
+            108.0,
+            109.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -29622,7 +29946,8 @@ Already up to date.
             12.031758185634317,
             13.5876441997301,
             14.466586773874141,
-            14.993755246034526
+            14.993755246034526,
+            16.40577846212019
         ],
         "type": "scatter"
     },
@@ -29740,7 +30065,8 @@ Already up to date.
             105.0,
             106.0,
             107.0,
-            108.0
+            108.0,
+            109.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -29862,7 +30188,8 @@ Already up to date.
             14.448848657964822,
             15.22573284672802,
             15.560298554731348,
-            17.489871355760485
+            17.489871355760485,
+            18.685128964670987
         ],
         "type": "scatter"
     },
@@ -29978,7 +30305,8 @@ Already up to date.
             105.0,
             106.0,
             107.0,
-            108.0
+            108.0,
+            109.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -30098,7 +30426,8 @@ Already up to date.
             3.0219169187987918,
             3.1504209304349544,
             3.2208908722999463,
-            3.026062209496733
+            3.026062209496733,
+            2.932793168793066
         ],
         "type": "scatter"
     },
@@ -30213,7 +30542,8 @@ Already up to date.
             103.0,
             104.0,
             105.0,
-            106.0
+            106.0,
+            107.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -30332,7 +30662,8 @@ Already up to date.
             3.0486334138055757,
             3.333187411067809,
             3.6043506319882903,
-            3.7895897047158624
+            3.7895897047158624,
+            3.8587753824815816
         ],
         "type": "scatter"
     },
@@ -30449,7 +30780,8 @@ Already up to date.
             104.0,
             105.0,
             106.0,
-            107.0
+            107.0,
+            108.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -30570,237 +30902,8 @@ Already up to date.
             9.445391248489797,
             10.110066928939078,
             11.748882675471924,
-            12.581745522026793
-        ],
-        "type": "scatter"
-    },
-    {
-        "xaxis": "x1",
-        "colorbar": {
-            "title": ""
-        },
-        "yaxis": "y1",
-        "x": [
-            1.0,
-            2.0,
-            3.0,
-            4.0,
-            5.0,
-            6.0,
-            7.0,
-            8.0,
-            9.0,
-            10.0,
-            11.0,
-            12.0,
-            13.0,
-            14.0,
-            15.0,
-            16.0,
-            17.0,
-            18.0,
-            19.0,
-            20.0,
-            21.0,
-            22.0,
-            23.0,
-            24.0,
-            25.0,
-            26.0,
-            27.0,
-            28.0,
-            29.0,
-            30.0,
-            31.0,
-            32.0,
-            33.0,
-            34.0,
-            35.0,
-            36.0,
-            37.0,
-            38.0,
-            39.0,
-            40.0,
-            41.0,
-            42.0,
-            43.0,
-            44.0,
-            45.0,
-            46.0,
-            47.0,
-            48.0,
-            49.0,
-            50.0,
-            51.0,
-            52.0,
-            53.0,
-            54.0,
-            55.0,
-            56.0,
-            57.0,
-            58.0,
-            59.0,
-            60.0,
-            61.0,
-            62.0,
-            63.0,
-            64.0,
-            65.0,
-            66.0,
-            67.0,
-            68.0,
-            69.0,
-            70.0,
-            71.0,
-            72.0,
-            73.0,
-            74.0,
-            75.0,
-            76.0,
-            77.0,
-            78.0,
-            79.0,
-            80.0,
-            81.0,
-            82.0,
-            83.0,
-            84.0,
-            85.0,
-            86.0,
-            87.0,
-            88.0,
-            89.0,
-            90.0,
-            91.0,
-            92.0,
-            93.0,
-            94.0,
-            95.0,
-            96.0,
-            97.0,
-            98.0,
-            99.0,
-            100.0,
-            101.0,
-            102.0,
-            103.0
-        ],
-        "showlegend": true,
-        "mode": "lines",
-        "name": "Michigan",
-        "zmin": null,
-        "legendgroup": "Michigan",
-        "zmax": null,
-        "line": {
-            "color": "rgba(142, 151, 30, 1.000)",
-            "shape": "linear",
-            "dash": "solid",
-            "width": 2
-        },
-        "y": [
-            0.18023688533840027,
-            0.1501974044486669,
-            0.19025004563497805,
-            0.18023688533840027,
-            0.2653487478593115,
-            0.44916176187506096,
-            0.639411807510039,
-            0.8425359163834742,
-            1.5534702974404975,
-            1.9711621269548856,
-            2.6491961241802957,
-            3.3029124463997315,
-            3.887967098014063,
-            4.830634617363315,
-            6.100875523557755,
-            6.611546698683223,
-            7.651484918056372,
-            8.595582888876566,
-            10.369342712841775,
-            11.726841158763534,
-            13.407621637117662,
-            14.082794731401194,
-            15.041197216930785,
-            15.759283855342506,
-            16.72626904969773,
-            16.248498258403878,
-            15.830806428889488,
-            14.387480894711347,
-            13.968358613726021,
-            12.752474863427288,
-            12.590833847211103,
-            12.012931452951472,
-            11.540882467541376,
-            10.970132330636442,
-            11.366367388086735,
-            10.772730027646766,
-            10.735538289402331,
-            9.586885758237766,
-            8.591291534463746,
-            8.954626208082425,
-            9.840075668594089,
-            10.16335770102646,
-            9.66699104061039,
-            9.801453478878718,
-            9.598329370005283,
-            10.181953570148675,
-            9.9773990098043,
-            9.488184606742928,
-            8.860216411000406,
-            9.491045509684808,
-            9.307947721404528,
-            9.031870587513168,
-            8.222235054961308,
-            7.66578943276577,
-            7.0578475576164035,
-            6.645877533985774,
-            6.082279654435539,
-            5.777593491125386,
-            6.12662365003467,
-            6.221033447116689,
-            5.837672452904853,
-            6.801796744318201,
-            6.6372948251601365,
-            6.635864373689196,
-            6.976311823772841,
-            7.472678484188912,
-            7.441208551828239,
-            7.871774444581083,
-            6.896206541400218,
-            6.770326811957528,
-            6.767465909015648,
-            6.339760919204681,
-            5.387080239558852,
-            5.0194542115273535,
-            4.6775763099727685,
-            4.474452201099333,
-            4.7061853393915625,
-            4.547405226117258,
-            4.743377077635994,
-            4.730503014397537,
-            4.671854504089009,
-            4.384333758430134,
-            4.095382561300317,
-            4.274188995167777,
-            3.846484005356812,
-            3.2299594213818072,
-            3.1126624007647536,
-            2.756479984500772,
-            2.181438493183019,
-            2.1027636622813364,
-            1.2173142017696716,
-            1.3188762562063894,
-            1.5520398459695577,
-            1.4032728929918306,
-            1.5763575209755323,
-            1.8810436842856852,
-            1.9296790342976347,
-            2.038393346089051,
-            2.444641563835921,
-            2.3702580873470573,
-            2.6778051535990897,
-            2.757910435971712,
-            2.943869127193871
+            12.581745522026793,
+            13.701199299625584
         ],
         "type": "scatter"
     },
@@ -30918,6 +31021,239 @@ Already up to date.
         ],
         "showlegend": true,
         "mode": "lines",
+        "name": "Michigan",
+        "zmin": null,
+        "legendgroup": "Michigan",
+        "zmax": null,
+        "line": {
+            "color": "rgba(142, 151, 30, 1.000)",
+            "shape": "linear",
+            "dash": "solid",
+            "width": 2
+        },
+        "y": [
+            0.18023688533840027,
+            0.1501974044486669,
+            0.19025004563497805,
+            0.18023688533840027,
+            0.2653487478593115,
+            0.44916176187506096,
+            0.639411807510039,
+            0.8425359163834742,
+            1.5534702974404975,
+            1.9711621269548856,
+            2.6491961241802957,
+            3.3029124463997315,
+            3.887967098014063,
+            4.830634617363315,
+            6.100875523557755,
+            6.611546698683223,
+            7.651484918056372,
+            8.595582888876566,
+            10.369342712841775,
+            11.726841158763534,
+            13.407621637117662,
+            14.082794731401194,
+            15.041197216930785,
+            15.759283855342506,
+            16.72626904969773,
+            16.248498258403878,
+            15.830806428889488,
+            14.387480894711347,
+            13.968358613726021,
+            12.752474863427288,
+            12.590833847211103,
+            12.012931452951472,
+            11.540882467541376,
+            10.970132330636442,
+            11.366367388086735,
+            10.772730027646766,
+            10.735538289402331,
+            9.586885758237766,
+            8.591291534463746,
+            8.954626208082425,
+            9.840075668594089,
+            10.16335770102646,
+            9.66699104061039,
+            9.801453478878718,
+            9.598329370005283,
+            10.181953570148675,
+            9.9773990098043,
+            9.488184606742928,
+            8.860216411000406,
+            9.491045509684808,
+            9.307947721404528,
+            9.031870587513168,
+            8.222235054961308,
+            7.66578943276577,
+            7.0578475576164035,
+            6.645877533985774,
+            6.082279654435539,
+            5.777593491125386,
+            6.12662365003467,
+            6.221033447116689,
+            5.837672452904853,
+            6.801796744318201,
+            6.6372948251601365,
+            6.635864373689196,
+            6.976311823772841,
+            7.472678484188912,
+            7.441208551828239,
+            7.871774444581083,
+            6.896206541400218,
+            6.770326811957528,
+            6.767465909015648,
+            6.339760919204681,
+            5.387080239558852,
+            5.0194542115273535,
+            4.6775763099727685,
+            4.474452201099333,
+            4.7061853393915625,
+            4.547405226117258,
+            4.743377077635994,
+            4.730503014397537,
+            4.671854504089009,
+            4.384333758430134,
+            4.095382561300317,
+            4.274188995167777,
+            3.846484005356812,
+            3.2299594213818072,
+            3.1126624007647536,
+            2.756479984500772,
+            2.181438493183019,
+            2.1027636622813364,
+            1.2173142017696716,
+            1.3188762562063894,
+            1.5520398459695577,
+            1.4032728929918306,
+            1.5763575209755323,
+            1.8810436842856852,
+            1.9296790342976347,
+            2.038393346089051,
+            2.444641563835921,
+            2.3702580873470573,
+            2.6778051535990897,
+            2.757910435971712,
+            2.943869127193871,
+            3.1341191728288487
+        ],
+        "type": "scatter"
+    },
+    {
+        "xaxis": "x1",
+        "colorbar": {
+            "title": ""
+        },
+        "yaxis": "y1",
+        "x": [
+            1.0,
+            2.0,
+            3.0,
+            4.0,
+            5.0,
+            6.0,
+            7.0,
+            8.0,
+            9.0,
+            10.0,
+            11.0,
+            12.0,
+            13.0,
+            14.0,
+            15.0,
+            16.0,
+            17.0,
+            18.0,
+            19.0,
+            20.0,
+            21.0,
+            22.0,
+            23.0,
+            24.0,
+            25.0,
+            26.0,
+            27.0,
+            28.0,
+            29.0,
+            30.0,
+            31.0,
+            32.0,
+            33.0,
+            34.0,
+            35.0,
+            36.0,
+            37.0,
+            38.0,
+            39.0,
+            40.0,
+            41.0,
+            42.0,
+            43.0,
+            44.0,
+            45.0,
+            46.0,
+            47.0,
+            48.0,
+            49.0,
+            50.0,
+            51.0,
+            52.0,
+            53.0,
+            54.0,
+            55.0,
+            56.0,
+            57.0,
+            58.0,
+            59.0,
+            60.0,
+            61.0,
+            62.0,
+            63.0,
+            64.0,
+            65.0,
+            66.0,
+            67.0,
+            68.0,
+            69.0,
+            70.0,
+            71.0,
+            72.0,
+            73.0,
+            74.0,
+            75.0,
+            76.0,
+            77.0,
+            78.0,
+            79.0,
+            80.0,
+            81.0,
+            82.0,
+            83.0,
+            84.0,
+            85.0,
+            86.0,
+            87.0,
+            88.0,
+            89.0,
+            90.0,
+            91.0,
+            92.0,
+            93.0,
+            94.0,
+            95.0,
+            96.0,
+            97.0,
+            98.0,
+            99.0,
+            100.0,
+            101.0,
+            102.0,
+            103.0,
+            104.0,
+            105.0
+        ],
+        "showlegend": true,
+        "mode": "lines",
         "name": "North Carolina",
         "zmin": null,
         "legendgroup": "North Carolina",
@@ -31032,7 +31368,8 @@ Already up to date.
             11.628162289427017,
             12.05449645793945,
             11.893769838500257,
-            13.066529324408267
+            13.066529324408267,
+            12.674247405777015
         ],
         "type": "scatter"
     },
@@ -31143,7 +31480,8 @@ Already up to date.
             99.0,
             100.0,
             101.0,
-            102.0
+            102.0,
+            103.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -31258,7 +31596,8 @@ Already up to date.
             33.139670867034084,
             34.847193144459,
             37.66951157542109,
-            37.78727173248488
+            37.78727173248488,
+            38.93150792528802
         ],
         "type": "scatter"
     }
@@ -31278,7 +31617,7 @@ Already up to date.
         "ticks": "inside",
         "range": [
             0.0,
-            161.20000000000002
+            162.5
         ],
         "domain": [
             0.10364016997875265,
@@ -31430,7 +31769,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[74]:</div>
+<div class="prompt input_prompt">In&nbsp;[110]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="nd">@df</span> <span class="n">deathsByStateTopPerCap</span> <span class="n">plot</span><span class="p">(</span><span class="o">:</span><span class="n">daysSince</span><span class="p">,</span> <span class="o">:</span><span class="n">Value_new_rolling7_perCap</span><span class="p">,</span> <span class="n">group</span><span class="o">=:</span><span class="n">Province_State</span><span class="p">,</span>
@@ -31452,7 +31791,7 @@ Already up to date.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[74]:</div>
+    <div class="prompt output_prompt">Out[110]:</div>
 
 
 
@@ -31461,13 +31800,13 @@ Already up to date.
 <html>
     <head>
         <title>Plots.jl</title>
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <script src="https://cdn.plot.ly/plotly-1.54.2.min.js"></script>
     </head>
     <body>
-            <div id="460ce6ae-8dee-406f-b0c2-e047f6a5bfbc" style="width:700px;height:400px;"></div>
+            <div id="fcd54a5f-b318-4960-96f0-82d68a489779" style="width:700px;height:400px;"></div>
     <script>
-    PLOT = document.getElementById('460ce6ae-8dee-406f-b0c2-e047f6a5bfbc');
+    PLOT = document.getElementById('fcd54a5f-b318-4960-96f0-82d68a489779');
     Plotly.plot(PLOT, [
     {
         "xaxis": "x1",
@@ -31576,7 +31915,8 @@ Already up to date.
             99.0,
             100.0,
             101.0,
-            102.0
+            102.0,
+            103.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -31691,7 +32031,8 @@ Already up to date.
             0.22030487301087373,
             0.234991864544932,
             0.23719491327504072,
-            0.23352316539152615
+            0.23352316539152615,
+            0.2401323115818524
         ],
         "type": "scatter"
     },
@@ -31800,7 +32141,8 @@ Already up to date.
             96.0,
             97.0,
             98.0,
-            99.0
+            99.0,
+            100.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -31913,7 +32255,8 @@ Already up to date.
             0.4503393870205433,
             0.42782241766951623,
             0.37474670419923783,
-            0.3876135438283963
+            0.3876135438283963,
+            3.2215349721505295
         ],
         "type": "scatter"
     },
@@ -32014,7 +32357,8 @@ Already up to date.
             91.0,
             92.0,
             93.0,
-            94.0
+            94.0,
+            95.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -32119,7 +32463,8 @@ Already up to date.
             0.482926366310095,
             0.4684178488673024,
             0.4663452035183321,
-            0.4228196511899544
+            0.4228196511899544,
+            0.4000205523512804
         ],
         "type": "scatter"
     },
@@ -32226,7 +32571,8 @@ Already up to date.
             94.0,
             95.0,
             96.0,
-            97.0
+            97.0,
+            98.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -32337,7 +32683,8 @@ Already up to date.
             0.3821753118874661,
             0.38893947669963364,
             0.3483544878266284,
-            0.32129782857795824
+            0.32129782857795824,
+            0.30776949895362316
         ],
         "type": "scatter"
     },
@@ -32441,7 +32788,8 @@ Already up to date.
             91.0,
             92.0,
             93.0,
-            94.0
+            94.0,
+            95.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -32549,7 +32897,8 @@ Already up to date.
             0.23210678992370415,
             0.2042093392117205,
             0.20978882935411725,
-            0.22206370766739
+            0.22206370766739,
+            0.218716013581952
         ],
         "type": "scatter"
     },
@@ -32655,7 +33004,8 @@ Already up to date.
             93.0,
             94.0,
             95.0,
-            96.0
+            96.0,
+            97.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -32765,7 +33115,8 @@ Already up to date.
             0.10585340884953666,
             0.11300566620423509,
             0.10728386032047633,
-            0.1115752147332954
+            0.1115752147332954,
+            0.10299250590765731
         ],
         "type": "scatter"
     },
@@ -32877,7 +33228,8 @@ Already up to date.
             102.0,
             103.0,
             104.0,
-            105.0
+            105.0,
+            106.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -32993,7 +33345,8 @@ Already up to date.
             0.15040553761951442,
             0.1634214014519724,
             0.15402105535075275,
-            0.16414450499822006
+            0.16414450499822006,
+            0.16305984967884857
         ],
         "type": "scatter"
     },
@@ -33098,7 +33451,8 @@ Already up to date.
             94.0,
             95.0,
             96.0,
-            97.0
+            97.0,
+            98.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -33207,7 +33561,8 @@ Already up to date.
             0.23640653413235538,
             0.23640653413235538,
             0.26846165740453914,
-            0.2724685478135621
+            0.2724685478135621,
+            0.288496109449654
         ],
         "type": "scatter"
     },
@@ -33315,7 +33670,8 @@ Already up to date.
             98.0,
             99.0,
             100.0,
-            101.0
+            101.0,
+            102.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -33427,7 +33783,8 @@ Already up to date.
             0.15298233169138284,
             0.15630803455423897,
             0.16295944027995127,
-            0.17493197058623342
+            0.17493197058623342,
+            0.1769273923039471
         ],
         "type": "scatter"
     },
@@ -33533,7 +33890,8 @@ Already up to date.
             97.0,
             98.0,
             99.0,
-            100.0
+            100.0,
+            101.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -33643,7 +34001,8 @@ Already up to date.
             0.2796424190876171,
             0.3042263680183967,
             0.28271541270396455,
-            0.2765694254712697
+            0.2765694254712697,
+            0.31344534886743897
         ],
         "type": "scatter"
     },
@@ -33740,7 +34099,8 @@ Already up to date.
             87.0,
             88.0,
             89.0,
-            90.0
+            90.0,
+            91.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -33841,7 +34201,8 @@ Already up to date.
             0.12395018956751298,
             0.1879684193441406,
             0.17298542939641923,
-            0.196140959315625
+            0.196140959315625,
+            0.20158931929661456
         ],
         "type": "scatter"
     },
@@ -33937,7 +34298,8 @@ Already up to date.
             89.0,
             90.0,
             91.0,
-            92.0
+            92.0,
+            93.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -34037,7 +34399,8 @@ Already up to date.
             0.3101017469346393,
             0.2904750540906748,
             0.32972843977860383,
-            0.42786190399842644
+            0.42786190399842644,
+            0.4160858882920477
         ],
         "type": "scatter"
     }
@@ -34060,7 +34423,7 @@ Already up to date.
         "ticks": "inside",
         "range": [
             0.0,
-            136.5
+            137.8
         ],
         "domain": [
             0.09094175728033996,
@@ -34219,7 +34582,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[75]:</div>
+<div class="prompt input_prompt">In&nbsp;[111]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="k">function</span> <span class="n">fastestGrowth</span><span class="p">(</span><span class="n">valueColumn</span><span class="p">)</span>
@@ -34240,7 +34603,7 @@ Already up to date.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[75]:</div>
+    <div class="prompt output_prompt">Out[111]:</div>
 
 
 
@@ -34257,7 +34620,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[76]:</div>
+<div class="prompt input_prompt">In&nbsp;[112]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">fg</span> <span class="o">=</span> <span class="n">fastestGrowth</span><span class="p">(</span><span class="o">:</span><span class="n">Value</span><span class="p">);</span>
@@ -34270,7 +34633,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[77]:</div>
+<div class="prompt input_prompt">In&nbsp;[113]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="k">using</span> <span class="n">PrettyTables</span>
@@ -34283,7 +34646,7 @@ Already up to date.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[78]:</div>
+<div class="prompt input_prompt">In&nbsp;[114]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">pretty_table</span><span class="p">(</span><span class="n">fg</span><span class="p">,</span> <span class="p">[</span><span class="s">&quot;State&quot;</span><span class="p">,</span> <span class="s">&quot;Two week growth in cases&quot;</span><span class="p">],</span> <span class="n">alignment</span><span class="o">=</span><span class="p">[</span><span class="o">:</span><span class="n">r</span><span class="p">,</span> <span class="o">:</span><span class="n">c</span><span class="p">],</span> <span class="n">backend</span><span class="o">=:</span><span class="n">html</span><span class="p">;</span> <span class="n">formatters</span> <span class="o">=</span> <span class="n">ft_printf</span><span class="p">(</span><span class="s">&quot;%&#39;d&quot;</span><span class="p">))</span>
@@ -34354,211 +34717,211 @@ th.rowNumber, td.rowNumber {
 </tr>
 <tr>
 <td style = "text-align: right; ">California</td>
-<td style = "text-align: center; ">56,210</td>
+<td style = "text-align: center; ">57,735</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Texas</td>
-<td style = "text-align: center; ">47,355</td>
+<td style = "text-align: center; ">51,900</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Florida</td>
-<td style = "text-align: center; ">41,643</td>
+<td style = "text-align: center; ">44,949</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Arizona</td>
-<td style = "text-align: center; ">30,338</td>
+<td style = "text-align: center; ">32,014</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">North Carolina</td>
-<td style = "text-align: center; ">18,054</td>
+<td style = "text-align: center; ">17,888</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Georgia</td>
-<td style = "text-align: center; ">15,401</td>
+<td style = "text-align: center; ">16,122</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">South Carolina</td>
-<td style = "text-align: center; ">12,138</td>
+<td style = "text-align: center; ">12,581</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Alabama</td>
-<td style = "text-align: center; ">10,075</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">New York</td>
-<td style = "text-align: center; ">9,510</td>
+<td style = "text-align: center; ">10,361</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Tennessee</td>
-<td style = "text-align: center; ">9,305</td>
+<td style = "text-align: center; ">9,694</td>
 </tr>
 <tr>
-<td style = "text-align: right; ">Illinois</td>
-<td style = "text-align: center; ">8,703</td>
+<td style = "text-align: right; ">New York</td>
+<td style = "text-align: center; ">9,523</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Louisiana</td>
-<td style = "text-align: center; ">8,447</td>
+<td style = "text-align: center; ">8,943</td>
 </tr>
 <tr>
-<td style = "text-align: right; ">Virginia</td>
-<td style = "text-align: center; ">7,337</td>
+<td style = "text-align: right; ">Illinois</td>
+<td style = "text-align: center; ">8,831</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Ohio</td>
-<td style = "text-align: center; ">7,184</td>
+<td style = "text-align: center; ">7,647</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">Virginia</td>
+<td style = "text-align: center; ">7,299</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Arkansas</td>
-<td style = "text-align: center; ">7,007</td>
+<td style = "text-align: center; ">7,246</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Pennsylvania</td>
-<td style = "text-align: center; ">6,369</td>
+<td style = "text-align: center; ">6,293</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Utah</td>
-<td style = "text-align: center; ">5,920</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">Maryland</td>
-<td style = "text-align: center; ">5,872</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">Washington</td>
-<td style = "text-align: center; ">5,515</td>
+<td style = "text-align: center; ">6,122</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Mississippi</td>
-<td style = "text-align: center; ">4,941</td>
+<td style = "text-align: center; ">6,033</td>
 </tr>
 <tr>
-<td style = "text-align: right; ">Minnesota</td>
-<td style = "text-align: center; ">4,894</td>
+<td style = "text-align: right; ">Washington</td>
+<td style = "text-align: center; ">5,588</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">Maryland</td>
+<td style = "text-align: center; ">5,580</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Indiana</td>
-<td style = "text-align: center; ">4,803</td>
+<td style = "text-align: center; ">4,907</td>
 </tr>
 <tr>
-<td style = "text-align: right; ">New Jersey</td>
-<td style = "text-align: center; ">4,546</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">Wisconsin</td>
-<td style = "text-align: center; ">4,170</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">Oklahoma</td>
-<td style = "text-align: center; ">4,027</td>
+<td style = "text-align: right; ">Minnesota</td>
+<td style = "text-align: center; ">4,807</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Iowa</td>
-<td style = "text-align: center; ">3,975</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">Massachusetts</td>
-<td style = "text-align: center; ">3,455</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">Michigan</td>
-<td style = "text-align: center; ">3,373</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">Missouri</td>
-<td style = "text-align: center; ">3,373</td>
+<td style = "text-align: center; ">4,400</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Nevada</td>
-<td style = "text-align: center; ">3,310</td>
+<td style = "text-align: center; ">4,386</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">New Jersey</td>
+<td style = "text-align: center; ">4,380</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">Oklahoma</td>
+<td style = "text-align: center; ">4,322</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">Wisconsin</td>
+<td style = "text-align: center; ">4,301</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">Missouri</td>
+<td style = "text-align: center; ">3,695</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">Michigan</td>
+<td style = "text-align: center; ">3,540</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">Massachusetts</td>
+<td style = "text-align: center; ">3,170</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Colorado</td>
-<td style = "text-align: center; ">2,655</td>
+<td style = "text-align: center; ">2,831</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Kentucky</td>
-<td style = "text-align: center; ">2,480</td>
+<td style = "text-align: center; ">2,672</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Oregon</td>
-<td style = "text-align: center; ">2,384</td>
+<td style = "text-align: center; ">2,331</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Kansas</td>
-<td style = "text-align: center; ">2,180</td>
+<td style = "text-align: center; ">2,284</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Nebraska</td>
-<td style = "text-align: center; ">2,163</td>
+<td style = "text-align: center; ">2,031</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">New Mexico</td>
-<td style = "text-align: center; ">1,740</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">Connecticut</td>
-<td style = "text-align: center; ">1,566</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">Puerto Rico</td>
-<td style = "text-align: center; ">1,491</td>
+<td style = "text-align: center; ">1,825</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Idaho</td>
-<td style = "text-align: center; ">1,142</td>
+<td style = "text-align: center; ">1,605</td>
 </tr>
 <tr>
-<td style = "text-align: right; ">Rhode Island</td>
-<td style = "text-align: center; ">850</td>
+<td style = "text-align: right; ">Connecticut</td>
+<td style = "text-align: center; ">1,533</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">Puerto Rico</td>
+<td style = "text-align: center; ">1,525</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Delaware</td>
-<td style = "text-align: center; ">833</td>
+<td style = "text-align: center; ">874</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">South Dakota</td>
-<td style = "text-align: center; ">815</td>
+<td style = "text-align: center; ">814</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">Rhode Island</td>
+<td style = "text-align: center; ">778</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">District of Columbia</td>
-<td style = "text-align: center; ">591</td>
+<td style = "text-align: center; ">570</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">West Virginia</td>
-<td style = "text-align: center; ">437</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">North Dakota</td>
-<td style = "text-align: center; ">421</td>
+<td style = "text-align: center; ">477</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">New Hampshire</td>
-<td style = "text-align: center; ">420</td>
+<td style = "text-align: center; ">429</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">North Dakota</td>
+<td style = "text-align: center; ">413</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Maine</td>
-<td style = "text-align: center; ">380</td>
+<td style = "text-align: center; ">403</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Wyoming</td>
-<td style = "text-align: center; ">302</td>
+<td style = "text-align: center; ">317</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Montana</td>
-<td style = "text-align: center; ">205</td>
+<td style = "text-align: center; ">240</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Alaska</td>
-<td style = "text-align: center; ">197</td>
+<td style = "text-align: center; ">204</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Hawaii</td>
-<td style = "text-align: center; ">150</td>
+<td style = "text-align: center; ">159</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Vermont</td>
-<td style = "text-align: center; ">89</td>
+<td style = "text-align: center; ">81</td>
 </tr>
 </table>
 </body>
@@ -34574,7 +34937,7 @@ th.rowNumber, td.rowNumber {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[79]:</div>
+<div class="prompt input_prompt">In&nbsp;[115]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">fgpc</span> <span class="o">=</span> <span class="n">fastestGrowth</span><span class="p">(</span><span class="o">:</span><span class="n">Value_perCap</span><span class="p">);</span>
@@ -34587,7 +34950,7 @@ th.rowNumber, td.rowNumber {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[80]:</div>
+<div class="prompt input_prompt">In&nbsp;[116]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="n">pretty_table</span><span class="p">(</span><span class="n">fgpc</span><span class="p">,</span> <span class="p">[</span><span class="s">&quot;State&quot;</span><span class="p">,</span> <span class="s">&quot;Two week growth in cases per 100K people&quot;</span><span class="p">],</span> <span class="n">alignment</span><span class="o">=</span><span class="p">[</span><span class="o">:</span><span class="n">r</span><span class="p">,</span> <span class="o">:</span><span class="n">c</span><span class="p">],</span> <span class="n">backend</span><span class="o">=:</span><span class="n">html</span><span class="p">;</span> <span class="n">formatters</span> <span class="o">=</span> <span class="n">ft_printf</span><span class="p">(</span><span class="s">&quot;%&#39;5.1f&quot;</span><span class="p">))</span>
@@ -34658,211 +35021,211 @@ th.rowNumber, td.rowNumber {
 </tr>
 <tr>
 <td style = "text-align: right; ">Arizona</td>
-<td style = "text-align: center; ">416.8</td>
+<td style = "text-align: center; ">439.8</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">South Carolina</td>
-<td style = "text-align: center; ">235.7</td>
+<td style = "text-align: center; ">244.4</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Arkansas</td>
-<td style = "text-align: center; ">232.2</td>
+<td style = "text-align: center; ">240.1</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Alabama</td>
-<td style = "text-align: center; ">205.5</td>
+<td style = "text-align: center; ">211.3</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Florida</td>
-<td style = "text-align: center; ">193.9</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">Utah</td>
-<td style = "text-align: center; ">184.7</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">Louisiana</td>
-<td style = "text-align: center; ">181.7</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">North Carolina</td>
-<td style = "text-align: center; ">172.1</td>
+<td style = "text-align: center; ">209.3</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Mississippi</td>
-<td style = "text-align: center; ">166.0</td>
+<td style = "text-align: center; ">202.7</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">Louisiana</td>
+<td style = "text-align: center; ">192.4</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">Utah</td>
+<td style = "text-align: center; ">191.0</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Texas</td>
-<td style = "text-align: center; ">163.3</td>
+<td style = "text-align: center; ">179.0</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">North Carolina</td>
+<td style = "text-align: center; ">170.6</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Georgia</td>
-<td style = "text-align: center; ">145.1</td>
+<td style = "text-align: center; ">151.8</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">California</td>
-<td style = "text-align: center; ">142.3</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">Tennessee</td>
-<td style = "text-align: center; ">136.3</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">Iowa</td>
-<td style = "text-align: center; ">126.0</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">Nebraska</td>
-<td style = "text-align: center; ">111.8</td>
+<td style = "text-align: center; ">146.1</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Nevada</td>
-<td style = "text-align: center; ">107.5</td>
+<td style = "text-align: center; ">142.4</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">Tennessee</td>
+<td style = "text-align: center; ">141.9</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">Iowa</td>
+<td style = "text-align: center; ">139.5</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Oklahoma</td>
-<td style = "text-align: center; ">101.8</td>
+<td style = "text-align: center; ">109.2</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">Nebraska</td>
+<td style = "text-align: center; ">105.0</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Maryland</td>
-<td style = "text-align: center; "> 97.1</td>
+<td style = "text-align: center; "> 92.3</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">South Dakota</td>
-<td style = "text-align: center; "> 92.1</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">Minnesota</td>
-<td style = "text-align: center; "> 86.8</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">Virginia</td>
-<td style = "text-align: center; "> 86.0</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">Delaware</td>
-<td style = "text-align: center; "> 85.5</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">District of Columbia</td>
-<td style = "text-align: center; "> 83.7</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">New Mexico</td>
-<td style = "text-align: center; "> 83.0</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">Rhode Island</td>
-<td style = "text-align: center; "> 80.2</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">Kansas</td>
-<td style = "text-align: center; "> 74.8</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">Washington</td>
-<td style = "text-align: center; "> 72.4</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">Wisconsin</td>
-<td style = "text-align: center; "> 71.6</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">Indiana</td>
-<td style = "text-align: center; "> 71.3</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">Illinois</td>
-<td style = "text-align: center; "> 68.7</td>
+<td style = "text-align: center; "> 92.0</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Idaho</td>
-<td style = "text-align: center; "> 63.9</td>
+<td style = "text-align: center; "> 89.8</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">Delaware</td>
+<td style = "text-align: center; "> 89.8</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">New Mexico</td>
+<td style = "text-align: center; "> 87.0</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">Virginia</td>
+<td style = "text-align: center; "> 85.5</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">Minnesota</td>
+<td style = "text-align: center; "> 85.2</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">District of Columbia</td>
+<td style = "text-align: center; "> 80.8</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">Kansas</td>
+<td style = "text-align: center; "> 78.4</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">Wisconsin</td>
+<td style = "text-align: center; "> 73.9</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">Rhode Island</td>
+<td style = "text-align: center; "> 73.4</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">Washington</td>
+<td style = "text-align: center; "> 73.4</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">Indiana</td>
+<td style = "text-align: center; "> 72.9</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">Illinois</td>
+<td style = "text-align: center; "> 69.7</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Ohio</td>
-<td style = "text-align: center; "> 61.5</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">Oregon</td>
-<td style = "text-align: center; "> 56.5</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">Kentucky</td>
-<td style = "text-align: center; "> 55.5</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">North Dakota</td>
-<td style = "text-align: center; "> 55.2</td>
+<td style = "text-align: center; "> 65.4</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Missouri</td>
-<td style = "text-align: center; "> 55.0</td>
+<td style = "text-align: center; "> 60.2</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">Kentucky</td>
+<td style = "text-align: center; "> 59.8</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">Oregon</td>
+<td style = "text-align: center; "> 55.3</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Wyoming</td>
-<td style = "text-align: center; "> 52.2</td>
+<td style = "text-align: center; "> 54.8</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">North Dakota</td>
+<td style = "text-align: center; "> 54.2</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">New Jersey</td>
-<td style = "text-align: center; "> 51.2</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">Massachusetts</td>
-<td style = "text-align: center; "> 50.1</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">Pennsylvania</td>
-<td style = "text-align: center; "> 49.8</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">New York</td>
-<td style = "text-align: center; "> 48.9</td>
-</tr>
-<tr>
-<td style = "text-align: right; ">Puerto Rico</td>
-<td style = "text-align: center; "> 46.7</td>
+<td style = "text-align: center; "> 49.3</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Colorado</td>
-<td style = "text-align: center; "> 46.1</td>
+<td style = "text-align: center; "> 49.2</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">Pennsylvania</td>
+<td style = "text-align: center; "> 49.2</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">New York</td>
+<td style = "text-align: center; "> 49.0</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">Puerto Rico</td>
+<td style = "text-align: center; "> 47.8</td>
+</tr>
+<tr>
+<td style = "text-align: right; ">Massachusetts</td>
+<td style = "text-align: center; "> 46.0</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Connecticut</td>
-<td style = "text-align: center; "> 43.9</td>
+<td style = "text-align: center; "> 43.0</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Michigan</td>
-<td style = "text-align: center; "> 33.8</td>
+<td style = "text-align: center; "> 35.4</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">New Hampshire</td>
-<td style = "text-align: center; "> 30.9</td>
+<td style = "text-align: center; "> 31.6</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Maine</td>
-<td style = "text-align: center; "> 28.3</td>
+<td style = "text-align: center; "> 30.0</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Alaska</td>
-<td style = "text-align: center; "> 26.9</td>
+<td style = "text-align: center; "> 27.9</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">West Virginia</td>
-<td style = "text-align: center; "> 24.4</td>
+<td style = "text-align: center; "> 26.6</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Montana</td>
-<td style = "text-align: center; "> 19.2</td>
+<td style = "text-align: center; "> 22.5</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Vermont</td>
-<td style = "text-align: center; "> 14.3</td>
+<td style = "text-align: center; "> 13.0</td>
 </tr>
 <tr>
 <td style = "text-align: right; ">Hawaii</td>
-<td style = "text-align: center; "> 10.6</td>
+<td style = "text-align: center; "> 11.2</td>
 </tr>
 </table>
 </body>
