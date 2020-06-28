@@ -29,4 +29,8 @@ rm -f *.htmlbak
 mv -f covidPlots.html ../docs/examples
 mv -f StateCountyPlots.html ../docs/examples
 
+d=$(date)
+
+sed "s/__DATE__/$d/" ../docs/index.html_template > ../docs/index.html
+
 echo 'HTML files are in ../docs/examples'

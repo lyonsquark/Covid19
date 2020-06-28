@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # ---
 # jupyter:
 #   jupytext:
@@ -69,12 +70,8 @@ topStatesCases = topLevels(confirmedByState, 10, :Province_State)
 topStatesDeaths = topLevels(deathsByState, 10, :Province_State)
 
 # %%
-push!(topStatesCases, "North Carolina");  # Add NC and AZ
-push!(topStatesCases, "Arizona");
-
-# %%
-push!(topStatesDeaths, "North Carolina");  # Add NC and AZ
-push!(topStatesDeaths, "Arizona");  # Add NC
+"North Carolina" ∉ topStatesCases && push!(topStatesCases, "North Carolina");  # Add NC and AZ
+"Arizona" ∉ topStatesCases && push!(topStatesCases, "Arizona");
 
 # %%
 # Restrict the datasets
@@ -102,11 +99,10 @@ fc(x) = format(x, commas=true, precision=0)
 fcl(x) = format(x, commas=true)
 
 # %%
-lw = fill(2, (1, length(topStatesCases)))
-lwConfirmed = lw
-lwDeaths = lw
-lwConfirmed[ topStatesCases .== "Illinois" ] .= 4
-lwDeaths[ topStatesDeaths .== "Illinois" ] .= 4
+lwConfirmed = fill(2, (1, length(topStatesCases)))
+lwDeaths = fill(2, (1, length(topStatesDeaths)))
+lwConfirmed[ topStatesCases .== "Illinois" ] .= 4 ;
+lwDeaths[ topStatesDeaths .== "Illinois" ] .= 4 ;
 
 # %%
 p = @df confirmedByStateTop plot(:daysSince, :Value_new_rolling7, group=:Province_State,
@@ -187,11 +183,13 @@ deathsByStatePerCap = @transform(deathsByStatePerCap,
 
 # %%
 topStatesCasesPerCap = topLevels(confirmedByStatePerCap, 10, :Province_State);
-push!(topStatesCasesPerCap, "North Carolina", "Arizona")
+"North Carolina" ∉ topStatesCasesPerCap && push!(topStatesCasesPerCap, "North Carolina")
+"Arizona" ∉ topStatesCasesPerCap && push!(topStatesCasesPerCap, "Arizona")
 
 # %%
 topStatesDeathsPerCap = topLevels(deathsByStatePerCap, 10, :Province_State);
-push!(topStatesDeathsPerCap, "North Carolina", "Arizona")
+"North Carolina" ∉ topStatesDeathsPerCap && push!(topStatesDeathsPerCap, "North Carolina")
+"Arizona" ∉ topStatesDeathsPerCap && push!(topStatesDeathsPerCap, "Arizona")
 
 # %%
 # Restrict the datasets
@@ -247,5 +245,40 @@ fgpc = fastestGrowth(:Value_perCap);
 
 # %%
 pretty_table(fgpc, ["State", "Two week growth in cases per 100K people"], alignment=[:r, :c], backend=:html; formatters = ft_printf("%'5.1f"))
+
+# %% [markdown]
+# # States by governor's party
+
+# %% [markdown]
+# Someone posted on Facebook a plot of state cases by governor party. 
+#
+# I don't think this looks right. Let's try it ourselves.
+#
+# Getting the Governors data
+
+# %%
+govsDataPath = joinpath(@__DIR__, "../data", "us-governors.csv")
+govsData = CSV.read(govsDataPath, select=["state_name", "party", "name"]);
+
+# %%
+govsData
+
+# %%
+ENV["COLUMNS"] = 200
+
+# %%
+cpc_wparty = innerjoin(confirmedByStatePerCap, govsData, on=:Province_State => :state_name) ;
+
+# %%
+cpc_d = filter(r -> r.party == "democrat", cpc_wparty);
+cpc_r = filter(r -> r.party == "republican", cpc_wparty);
+
+# %%
+cpc_d = combine(groupby(cpc_d, :Date), [:Value_new_rolling7_perCap] => sum => :Value_new_rolling7_perCap);
+cpc_r = combine(groupby(cpc_r, :Date), [:Value_new_rolling7_perCap] => sum => :Value_new_rolling7_perCap);
+
+# %%
+@df cpc_d plot( :Date, :Value_new_rolling7_perCap, label="democrat", legend=:left, lw=3, xlab="Date", ylab="New cases per 100K people")
+@df cpc_r plot!(:Date, :Value_new_rolling7_perCap, label="republican", lw=3)
 
 # %%
