@@ -13134,7 +13134,45 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>HEAD is now at 1461786 Update README
-Already up to date.
+Updating 1461786..deddfd8
+Fast-forward
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>From https://github.com/CSSEGISandData/COVID-19
+   1461786..deddfd8  master     -&gt; origin/master
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre> .../csse_covid_19_daily_reports/06-24-2020.csv     |  204 +-
+ .../csse_covid_19_daily_reports/06-28-2020.csv     | 3784 ++++++++++++
+ .../csse_covid_19_daily_reports/06-29-2020.csv     | 3786 ++++++++++++
+ .../csse_covid_19_daily_reports_us/06-28-2020.csv  |   59 +
+ .../csse_covid_19_daily_reports_us/06-29-2020.csv  |   59 +
+ .../time_series_covid19_confirmed_US.csv           | 6524 ++++++++++----------
+ .../time_series_covid19_confirmed_global.csv       |  534 +-
+ .../time_series_covid19_deaths_US.csv              | 6524 ++++++++++----------
+ .../time_series_covid19_deaths_global.csv          |  534 +-
+ .../time_series_covid19_recovered_global.csv       |  508 +-
+ 10 files changed, 15102 insertions(+), 7414 deletions(-)
+ create mode 100644 csse_covid_19_data/csse_covid_19_daily_reports/06-28-2020.csv
+ create mode 100644 csse_covid_19_data/csse_covid_19_daily_reports/06-29-2020.csv
+ create mode 100644 csse_covid_19_data/csse_covid_19_daily_reports_us/06-28-2020.csv
+ create mode 100644 csse_covid_19_data/csse_covid_19_daily_reports_us/06-29-2020.csv
 </pre>
 </div>
 </div>
@@ -13209,7 +13247,7 @@ Already up to date.
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>16438</pre>
+<pre>16785</pre>
 </div>
 
 </div>
@@ -13242,7 +13280,7 @@ Already up to date.
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>2020-06-27</pre>
+<pre>2020-06-29</pre>
 </div>
 
 </div>
@@ -13369,9 +13407,9 @@ Already up to date.
         <script src="https://cdn.plot.ly/plotly-1.54.2.min.js"></script>
     </head>
     <body>
-            <div id="627a5319-9306-4e44-a946-3fa81922d1f2" style="width:700px;height:400px;"></div>
+            <div id="ade9fe54-14fe-42a8-ad65-dda20d6b8677" style="width:700px;height:400px;"></div>
     <script>
-    PLOT = document.getElementById('627a5319-9306-4e44-a946-3fa81922d1f2');
+    PLOT = document.getElementById('ade9fe54-14fe-42a8-ad65-dda20d6b8677');
     Plotly.plot(PLOT, [
     {
         "xaxis": "x1",
@@ -13495,7 +13533,9 @@ Already up to date.
             115.0,
             116.0,
             117.0,
-            118.0
+            118.0,
+            119.0,
+            120.0
         ],
         "showlegend": false,
         "mode": "lines",
@@ -13625,7 +13665,9 @@ Already up to date.
             2.2846718571428573e6,
             2.3177071428571427e6,
             2.3527035714285714e6,
-            2.389111285714286e6
+            2.389111285714286e6,
+            2.4273028571428573e6,
+            2.4670528571428573e6
         ],
         "type": "scatter"
     }
@@ -13645,8 +13687,8 @@ Already up to date.
         "visible": true,
         "ticks": "inside",
         "range": [
-            -0.44999999999999973,
-            121.45
+            -0.5099999999999998,
+            123.51
         ],
         "domain": [
             0.14173540807399074,
@@ -13718,13 +13760,14 @@ Already up to date.
             500000.0,
             1.0e6,
             1.5e6,
-            2.0e6
+            2.0e6,
+            2.5e6
         ],
         "visible": true,
         "ticks": "inside",
         "range": [
-            -71606.38857142857,
-            2.4607826742857145e6
+            -73944.63571428572,
+            2.541062492857143e6
         ],
         "domain": [
             0.07581474190726165,
@@ -13749,7 +13792,8 @@ Already up to date.
             "500,000",
             "1,000,000",
             "1,500,000",
-            "2,000,000"
+            "2,000,000",
+            "2,500,000"
         ],
         "zeroline": false,
         "type": "-",
@@ -13841,9 +13885,9 @@ Already up to date.
         <script src="https://cdn.plot.ly/plotly-1.54.2.min.js"></script>
     </head>
     <body>
-            <div id="5d9045d1-140e-45ab-95c2-2f02844d74e9" style="width:700px;height:400px;"></div>
+            <div id="8df0b67d-fb98-4ae3-a339-f128371d05b4" style="width:700px;height:400px;"></div>
     <script>
-    PLOT = document.getElementById('5d9045d1-140e-45ab-95c2-2f02844d74e9');
+    PLOT = document.getElementById('8df0b67d-fb98-4ae3-a339-f128371d05b4');
     Plotly.plot(PLOT, [
     {
         "xaxis": "x1",
@@ -13967,7 +14011,9 @@ Already up to date.
             115.0,
             116.0,
             117.0,
-            118.0
+            118.0,
+            119.0,
+            120.0
         ],
         "showlegend": false,
         "mode": "lines",
@@ -14097,7 +14143,9 @@ Already up to date.
             2.2846718571428573e6,
             2.3177071428571427e6,
             2.3527035714285714e6,
-            2.389111285714286e6
+            2.389111285714286e6,
+            2.4273028571428573e6,
+            2.4670528571428573e6
         ],
         "type": "scatter"
     }
@@ -14117,8 +14165,8 @@ Already up to date.
         "visible": true,
         "ticks": "inside",
         "range": [
-            -0.44999999999999973,
-            121.45
+            -0.5099999999999998,
+            123.51
         ],
         "domain": [
             0.14173540807399074,
@@ -14195,8 +14243,8 @@ Already up to date.
         "visible": true,
         "ticks": "inside",
         "range": [
-            1.675953665947435,
-            6.515196070518961
+            1.675535403708853,
+            6.529556407376943
         ],
         "domain": [
             0.07581474190726165,
@@ -14307,9 +14355,9 @@ Already up to date.
         <script src="https://cdn.plot.ly/plotly-1.54.2.min.js"></script>
     </head>
     <body>
-            <div id="ce6300a1-48e4-4cd2-a22c-a31806963a42" style="width:700px;height:400px;"></div>
+            <div id="59e2f035-40d7-4ea6-bbb0-dba681b5f9ce" style="width:700px;height:400px;"></div>
     <script>
-    PLOT = document.getElementById('ce6300a1-48e4-4cd2-a22c-a31806963a42');
+    PLOT = document.getElementById('59e2f035-40d7-4ea6-bbb0-dba681b5f9ce');
     Plotly.plot(PLOT, [
     {
         "xaxis": "x1",
@@ -14433,7 +14481,9 @@ Already up to date.
             115.0,
             116.0,
             117.0,
-            118.0
+            118.0,
+            119.0,
+            120.0
         ],
         "showlegend": false,
         "mode": "lines",
@@ -14563,7 +14613,9 @@ Already up to date.
             31291.0,
             33035.28571428572,
             34996.42857142857,
-            36407.71428571428
+            36407.71428571428,
+            38191.57142857143,
+            39750.0
         ],
         "type": "scatter"
     }
@@ -14583,8 +14635,8 @@ Already up to date.
         "visible": true,
         "ticks": "inside",
         "range": [
-            -0.44999999999999973,
-            121.45
+            -0.5099999999999998,
+            123.51
         ],
         "domain": [
             0.10364016997875265,
@@ -14655,13 +14707,14 @@ Already up to date.
             0.0,
             10000.0,
             20000.0,
-            30000.0
+            30000.0,
+            40000.0
         ],
         "visible": true,
         "ticks": "inside",
         "range": [
-            -1065.4514285714286,
-            37499.165714285715
+            -1165.72,
+            40941.72
         ],
         "domain": [
             0.07581474190726165,
@@ -14685,7 +14738,8 @@ Already up to date.
             "0",
             "10,000",
             "20,000",
-            "30,000"
+            "30,000",
+            "40,000"
         ],
         "zeroline": false,
         "type": "-",
@@ -14821,9 +14875,9 @@ Already up to date.
         <script src="https://cdn.plot.ly/plotly-1.54.2.min.js"></script>
     </head>
     <body>
-            <div id="0a16535d-fa40-4f23-a391-667406dcc486" style="width:700px;height:400px;"></div>
+            <div id="a581e9d2-49c0-4c4f-a003-00da64a81cf1" style="width:700px;height:400px;"></div>
     <script>
-    PLOT = document.getElementById('0a16535d-fa40-4f23-a391-667406dcc486');
+    PLOT = document.getElementById('a581e9d2-49c0-4c4f-a003-00da64a81cf1');
     Plotly.plot(PLOT, [
     {
         "xaxis": "x1",
@@ -14947,7 +15001,9 @@ Already up to date.
             737600.0,
             737601.0,
             737602.0,
-            737603.0
+            737603.0,
+            737604.0,
+            737605.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -15077,7 +15133,9 @@ Already up to date.
             34836.0,
             39972.0,
             45255.0,
-            42597.0
+            42597.0,
+            38845.0,
+            41556.0
         ],
         "type": "scatter"
     },
@@ -15203,7 +15261,9 @@ Already up to date.
             737600.0,
             737601.0,
             737602.0,
-            737603.0
+            737603.0,
+            737604.0,
+            737605.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -15333,7 +15393,9 @@ Already up to date.
             31291.0,
             33035.28571428572,
             34996.42857142857,
-            36407.71428571428
+            36407.71428571428,
+            38191.57142857143,
+            39750.0
         ],
         "type": "scatter"
     }
@@ -15347,13 +15409,14 @@ Already up to date.
             737485.0,
             737516.0,
             737546.0,
-            737577.0
+            737577.0,
+            737607.0
         ],
         "visible": true,
         "ticks": "inside",
         "range": [
-            737484.55,
-            737606.45
+            737484.49,
+            737608.51
         ],
         "domain": [
             0.10364016997875265,
@@ -15377,7 +15440,8 @@ Already up to date.
             "2020-03-01",
             "2020-04-01",
             "2020-05-01",
-            "2020-06-01"
+            "2020-06-01",
+            "2020-07-01"
         ],
         "zeroline": false,
         "type": "-",
@@ -15513,9 +15577,9 @@ Already up to date.
         <script src="https://cdn.plot.ly/plotly-1.54.2.min.js"></script>
     </head>
     <body>
-            <div id="fba80a99-f9bd-464c-a8aa-7e3f761ee740" style="width:700px;height:400px;"></div>
+            <div id="641f3654-4d6b-4dd6-a38a-a59c6ecf7197" style="width:700px;height:400px;"></div>
     <script>
-    PLOT = document.getElementById('fba80a99-f9bd-464c-a8aa-7e3f761ee740');
+    PLOT = document.getElementById('641f3654-4d6b-4dd6-a38a-a59c6ecf7197');
     Plotly.plot(PLOT, [
     {
         "xaxis": "x1",
@@ -15639,7 +15703,9 @@ Already up to date.
             737600.0,
             737601.0,
             737602.0,
-            737603.0
+            737603.0,
+            737604.0,
+            737605.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -15769,7 +15835,9 @@ Already up to date.
             34836.0,
             39972.0,
             45255.0,
-            42597.0
+            42597.0,
+            38845.0,
+            41556.0
         ],
         "type": "scatter"
     },
@@ -15895,7 +15963,9 @@ Already up to date.
             737600.0,
             737601.0,
             737602.0,
-            737603.0
+            737603.0,
+            737604.0,
+            737605.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -16025,7 +16095,9 @@ Already up to date.
             31291.0,
             33035.28571428572,
             34996.42857142857,
-            36407.71428571428
+            36407.71428571428,
+            38191.57142857143,
+            39750.0
         ],
         "type": "scatter"
     }
@@ -16039,13 +16111,14 @@ Already up to date.
             737485.0,
             737516.0,
             737546.0,
-            737577.0
+            737577.0,
+            737607.0
         ],
         "visible": true,
         "ticks": "inside",
         "range": [
-            737484.55,
-            737606.45
+            737484.49,
+            737608.51
         ],
         "domain": [
             0.10364016997875265,
@@ -16069,7 +16142,8 @@ Already up to date.
             "2020-03-01",
             "2020-04-01",
             "2020-05-01",
-            "2020-06-01"
+            "2020-06-01",
+            "2020-07-01"
         ],
         "zeroline": false,
         "type": "-",
@@ -16217,9 +16291,9 @@ Already up to date.
         <script src="https://cdn.plot.ly/plotly-1.54.2.min.js"></script>
     </head>
     <body>
-            <div id="f5b7ed39-7321-445e-94a4-1168246a81e1" style="width:700px;height:400px;"></div>
+            <div id="b50b0038-b0d5-432b-b233-c02ce509f8c0" style="width:700px;height:400px;"></div>
     <script>
-    PLOT = document.getElementById('f5b7ed39-7321-445e-94a4-1168246a81e1');
+    PLOT = document.getElementById('b50b0038-b0d5-432b-b233-c02ce509f8c0');
     Plotly.plot(PLOT, [
     {
         "xaxis": "x1",
@@ -16343,7 +16417,9 @@ Already up to date.
             737600.0,
             737601.0,
             737602.0,
-            737603.0
+            737603.0,
+            737604.0,
+            737605.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -16473,7 +16549,9 @@ Already up to date.
             2.382327e6,
             2.422299e6,
             2.467554e6,
-            2.510151e6
+            2.510151e6,
+            2.548996e6,
+            2.590552e6
         ],
         "type": "scatter"
     },
@@ -16599,7 +16677,9 @@ Already up to date.
             737600.0,
             737601.0,
             737602.0,
-            737603.0
+            737603.0,
+            737604.0,
+            737605.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -16729,7 +16809,9 @@ Already up to date.
             2.2846718571428573e6,
             2.3177071428571427e6,
             2.3527035714285714e6,
-            2.389111285714286e6
+            2.389111285714286e6,
+            2.4273028571428573e6,
+            2.4670528571428573e6
         ],
         "type": "scatter"
     }
@@ -16743,13 +16825,14 @@ Already up to date.
             737485.0,
             737516.0,
             737546.0,
-            737577.0
+            737577.0,
+            737607.0
         ],
         "visible": true,
         "ticks": "inside",
         "range": [
-            737484.55,
-            737606.45
+            737484.49,
+            737608.51
         ],
         "domain": [
             0.14173540807399074,
@@ -16773,7 +16856,8 @@ Already up to date.
             "2020-03-01",
             "2020-04-01",
             "2020-05-01",
-            "2020-06-01"
+            "2020-06-01",
+            "2020-07-01"
         ],
         "zeroline": false,
         "type": "-",
@@ -16809,8 +16893,8 @@ Already up to date.
         "visible": true,
         "ticks": "inside",
         "range": [
-            -75237.58,
-            2.58545358e6
+            -77649.61,
+            2.66826661e6
         ],
         "domain": [
             0.18661921498167627,
@@ -16912,9 +16996,9 @@ Already up to date.
         <script src="https://cdn.plot.ly/plotly-1.54.2.min.js"></script>
     </head>
     <body>
-            <div id="d6fadd36-b7a5-4982-bf3d-57ca2973b971" style="width:700px;height:400px;"></div>
+            <div id="a6e8611a-a04f-45ee-b1ce-775acd5b500c" style="width:700px;height:400px;"></div>
     <script>
-    PLOT = document.getElementById('d6fadd36-b7a5-4982-bf3d-57ca2973b971');
+    PLOT = document.getElementById('a6e8611a-a04f-45ee-b1ce-775acd5b500c');
     Plotly.plot(PLOT, [
     {
         "xaxis": "x1",
@@ -17038,7 +17122,9 @@ Already up to date.
             737600.0,
             737601.0,
             737602.0,
-            737603.0
+            737603.0,
+            737604.0,
+            737605.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -17168,7 +17254,9 @@ Already up to date.
             2.382327e6,
             2.422299e6,
             2.467554e6,
-            2.510151e6
+            2.510151e6,
+            2.548996e6,
+            2.590552e6
         ],
         "type": "scatter"
     },
@@ -17294,7 +17382,9 @@ Already up to date.
             737600.0,
             737601.0,
             737602.0,
-            737603.0
+            737603.0,
+            737604.0,
+            737605.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -17424,7 +17514,9 @@ Already up to date.
             2.2846718571428573e6,
             2.3177071428571427e6,
             2.3527035714285714e6,
-            2.389111285714286e6
+            2.389111285714286e6,
+            2.4273028571428573e6,
+            2.4670528571428573e6
         ],
         "type": "scatter"
     }
@@ -17438,13 +17530,14 @@ Already up to date.
             737485.0,
             737516.0,
             737546.0,
-            737577.0
+            737577.0,
+            737607.0
         ],
         "visible": true,
         "ticks": "inside",
         "range": [
-            737484.55,
-            737606.45
+            737484.49,
+            737608.51
         ],
         "domain": [
             0.14173540807399074,
@@ -17468,7 +17561,8 @@ Already up to date.
             "2020-03-01",
             "2020-04-01",
             "2020-05-01",
-            "2020-06-01"
+            "2020-06-01",
+            "2020-07-01"
         ],
         "zeroline": false,
         "type": "-",
@@ -17503,8 +17597,8 @@ Already up to date.
         "visible": true,
         "ticks": "inside",
         "range": [
-            1.67530976191491,
-            6.537303442302317
+            1.6748989879137839,
+            6.551406683007645
         ],
         "domain": [
             0.18661921498167627,
@@ -17631,9 +17725,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
         <script src="https://cdn.plot.ly/plotly-1.54.2.min.js"></script>
     </head>
     <body>
-            <div id="9d8c6131-925d-4f5a-a9e3-35f24da81a57" style="width:700px;height:400px;"></div>
+            <div id="a48dc8e6-246c-411f-b7c2-20be61428822" style="width:700px;height:400px;"></div>
     <script>
-    PLOT = document.getElementById('9d8c6131-925d-4f5a-a9e3-35f24da81a57');
+    PLOT = document.getElementById('a48dc8e6-246c-411f-b7c2-20be61428822');
     Plotly.plot(PLOT, [
     {
         "xaxis": "x1",
@@ -17757,7 +17851,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             737600.0,
             737601.0,
             737602.0,
-            737603.0
+            737603.0,
+            737604.0,
+            737605.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -17887,7 +17983,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             31291.0,
             33035.28571428572,
             34996.42857142857,
-            36407.71428571428
+            36407.71428571428,
+            38191.57142857143,
+            39750.0
         ],
         "type": "scatter"
     },
@@ -18021,7 +18119,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             737600.0,
             737601.0,
             737602.0,
-            737603.0
+            737603.0,
+            737604.0,
+            737605.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -18159,7 +18259,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             3130.428571428572,
             2907.7142857142853,
             3136.5714285714284,
-            3012.4285714285716
+            3012.4285714285716,
+            2794.0,
+            2983.285714285714
         ],
         "type": "scatter"
     }
@@ -18173,13 +18275,14 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             737485.0,
             737516.0,
             737546.0,
-            737577.0
+            737577.0,
+            737607.0
         ],
         "visible": true,
         "ticks": "inside",
         "range": [
-            737476.31,
-            737606.69
+            737476.25,
+            737608.75
         ],
         "domain": [
             0.10364016997875265,
@@ -18203,7 +18306,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             "2020-03-01",
             "2020-04-01",
             "2020-05-01",
-            "2020-06-01"
+            "2020-06-01",
+            "2020-07-01"
         ],
         "zeroline": false,
         "type": "-",
@@ -18249,13 +18353,14 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             0.0,
             10000.0,
             20000.0,
-            30000.0
+            30000.0,
+            40000.0
         ],
         "visible": true,
         "ticks": "inside",
         "range": [
-            -1065.4514285714286,
-            37499.165714285715
+            -1165.72,
+            40941.72
         ],
         "domain": [
             0.18661921498167627,
@@ -18279,7 +18384,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             "0",
             "10,000",
             "20,000",
-            "30,000"
+            "30,000",
+            "40,000"
         ],
         "zeroline": false,
         "type": "-",
@@ -18534,9 +18640,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
         <script src="https://cdn.plot.ly/plotly-1.54.2.min.js"></script>
     </head>
     <body>
-            <div id="ccd15feb-776e-45df-8424-092fa20c441c" style="width:700px;height:400px;"></div>
+            <div id="974cc724-9348-45ee-8314-6f4a3bcd399b" style="width:700px;height:400px;"></div>
     <script>
-    PLOT = document.getElementById('ccd15feb-776e-45df-8424-092fa20c441c');
+    PLOT = document.getElementById('974cc724-9348-45ee-8314-6f4a3bcd399b');
     Plotly.plot(PLOT, [
     {
         "xaxis": "x1",
@@ -18662,7 +18768,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             115.0,
             116.0,
             117.0,
-            118.0
+            118.0,
+            119.0,
+            120.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -18794,7 +18902,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             31291.0,
             33035.28571428572,
             34996.42857142857,
-            36407.71428571428
+            36407.71428571428,
+            38191.57142857143,
+            39750.0
         ],
         "type": "scatter"
     },
@@ -18912,7 +19022,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             106.0,
             107.0,
             108.0,
-            109.0
+            109.0,
+            110.0,
+            111.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -19034,7 +19146,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             33322.0,
             35710.28571428572,
             34580.142857142855,
-            35155.42857142857
+            35155.42857142857,
+            37257.42857142857,
+            37389.28571428572
         ],
         "type": "scatter"
     },
@@ -19150,7 +19264,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             103.0,
             104.0,
             105.0,
-            106.0
+            106.0,
+            107.0,
+            108.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -19270,7 +19386,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             7642.0,
             7546.714285714285,
             7377.714285714285,
-            7231.0
+            7231.0,
+            7097.714285714285,
+            6968.714285714285
         ],
         "type": "scatter"
     },
@@ -19394,7 +19512,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             111.0,
             112.0,
             113.0,
-            114.0
+            114.0,
+            115.0,
+            116.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -19522,7 +19642,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             15165.57142857143,
             15695.57142857143,
             16272.142857142857,
-            16915.428571428572
+            16915.428571428572,
+            17576.571428571428,
+            18089.285714285714
         ],
         "type": "scatter"
     },
@@ -19648,7 +19770,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             115.0,
             116.0,
             117.0,
-            118.0
+            118.0,
+            119.0,
+            120.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -19778,7 +19902,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             1088.5714285714287,
             1074.2857142857142,
             1078.7142857142858,
-            1021.0
+            1021.0,
+            976.7142857142857,
+            958.4285714285714
         ],
         "type": "scatter"
     },
@@ -19890,7 +20016,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             102.0,
             103.0,
             104.0,
-            105.0
+            105.0,
+            106.0,
+            107.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -20006,7 +20134,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             3397.285714285714,
             3459.1428571428573,
             3491.285714285714,
-            3521.5714285714284
+            3521.5714285714284,
+            3497.5714285714284,
+            3559.714285714286
         ],
         "type": "scatter"
     },
@@ -20121,7 +20251,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             103.0,
             104.0,
             105.0,
-            106.0
+            106.0,
+            107.0,
+            108.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -20240,7 +20372,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             4826.857142857143,
             4851.571428571428,
             4566.714285714285,
-            4431.142857142857
+            4431.142857142857,
+            4232.428571428572,
+            4148.0
         ],
         "type": "scatter"
     },
@@ -20365,7 +20499,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             117.0,
             118.0,
             119.0,
-            120.0
+            120.0,
+            121.0,
+            122.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -20494,7 +20630,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             343.2857142857143,
             316.85714285714283,
             332.85714285714283,
-            361.57142857142856
+            361.57142857142856,
+            356.85714285714283,
+            352.2857142857143
         ],
         "type": "scatter"
     },
@@ -20629,7 +20767,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             123.0,
             124.0,
             125.0,
-            126.0
+            126.0,
+            127.0,
+            128.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -20768,7 +20908,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             226.0,
             221.0,
             278.57142857142856,
-            265.85714285714283
+            265.85714285714283,
+            258.7142857142857,
+            245.14285714285714
         ],
         "type": "scatter"
     },
@@ -20903,7 +21045,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             122.0,
             123.0,
             124.0,
-            125.0
+            125.0,
+            126.0,
+            127.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -21042,7 +21186,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             2492.8571428571427,
             2492.714285714286,
             2494.5714285714284,
-            2513.714285714286
+            2513.714285714286,
+            2531.0,
+            2525.714285714286
         ],
         "type": "scatter"
     },
@@ -21166,7 +21312,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             111.0,
             112.0,
             113.0,
-            114.0
+            114.0,
+            117.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -21294,7 +21441,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             1073.4285714285713,
             1108.857142857143,
             1121.0,
-            1008.7142857142857
+            1008.7142857142857,
+            1247.857142857143
         ],
         "type": "scatter"
     }
@@ -21314,7 +21462,7 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
         "ticks": "inside",
         "range": [
             0.0,
-            163.8
+            166.4
         ],
         "domain": [
             0.10364016997875265,
@@ -21389,8 +21537,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
         "visible": true,
         "ticks": "inside",
         "range": [
-            0.6751857256024159,
-            4.674378104292041
+            0.6740414140425149,
+            4.713666134515304
         ],
         "domain": [
             0.07581474190726165,
@@ -21502,9 +21650,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
         <script src="https://cdn.plot.ly/plotly-1.54.2.min.js"></script>
     </head>
     <body>
-            <div id="48a94e8d-ad59-48a7-846d-0765ca365dff" style="width:700px;height:400px;"></div>
+            <div id="8dc0707d-2e22-45c8-84b8-bc9e6f82db94" style="width:700px;height:400px;"></div>
     <script>
-    PLOT = document.getElementById('48a94e8d-ad59-48a7-846d-0765ca365dff');
+    PLOT = document.getElementById('8dc0707d-2e22-45c8-84b8-bc9e6f82db94');
     Plotly.plot(PLOT, [
     {
         "xaxis": "x1",
@@ -21630,7 +21778,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             2.2846718571428573e6,
             2.3177071428571427e6,
             2.3527035714285714e6,
-            2.389111285714286e6
+            2.389111285714286e6,
+            2.4273028571428573e6,
+            2.4670528571428573e6
         ],
         "showlegend": true,
         "mode": "lines",
@@ -21762,7 +21912,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             31291.0,
             33035.28571428572,
             34996.42857142857,
-            36407.71428571428
+            36407.71428571428,
+            38191.57142857143,
+            39750.0
         ],
         "type": "scatter"
     },
@@ -21880,7 +22032,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             1.0861402857142857e6,
             1.1218505714285714e6,
             1.1564307142857143e6,
-            1.191586142857143e6
+            1.191586142857143e6,
+            1.2288435714285714e6,
+            1.266232857142857e6
         ],
         "showlegend": true,
         "mode": "lines",
@@ -22002,7 +22156,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             33322.0,
             35710.28571428572,
             34580.142857142855,
-            35155.42857142857
+            35155.42857142857,
+            37257.42857142857,
+            37389.28571428572
         ],
         "type": "scatter"
     },
@@ -22118,7 +22274,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             583577.1428571428,
             591123.8571428572,
             598501.5714285715,
-            605732.5714285715
+            605732.5714285715,
+            612830.2857142857,
+            619799.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -22238,7 +22396,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             7642.0,
             7546.714285714285,
             7377.714285714285,
-            7231.0
+            7231.0,
+            7097.714285714285,
+            6968.714285714285
         ],
         "type": "scatter"
     },
@@ -22362,7 +22522,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             425830.85714285716,
             441526.4285714286,
             457798.5714285714,
-            474714.0
+            474714.0,
+            492290.5714285714,
+            510379.85714285716
         ],
         "showlegend": true,
         "mode": "lines",
@@ -22490,7 +22652,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             15165.57142857143,
             15695.57142857143,
             16272.142857142857,
-            16915.428571428572
+            16915.428571428572,
+            17576.571428571428,
+            18089.285714285714
         ],
         "type": "scatter"
     },
@@ -22616,7 +22780,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             305483.28571428574,
             306557.5714285714,
             307636.28571428574,
-            308657.28571428574
+            308657.28571428574,
+            309634.0,
+            310592.4285714286
         ],
         "showlegend": true,
         "mode": "lines",
@@ -22746,7 +22912,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             1088.5714285714287,
             1074.2857142857142,
             1078.7142857142858,
-            1021.0
+            1021.0,
+            976.7142857142857,
+            958.4285714285714
         ],
         "type": "scatter"
     },
@@ -22858,7 +23026,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             254504.7142857143,
             257963.85714285713,
             261455.14285714287,
-            264976.71428571426
+            264976.71428571426,
+            268474.28571428574,
+            272034.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -22974,7 +23144,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             3397.285714285714,
             3459.1428571428573,
             3491.285714285714,
-            3521.5714285714284
+            3521.5714285714284,
+            3497.5714285714284,
+            3559.714285714286
         ],
         "type": "scatter"
     },
@@ -23089,7 +23261,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             241106.42857142858,
             245958.0,
             250524.7142857143,
-            254955.85714285713
+            254955.85714285713,
+            259188.2857142857,
+            263336.28571428574
         ],
         "showlegend": true,
         "mode": "lines",
@@ -23208,7 +23382,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             4826.857142857143,
             4851.571428571428,
             4566.714285714285,
-            4431.142857142857
+            4431.142857142857,
+            4232.428571428572,
+            4148.0
         ],
         "type": "scatter"
     },
@@ -23333,7 +23509,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             246199.2857142857,
             246516.14285714287,
             246849.0,
-            247210.57142857142
+            247210.57142857142,
+            247567.42857142858,
+            247919.7142857143
         ],
         "showlegend": true,
         "mode": "lines",
@@ -23462,7 +23640,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             343.2857142857143,
             316.85714285714283,
             332.85714285714283,
-            361.57142857142856
+            361.57142857142856,
+            356.85714285714283,
+            352.2857142857143
         ],
         "type": "scatter"
     },
@@ -23597,7 +23777,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             238558.14285714287,
             238779.14285714287,
             239057.7142857143,
-            239323.57142857142
+            239323.57142857142,
+            239582.2857142857,
+            239827.42857142858
         ],
         "showlegend": true,
         "mode": "lines",
@@ -23736,7 +23918,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             226.0,
             221.0,
             278.57142857142856,
-            265.85714285714283
+            265.85714285714283,
+            258.7142857142857,
+            245.14285714285714
         ],
         "type": "scatter"
     },
@@ -23871,7 +24055,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             205063.0,
             207555.7142857143,
             210050.2857142857,
-            212564.0
+            212564.0,
+            215095.0,
+            217620.7142857143
         ],
         "showlegend": true,
         "mode": "lines",
@@ -24010,7 +24196,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             2492.8571428571427,
             2492.714285714286,
             2494.5714285714284,
-            2513.714285714286
+            2513.714285714286,
+            2531.0,
+            2525.714285714286
         ],
         "type": "scatter"
     },
@@ -24134,7 +24322,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             57984.142857142855,
             59093.0,
             60214.0,
-            61222.71428571428
+            61222.71428571428,
+            64304.142857142855
         ],
         "showlegend": true,
         "mode": "lines",
@@ -24262,7 +24451,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             1073.4285714285713,
             1108.857142857143,
             1121.0,
-            1008.7142857142857
+            1008.7142857142857,
+            1247.857142857143
         ],
         "type": "scatter"
     }
@@ -24284,7 +24474,7 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
         "ticks": "inside",
         "range": [
             1.4842998393467859,
-            7.37823637982354
+            7.3921784544429405
         ],
         "domain": [
             0.10364016997875265,
@@ -24361,8 +24551,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
         "visible": true,
         "ticks": "inside",
         "range": [
-            0.6751857256024159,
-            4.674378104292041
+            0.6740414140425149,
+            4.713666134515304
         ],
         "domain": [
             0.07581474190726165,
@@ -24501,9 +24691,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
         <script src="https://cdn.plot.ly/plotly-1.54.2.min.js"></script>
     </head>
     <body>
-            <div id="36907d33-53f1-44ca-8bcc-c0f73e6de8e3" style="width:700px;height:400px;"></div>
+            <div id="76c8488f-5b5b-476a-9124-df7a477455ef" style="width:700px;height:400px;"></div>
     <script>
-    PLOT = document.getElementById('36907d33-53f1-44ca-8bcc-c0f73e6de8e3');
+    PLOT = document.getElementById('76c8488f-5b5b-476a-9124-df7a477455ef');
     Plotly.plot(PLOT, [
     {
         "xaxis": "x1",
@@ -24628,7 +24818,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             737600.0,
             737601.0,
             737602.0,
-            737603.0
+            737603.0,
+            737604.0,
+            737605.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -24759,7 +24951,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             754.0,
             2425.0,
             629.0,
-            500.0
+            500.0,
+            264.0,
+            337.0
         ],
         "type": "scatter"
     },
@@ -24886,7 +25080,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             737600.0,
             737601.0,
             737602.0,
-            737603.0
+            737603.0,
+            737604.0,
+            737605.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -25017,7 +25213,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             609.7142857142857,
             854.0,
             845.0,
-            831.2857142857143
+            831.2857142857143,
+            832.0,
+            819.7142857142857
         ],
         "type": "scatter"
     }
@@ -25031,13 +25229,14 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             737485.0,
             737516.0,
             737546.0,
-            737577.0
+            737577.0,
+            737607.0
         ],
         "visible": true,
         "ticks": "inside",
         "range": [
-            737483.52,
-            737606.48
+            737483.46,
+            737608.54
         ],
         "domain": [
             0.09094175728033996,
@@ -25061,7 +25260,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             "2020-03-01",
             "2020-04-01",
             "2020-05-01",
-            "2020-06-01"
+            "2020-06-01",
+            "2020-07-01"
         ],
         "zeroline": false,
         "type": "-",
@@ -25199,9 +25399,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
         <script src="https://cdn.plot.ly/plotly-1.54.2.min.js"></script>
     </head>
     <body>
-            <div id="3c7b4f39-cc4d-4584-b925-5cb4cf06d392" style="width:700px;height:400px;"></div>
+            <div id="f0394b2c-d8fe-4546-a1ba-3fdb21cc1a40" style="width:700px;height:400px;"></div>
     <script>
-    PLOT = document.getElementById('3c7b4f39-cc4d-4584-b925-5cb4cf06d392');
+    PLOT = document.getElementById('f0394b2c-d8fe-4546-a1ba-3fdb21cc1a40');
     Plotly.plot(PLOT, [
     {
         "xaxis": "x1",
@@ -25326,7 +25526,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             737600.0,
             737601.0,
             737602.0,
-            737603.0
+            737603.0,
+            737604.0,
+            737605.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -25457,7 +25659,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             754.0,
             2425.0,
             629.0,
-            500.0
+            500.0,
+            264.0,
+            337.0
         ],
         "type": "scatter"
     },
@@ -25584,7 +25788,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             737600.0,
             737601.0,
             737602.0,
-            737603.0
+            737603.0,
+            737604.0,
+            737605.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -25715,7 +25921,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             609.7142857142857,
             854.0,
             845.0,
-            831.2857142857143
+            831.2857142857143,
+            832.0,
+            819.7142857142857
         ],
         "type": "scatter"
     }
@@ -25729,13 +25937,14 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             737485.0,
             737516.0,
             737546.0,
-            737577.0
+            737577.0,
+            737607.0
         ],
         "visible": true,
         "ticks": "inside",
         "range": [
-            737483.52,
-            737606.48
+            737483.46,
+            737608.54
         ],
         "domain": [
             0.09094175728033996,
@@ -25759,7 +25968,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             "2020-03-01",
             "2020-04-01",
             "2020-05-01",
-            "2020-06-01"
+            "2020-06-01",
+            "2020-07-01"
         ],
         "zeroline": false,
         "type": "-",
@@ -25901,9 +26111,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
         <script src="https://cdn.plot.ly/plotly-1.54.2.min.js"></script>
     </head>
     <body>
-            <div id="83e3510a-7fbe-464e-baa5-6c57e9d10b19" style="width:700px;height:400px;"></div>
+            <div id="d8993c37-c73b-4e2f-8ecb-53e20bf5b6b0" style="width:700px;height:400px;"></div>
     <script>
-    PLOT = document.getElementById('83e3510a-7fbe-464e-baa5-6c57e9d10b19');
+    PLOT = document.getElementById('d8993c37-c73b-4e2f-8ecb-53e20bf5b6b0');
     Plotly.plot(PLOT, [
     {
         "xaxis": "x1",
@@ -26028,7 +26238,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             737600.0,
             737601.0,
             737602.0,
-            737603.0
+            737603.0,
+            737604.0,
+            737605.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -26159,7 +26371,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             121985.0,
             124410.0,
             125039.0,
-            125539.0
+            125539.0,
+            125803.0,
+            126140.0
         ],
         "type": "scatter"
     },
@@ -26286,7 +26500,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             737600.0,
             737601.0,
             737602.0,
-            737603.0
+            737603.0,
+            737604.0,
+            737605.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -26417,7 +26633,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             120124.71428571429,
             120978.71428571429,
             121823.71428571429,
-            122655.0
+            122655.0,
+            123487.0,
+            124306.71428571429
         ],
         "type": "scatter"
     }
@@ -26431,13 +26649,14 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             737485.0,
             737516.0,
             737546.0,
-            737577.0
+            737577.0,
+            737607.0
         ],
         "visible": true,
         "ticks": "inside",
         "range": [
-            737483.52,
-            737606.48
+            737483.46,
+            737608.54
         ],
         "domain": [
             0.11633858267716533,
@@ -26461,7 +26680,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             "2020-03-01",
             "2020-04-01",
             "2020-05-01",
-            "2020-06-01"
+            "2020-06-01",
+            "2020-07-01"
         ],
         "zeroline": false,
         "type": "-",
@@ -26498,8 +26718,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
         "visible": true,
         "ticks": "inside",
         "range": [
-            -3759.475,
-            129304.975
+            -3777.5049999999997,
+            129924.005
         ],
         "domain": [
             0.18661921498167627,
@@ -26601,9 +26821,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
         <script src="https://cdn.plot.ly/plotly-1.54.2.min.js"></script>
     </head>
     <body>
-            <div id="a0094f89-39e6-41c6-8456-0bcf309e0596" style="width:700px;height:400px;"></div>
+            <div id="7011f472-cd84-4430-8d52-953931030ae6" style="width:700px;height:400px;"></div>
     <script>
-    PLOT = document.getElementById('a0094f89-39e6-41c6-8456-0bcf309e0596');
+    PLOT = document.getElementById('7011f472-cd84-4430-8d52-953931030ae6');
     Plotly.plot(PLOT, [
     {
         "xaxis": "x1",
@@ -26728,7 +26948,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             737600.0,
             737601.0,
             737602.0,
-            737603.0
+            737603.0,
+            737604.0,
+            737605.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -26859,7 +27081,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             121985.0,
             124410.0,
             125039.0,
-            125539.0
+            125539.0,
+            125803.0,
+            126140.0
         ],
         "type": "scatter"
     },
@@ -26986,7 +27210,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             737600.0,
             737601.0,
             737602.0,
-            737603.0
+            737603.0,
+            737604.0,
+            737605.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -27117,7 +27343,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             120124.71428571429,
             120978.71428571429,
             121823.71428571429,
-            122655.0
+            122655.0,
+            123487.0,
+            124306.71428571429
         ],
         "type": "scatter"
     }
@@ -27131,13 +27359,14 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             737485.0,
             737516.0,
             737546.0,
-            737577.0
+            737577.0,
+            737607.0
         ],
         "visible": true,
         "ticks": "inside",
         "range": [
-            737483.52,
-            737606.48
+            737483.46,
+            737608.54
         ],
         "domain": [
             0.11633858267716533,
@@ -27161,7 +27390,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             "2020-03-01",
             "2020-04-01",
             "2020-05-01",
-            "2020-06-01"
+            "2020-06-01",
+            "2020-07-01"
         ],
         "zeroline": false,
         "type": "-",
@@ -27196,8 +27426,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
         "visible": true,
         "ticks": "inside",
         "range": [
-            0.6843373973954499,
-            5.227354624137121
+            0.6842751725424222,
+            5.229491010757735
         ],
         "domain": [
             0.18661921498167627,
@@ -27418,9 +27648,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
         <script src="https://cdn.plot.ly/plotly-1.54.2.min.js"></script>
     </head>
     <body>
-            <div id="52b30952-d661-48ad-94d4-05e83e3b6049" style="width:700px;height:400px;"></div>
+            <div id="a301519c-5cf3-4b85-839b-8b6e86c03359" style="width:700px;height:400px;"></div>
     <script>
-    PLOT = document.getElementById('52b30952-d661-48ad-94d4-05e83e3b6049');
+    PLOT = document.getElementById('a301519c-5cf3-4b85-839b-8b6e86c03359');
     Plotly.plot(PLOT, [
     {
         "xaxis": "x1",
@@ -27545,7 +27775,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             114.0,
             115.0,
             116.0,
-            117.0
+            117.0,
+            118.0,
+            119.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -27676,7 +27908,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             609.7142857142857,
             854.0,
             845.0,
-            831.2857142857143
+            831.2857142857143,
+            832.0,
+            819.7142857142857
         ],
         "type": "scatter"
     },
@@ -27787,7 +28021,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             98.0,
             99.0,
             100.0,
-            101.0
+            101.0,
+            102.0,
+            103.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -27902,7 +28138,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             1045.7142857142858,
             1031.857142857143,
             1001.0,
-            1013.4285714285714
+            1013.4285714285714,
+            1004.4285714285714,
+            1006.1428571428571
         ],
         "type": "scatter"
     },
@@ -28021,7 +28259,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             107.0,
             108.0,
             109.0,
-            110.0
+            110.0,
+            111.0,
+            112.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -28144,7 +28384,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             132.42857142857142,
             134.42857142857142,
             136.0,
-            132.0
+            132.0,
+            131.0,
+            132.57142857142858
         ],
         "type": "scatter"
     },
@@ -28278,7 +28520,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             121.0,
             123.0,
             124.0,
-            125.0
+            125.0,
+            126.0,
+            127.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -28416,7 +28660,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             38.57142857142857,
             23.428571428571427,
             21.0,
-            15.142857142857142
+            15.142857142857142,
+            14.857142857142858,
+            12.428571428571429
         ],
         "type": "scatter"
     },
@@ -28534,7 +28780,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             113.0,
             114.0,
             115.0,
-            116.0
+            116.0,
+            119.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -28656,7 +28903,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             24.714285714285715,
             22.285714285714285,
             21.285714285714285,
-            23.0
+            23.0,
+            21.428571428571427
         ],
         "type": "scatter"
     },
@@ -28758,7 +29006,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             111.0,
             112.0,
             113.0,
-            114.0
+            114.0,
+            115.0,
+            116.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -28864,7 +29114,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             170.14285714285714,
             170.57142857142858,
             3.2857142857142856,
-            2.7142857142857144
+            2.7142857142857144,
+            2.857142857142857,
+            3.142857142857143
         ],
         "type": "scatter"
     },
@@ -28971,7 +29223,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             94.0,
             95.0,
             96.0,
-            97.0
+            97.0,
+            98.0,
+            99.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -29082,7 +29336,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             749.1428571428571,
             759.0,
             769.2857142857143,
-            800.0
+            800.0,
+            689.0,
+            648.1428571428571
         ],
         "type": "scatter"
     },
@@ -29189,7 +29445,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             99.0,
             100.0,
             101.0,
-            102.0
+            102.0,
+            103.0,
+            104.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -29300,7 +29558,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             379.57142857142856,
             389.7142857142857,
             391.0,
-            405.85714285714283
+            405.85714285714283,
+            396.57142857142856,
+            411.7142857142857
         ],
         "type": "scatter"
     },
@@ -29437,7 +29697,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             124.0,
             125.0,
             126.0,
-            127.0
+            127.0,
+            128.0,
+            129.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -29578,7 +29840,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             115.85714285714286,
             122.57142857142857,
             121.0,
-            122.42857142857143
+            122.42857142857143,
+            126.42857142857143,
+            132.57142857142858
         ],
         "type": "scatter"
     },
@@ -29918,7 +30182,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             100.0,
             101.0,
             102.0,
-            103.0
+            103.0,
+            106.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -30032,7 +30297,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             31.714285714285715,
             24.0,
             25.285714285714285,
-            25.0
+            25.0,
+            26.857142857142858
         ],
         "type": "scatter"
     }
@@ -30052,7 +30318,7 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
         "ticks": "inside",
         "range": [
             0.0,
-            165.1
+            167.70000000000002
         ],
         "domain": [
             0.09094175728033996,
@@ -30232,9 +30498,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
         <script src="https://cdn.plot.ly/plotly-1.54.2.min.js"></script>
     </head>
     <body>
-            <div id="93177257-2681-4903-9a85-4663b9f37c2f" style="width:700px;height:400px;"></div>
+            <div id="90b839c5-4b31-46bd-848c-0420179d8354" style="width:700px;height:400px;"></div>
     <script>
-    PLOT = document.getElementById('93177257-2681-4903-9a85-4663b9f37c2f');
+    PLOT = document.getElementById('90b839c5-4b31-46bd-848c-0420179d8354');
     Plotly.plot(PLOT, [
     {
         "xaxis": "x1",
@@ -30359,7 +30625,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             120124.71428571429,
             120978.71428571429,
             121823.71428571429,
-            122655.0
+            122655.0,
+            123487.0,
+            124306.71428571429
         ],
         "showlegend": true,
         "mode": "lines",
@@ -30490,7 +30758,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             609.7142857142857,
             854.0,
             845.0,
-            831.2857142857143
+            831.2857142857143,
+            832.0,
+            819.7142857142857
         ],
         "type": "scatter"
     },
@@ -30601,7 +30871,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             50716.42857142857,
             51748.28571428572,
             52749.28571428572,
-            53762.71428571428
+            53762.71428571428,
+            54767.142857142855,
+            55773.28571428572
         ],
         "showlegend": true,
         "mode": "lines",
@@ -30716,7 +30988,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             1045.7142857142858,
             1031.857142857143,
             1001.0,
-            1013.4285714285714
+            1013.4285714285714,
+            1004.4285714285714,
+            1006.1428571428571
         ],
         "type": "scatter"
     },
@@ -30835,7 +31109,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             42745.28571428572,
             42879.71428571428,
             43015.71428571428,
-            43147.71428571428
+            43147.71428571428,
+            43278.71428571428,
+            43411.28571428572
         ],
         "showlegend": true,
         "mode": "lines",
@@ -30958,7 +31234,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             132.42857142857142,
             134.42857142857142,
             136.0,
-            132.0
+            132.0,
+            131.0,
+            132.57142857142858
         ],
         "type": "scatter"
     },
@@ -31092,7 +31370,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             34585.57142857143,
             34637.0,
             34658.0,
-            34673.142857142855
+            34673.142857142855,
+            34688.0,
+            34700.42857142857
         ],
         "showlegend": true,
         "mode": "lines",
@@ -31230,7 +31510,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             38.57142857142857,
             23.428571428571427,
             21.0,
-            15.142857142857142
+            15.142857142857142,
+            14.857142857142858,
+            12.428571428571429
         ],
         "type": "scatter"
     },
@@ -31348,7 +31630,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             29638.85714285714,
             29661.14285714286,
             29682.428571428572,
-            29705.428571428572
+            29705.428571428572,
+            29767.285714285714
         ],
         "showlegend": true,
         "mode": "lines",
@@ -31470,7 +31753,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             24.714285714285715,
             22.285714285714285,
             21.285714285714285,
-            23.0
+            23.0,
+            21.428571428571427
         ],
         "type": "scatter"
     },
@@ -31572,7 +31856,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             28153.14285714286,
             28323.714285714286,
             28327.0,
-            28329.714285714286
+            28329.714285714286,
+            28332.571428571428,
+            28335.714285714286
         ],
         "showlegend": true,
         "mode": "lines",
@@ -31678,7 +31964,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             170.14285714285714,
             170.57142857142858,
             3.2857142857142856,
-            2.7142857142857144
+            2.7142857142857144,
+            2.857142857142857,
+            3.142857142857143
         ],
         "type": "scatter"
     },
@@ -31785,7 +32073,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             21861.714285714286,
             22620.714285714286,
             23390.0,
-            24190.0
+            24190.0,
+            24879.0,
+            25527.14285714286
         ],
         "showlegend": true,
         "mode": "lines",
@@ -31896,7 +32186,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             749.1428571428571,
             759.0,
             769.2857142857143,
-            800.0
+            800.0,
+            689.0,
+            648.1428571428571
         ],
         "type": "scatter"
     },
@@ -32003,7 +32295,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             13693.57142857143,
             14083.285714285714,
             14474.285714285714,
-            14880.142857142857
+            14880.142857142857,
+            15276.714285714286,
+            15688.42857142857
         ],
         "showlegend": true,
         "mode": "lines",
@@ -32114,7 +32408,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             379.57142857142856,
             389.7142857142857,
             391.0,
-            405.85714285714283
+            405.85714285714283,
+            396.57142857142856,
+            411.7142857142857
         ],
         "type": "scatter"
     },
@@ -32251,7 +32547,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             9627.857142857143,
             9750.42857142857,
             9871.42857142857,
-            9993.857142857143
+            9993.857142857143,
+            10120.285714285714,
+            10252.857142857143
         ],
         "showlegend": true,
         "mode": "lines",
@@ -32392,7 +32690,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             115.85714285714286,
             122.57142857142857,
             121.0,
-            122.42857142857143
+            122.42857142857143,
+            126.42857142857143,
+            132.57142857142858
         ],
         "type": "scatter"
     },
@@ -32732,7 +33032,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             5100.285714285715,
             5124.285714285715,
             5149.571428571428,
-            5174.571428571428
+            5174.571428571428,
+            5250.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -32846,7 +33147,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             31.714285714285715,
             24.0,
             25.285714285714285,
-            25.0
+            25.0,
+            26.857142857142858
         ],
         "type": "scatter"
     }
@@ -32868,7 +33170,7 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
         "ticks": "inside",
         "range": [
             0.5118833609788743,
-            6.389715252471768
+            6.395524582861399
         ],
         "domain": [
             0.09094175728033996,
@@ -33157,9 +33459,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
         <script src="https://cdn.plot.ly/plotly-1.54.2.min.js"></script>
     </head>
     <body>
-            <div id="707bf48a-bc3c-4527-ac85-e98adde81fdc" style="width:700px;height:400px;"></div>
+            <div id="d7ad41a5-c65d-471b-aa73-555a231b7490" style="width:700px;height:400px;"></div>
     <script>
-    PLOT = document.getElementById('707bf48a-bc3c-4527-ac85-e98adde81fdc');
+    PLOT = document.getElementById('d7ad41a5-c65d-471b-aa73-555a231b7490');
     Plotly.plot(PLOT, [
     {
         "xaxis": "x1",
@@ -33285,7 +33587,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             115.0,
             116.0,
             117.0,
-            118.0
+            118.0,
+            119.0,
+            120.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -33417,7 +33721,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             95.7826666285589,
             101.12197624079202,
             107.12509191292438,
-            111.44507878100387
+            111.44507878100387,
+            116.9055176940223,
+            121.67591315346957
         ],
         "type": "scatter"
     },
@@ -33535,7 +33841,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             106.0,
             107.0,
             108.0,
-            109.0
+            109.0,
+            110.0,
+            111.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -33657,7 +33965,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             159.07817876137506,
             170.4797795593578,
             165.0845131451431,
-            167.83090903062444
+            167.83090903062444,
+            177.86579084313297,
+            178.4952726912331
         ],
         "type": "scatter"
     },
@@ -33781,7 +34091,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             111.0,
             112.0,
             113.0,
-            114.0
+            114.0,
+            115.0,
+            116.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -33909,7 +34221,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             11.212019182835302,
             11.603852104851512,
             12.030115628640576,
-            12.505701517545967
+            12.505701517545967,
+            12.994489324309047,
+            13.373542789839014
         ],
         "type": "scatter"
     },
@@ -34035,7 +34349,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             115.0,
             116.0,
             117.0,
-            118.0
+            118.0,
+            119.0,
+            120.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -34165,7 +34481,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             16.379262625716002,
             16.164311672622613,
             16.230946468081562,
-            15.362544617584286
+            15.362544617584286,
+            14.696196662994788,
+            14.421059443035254
         ],
         "type": "scatter"
     },
@@ -34277,7 +34595,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             102.0,
             103.0,
             104.0,
-            105.0
+            105.0,
+            106.0,
+            107.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -34393,7 +34713,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             106.20083550194835,
             108.13452045095569,
             109.13932209882326,
-            110.08606854036957
+            110.08606854036957,
+            109.33581664329512,
+            111.27843316250575
         ],
         "type": "scatter"
     },
@@ -34508,7 +34830,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             103.0,
             104.0,
             105.0,
-            106.0
+            106.0,
+            107.0,
+            108.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -34627,7 +34951,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             257.71882683778364,
             259.038388724931,
             243.82910315861923,
-            236.5905815927066
+            236.5905815927066,
+            225.98069381801275,
+            221.4728263307057
         ],
         "type": "scatter"
     },
@@ -34752,7 +35078,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             117.0,
             118.0,
             119.0,
-            120.0
+            120.0,
+            121.0,
+            122.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -34881,7 +35209,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             7.335707175909037,
             6.770952357955157,
             7.112857977473181,
-            7.726456455358207
+            7.726456455358207,
+            7.625716406750218,
+            7.528029086887925
         ],
         "type": "scatter"
     },
@@ -35016,7 +35346,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             123.0,
             124.0,
             125.0,
-            126.0
+            126.0,
+            127.0,
+            128.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -35155,7 +35487,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             3.7403743287186604,
             3.6576226842779818,
             4.610448761694935,
-            4.400023151545781
+            4.400023151545781,
+            4.281806516630527,
+            4.057194910291543
         ],
         "type": "scatter"
     },
@@ -35290,7 +35624,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             122.0,
             123.0,
             124.0,
-            125.0
+            125.0,
+            126.0,
+            127.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -35429,7 +35765,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             30.474925979242716,
             30.473179565146488,
             30.495882948397497,
-            30.729902437292548
+            30.729902437292548,
+            30.941218542936575,
+            30.876601221376003
         ],
         "type": "scatter"
     },
@@ -35553,7 +35891,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             111.0,
             112.0,
             113.0,
-            114.0
+            114.0,
+            117.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -35681,7 +36020,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             105.49444674368237,
             108.97629699553669,
             110.16967308992224,
-            99.13445414654528
+            99.13445414654528,
+            122.63694334656184
         ],
         "type": "scatter"
     }
@@ -35701,7 +36041,7 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
         "ticks": "inside",
         "range": [
             0.0,
-            157.5
+            160.0
         ],
         "domain": [
             0.06554493188351455,
@@ -35865,9 +36205,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
         <script src="https://cdn.plot.ly/plotly-1.54.2.min.js"></script>
     </head>
     <body>
-            <div id="c9be3873-f194-4352-a455-7ce7b7ffafd8" style="width:700px;height:400px;"></div>
+            <div id="a8ae7e06-58b2-43cc-8959-15c74dd30ecd" style="width:700px;height:400px;"></div>
     <script>
-    PLOT = document.getElementById('c9be3873-f194-4352-a455-7ce7b7ffafd8');
+    PLOT = document.getElementById('a8ae7e06-58b2-43cc-8959-15c74dd30ecd');
     Plotly.plot(PLOT, [
     {
         "xaxis": "x1",
@@ -35993,7 +36333,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             115.0,
             116.0,
             117.0,
-            118.0
+            118.0,
+            119.0,
+            120.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -36125,7 +36467,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             95.7826666285589,
             101.12197624079202,
             107.12509191292438,
-            111.44507878100387
+            111.44507878100387,
+            116.9055176940223,
+            121.67591315346957
         ],
         "type": "scatter"
     },
@@ -36243,7 +36587,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             106.0,
             107.0,
             108.0,
-            109.0
+            109.0,
+            110.0,
+            111.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -36365,7 +36711,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             159.07817876137506,
             170.4797795593578,
             165.0845131451431,
-            167.83090903062444
+            167.83090903062444,
+            177.86579084313297,
+            178.4952726912331
         ],
         "type": "scatter"
     },
@@ -36489,7 +36837,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             111.0,
             112.0,
             113.0,
-            114.0
+            114.0,
+            115.0,
+            116.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -36617,7 +36967,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             11.212019182835302,
             11.603852104851512,
             12.030115628640576,
-            12.505701517545967
+            12.505701517545967,
+            12.994489324309047,
+            13.373542789839014
         ],
         "type": "scatter"
     },
@@ -36743,7 +37095,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             115.0,
             116.0,
             117.0,
-            118.0
+            118.0,
+            119.0,
+            120.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -36873,7 +37227,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             16.379262625716002,
             16.164311672622613,
             16.230946468081562,
-            15.362544617584286
+            15.362544617584286,
+            14.696196662994788,
+            14.421059443035254
         ],
         "type": "scatter"
     },
@@ -36985,7 +37341,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             102.0,
             103.0,
             104.0,
-            105.0
+            105.0,
+            106.0,
+            107.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -37101,7 +37459,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             106.20083550194835,
             108.13452045095569,
             109.13932209882326,
-            110.08606854036957
+            110.08606854036957,
+            109.33581664329512,
+            111.27843316250575
         ],
         "type": "scatter"
     },
@@ -37216,7 +37576,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             103.0,
             104.0,
             105.0,
-            106.0
+            106.0,
+            107.0,
+            108.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -37335,7 +37697,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             257.71882683778364,
             259.038388724931,
             243.82910315861923,
-            236.5905815927066
+            236.5905815927066,
+            225.98069381801275,
+            221.4728263307057
         ],
         "type": "scatter"
     },
@@ -37460,7 +37824,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             117.0,
             118.0,
             119.0,
-            120.0
+            120.0,
+            121.0,
+            122.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -37589,7 +37955,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             7.335707175909037,
             6.770952357955157,
             7.112857977473181,
-            7.726456455358207
+            7.726456455358207,
+            7.625716406750218,
+            7.528029086887925
         ],
         "type": "scatter"
     },
@@ -37724,7 +38092,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             123.0,
             124.0,
             125.0,
-            126.0
+            126.0,
+            127.0,
+            128.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -37863,7 +38233,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             3.7403743287186604,
             3.6576226842779818,
             4.610448761694935,
-            4.400023151545781
+            4.400023151545781,
+            4.281806516630527,
+            4.057194910291543
         ],
         "type": "scatter"
     },
@@ -37998,7 +38370,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             122.0,
             123.0,
             124.0,
-            125.0
+            125.0,
+            126.0,
+            127.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -38137,7 +38511,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             30.474925979242716,
             30.473179565146488,
             30.495882948397497,
-            30.729902437292548
+            30.729902437292548,
+            30.941218542936575,
+            30.876601221376003
         ],
         "type": "scatter"
     },
@@ -38261,7 +38637,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             111.0,
             112.0,
             113.0,
-            114.0
+            114.0,
+            117.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -38389,7 +38766,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             105.49444674368237,
             108.97629699553669,
             110.16967308992224,
-            99.13445414654528
+            99.13445414654528,
+            122.63694334656184
         ],
         "type": "scatter"
     }
@@ -38409,7 +38787,7 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
         "ticks": "inside",
         "range": [
             0.0,
-            157.5
+            160.0
         ],
         "domain": [
             0.07824334458192725,
@@ -38574,9 +38952,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
         <script src="https://cdn.plot.ly/plotly-1.54.2.min.js"></script>
     </head>
     <body>
-            <div id="fd82d56c-3436-4d58-bde4-a77d703cef15" style="width:700px;height:400px;"></div>
+            <div id="dcd62cc5-92d4-43ba-82e9-b6ce56d7e2ed" style="width:700px;height:400px;"></div>
     <script>
-    PLOT = document.getElementById('fd82d56c-3436-4d58-bde4-a77d703cef15');
+    PLOT = document.getElementById('dcd62cc5-92d4-43ba-82e9-b6ce56d7e2ed');
     Plotly.plot(PLOT, [
     {
         "xaxis": "x1",
@@ -38702,7 +39080,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             6993.447408148184,
             7094.569384388975,
             7201.6944763019,
-            7313.139555082905
+            7313.139555082905,
+            7430.045072776927,
+            7551.720985930396
         ],
         "showlegend": true,
         "mode": "lines",
@@ -38834,7 +39214,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             95.7826666285589,
             101.12197624079202,
             107.12509191292438,
-            111.44507878100387
+            111.44507878100387,
+            116.9055176940223,
+            121.67591315346957
         ],
         "type": "scatter"
     },
@@ -38952,7 +39334,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             5185.199523761723,
             5355.679303321081,
             5520.763816466224,
-            5688.594725496849
+            5688.594725496849,
+            5866.460516339981,
+            6044.9557890312135
         ],
         "showlegend": true,
         "mode": "lines",
@@ -39074,7 +39458,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             159.07817876137506,
             170.4797795593578,
             165.0845131451431,
-            167.83090903062444
+            167.83090903062444,
+            177.86579084313297,
+            178.4952726912331
         ],
         "type": "scatter"
     },
@@ -39198,7 +39584,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             314.8199038470821,
             326.42375595193363,
             338.45387158057423,
-            350.9595730981202
+            350.9595730981202,
+            363.9540624224292,
+            377.3276052122683
         ],
         "showlegend": true,
         "mode": "lines",
@@ -39326,7 +39714,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             11.212019182835302,
             11.603852104851512,
             12.030115628640576,
-            12.505701517545967
+            12.505701517545967,
+            12.994489324309047,
+            13.373542789839014
         ],
         "type": "scatter"
     },
@@ -39452,7 +39842,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             4596.4746392869365,
             4612.638950959559,
             4628.86989742764,
-            4644.232442045225
+            4644.232442045225,
+            4658.928638708219,
+            4673.349698151255
         ],
         "showlegend": true,
         "mode": "lines",
@@ -39582,7 +39974,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             16.379262625716002,
             16.164311672622613,
             16.230946468081562,
-            15.362544617584286
+            15.362544617584286,
+            14.696196662994788,
+            14.421059443035254
         ],
         "type": "scatter"
     },
@@ -39694,7 +40088,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             7955.943529468591,
             8064.078049919546,
             8173.217372018369,
-            8283.303440558737
+            8283.303440558737,
+            8392.639257202034,
+            8503.91769036454
         ],
         "showlegend": true,
         "mode": "lines",
@@ -39810,7 +40206,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             106.20083550194835,
             108.13452045095569,
             109.13932209882326,
-            110.08606854036957
+            110.08606854036957,
+            109.33581664329512,
+            111.27843316250575
         ],
         "type": "scatter"
     },
@@ -39925,7 +40323,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             12873.31778741965,
             13132.35617614458,
             13376.1852793032,
-            13612.775860895903
+            13612.775860895903,
+            13838.756554713918,
+            14060.229381044624
         ],
         "showlegend": true,
         "mode": "lines",
@@ -40044,7 +40444,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             257.71882683778364,
             259.038388724931,
             243.82910315861923,
-            236.5905815927066
+            236.5905815927066,
+            225.98069381801275,
+            221.4728263307057
         ],
         "type": "scatter"
     },
@@ -40169,7 +40571,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             5261.057456689869,
             5267.828409047824,
             5274.941267025297,
-            5282.667723480655
+            5282.667723480655,
+            5290.293439887406,
+            5297.821468974294
         ],
         "showlegend": true,
         "mode": "lines",
@@ -40298,7 +40702,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             7.335707175909037,
             6.770952357955157,
             7.112857977473181,
-            7.726456455358207
+            7.726456455358207,
+            7.625716406750218,
+            7.528029086887925
         ],
         "type": "scatter"
     },
@@ -40433,7 +40839,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             3948.2157232285663,
             3951.8733459128443,
             3956.4837946745392,
-            3960.883817826085
+            3960.883817826085,
+            3965.165624342715,
+            3969.222819253007
         ],
         "showlegend": true,
         "mode": "lines",
@@ -40572,7 +40980,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             3.7403743287186604,
             3.6576226842779818,
             4.610448761694935,
-            4.400023151545781
+            4.400023151545781,
+            4.281806516630527,
+            4.057194910291543
         ],
         "type": "scatter"
     },
@@ -40707,7 +41117,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             2506.8743967088913,
             2537.3475762740377,
             2567.843459222435,
-            2598.5733616597277
+            2598.5733616597277,
+            2629.514580202664,
+            2660.39118142404
         ],
         "showlegend": true,
         "mode": "lines",
@@ -40846,7 +41258,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             30.474925979242716,
             30.473179565146488,
             30.495882948397497,
-            30.729902437292548
+            30.729902437292548,
+            30.941218542936575,
+            30.876601221376003
         ],
         "type": "scatter"
     },
@@ -40970,7 +41384,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             5698.567406753594,
             5807.54370374913,
             5917.713376839052,
-            6016.847830985596
+            6016.847830985596,
+            6319.684564584377
         ],
         "showlegend": true,
         "mode": "lines",
@@ -41098,7 +41513,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             105.49444674368237,
             108.97629699553669,
             110.16967308992224,
-            99.13445414654528
+            99.13445414654528,
+            122.63694334656184
         ],
         "type": "scatter"
     }
@@ -41121,7 +41537,7 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
         "ticks": "inside",
         "range": [
             -1.6468751074025847,
-            5.434976689430637
+            5.449022401561821
         ],
         "domain": [
             0.07824334458192725,
@@ -41309,9 +41725,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
         <script src="https://cdn.plot.ly/plotly-1.54.2.min.js"></script>
     </head>
     <body>
-            <div id="aaa722e6-60a5-4f94-96e1-6dc8ca60911b" style="width:700px;height:400px;"></div>
+            <div id="ead10361-116b-44e6-a8a3-5fe431649866" style="width:700px;height:400px;"></div>
     <script>
-    PLOT = document.getElementById('aaa722e6-60a5-4f94-96e1-6dc8ca60911b');
+    PLOT = document.getElementById('ead10361-116b-44e6-a8a3-5fe431649866');
     Plotly.plot(PLOT, [
     {
         "xaxis": "x1",
@@ -41436,7 +41852,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             114.0,
             115.0,
             116.0,
-            117.0
+            117.0,
+            118.0,
+            119.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -41567,7 +41985,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             1.8663532698616643,
             2.614118989511019,
             2.5865697261555165,
-            2.544589896280465
+            2.544589896280465,
+            2.5467763457531243,
+            2.50916941482339
         ],
         "type": "scatter"
     },
@@ -41678,7 +42098,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             98.0,
             99.0,
             100.0,
-            101.0
+            101.0,
+            102.0,
+            103.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -41793,7 +42215,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             4.992207072690138,
             4.926053509021976,
             4.778742480647513,
-            4.8380760892983385
+            4.8380760892983385,
+            4.795110372689121,
+            4.8032943187099235
         ],
         "type": "scatter"
     },
@@ -41912,7 +42336,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             107.0,
             108.0,
             109.0,
-            110.0
+            110.0,
+            111.0,
+            112.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -42035,7 +42461,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             1.9925953351756864,
             2.0226884686087603,
             2.0463330734490333,
-            1.986146806582885
+            1.986146806582885,
+            1.971100239866348,
+            1.9947448447066205
         ],
         "type": "scatter"
     },
@@ -42169,7 +42597,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             121.0,
             123.0,
             124.0,
-            125.0
+            125.0,
+            126.0,
+            127.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -42307,7 +42737,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             0.6383698285423757,
             0.38775056252203555,
             0.347556906650849,
-            0.25061926602034007
+            0.25061926602034007,
+            0.24589060062372992,
+            0.20569694475254327
         ],
         "type": "scatter"
     },
@@ -42425,7 +42857,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             113.0,
             114.0,
             115.0,
-            116.0
+            116.0,
+            119.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -42547,7 +42980,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             0.3689960170164668,
             0.3327362928009758,
             0.31780581812400893,
-            0.34340091757023783
+            0.34340091757023783,
+            0.3199387430778613
         ],
         "type": "scatter"
     },
@@ -42649,7 +43083,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             111.0,
             112.0,
             113.0,
-            114.0
+            114.0,
+            115.0,
+            116.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -42755,7 +43191,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             3.6357999361247035,
             3.644958122361794,
             0.07021276115102283,
-            0.058001846168236254
+            0.058001846168236254,
+            0.061054574913932895,
+            0.06716003240532617
         ],
         "type": "scatter"
     },
@@ -42862,7 +43300,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             94.0,
             95.0,
             96.0,
-            97.0
+            97.0,
+            98.0,
+            99.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -42973,7 +43413,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             5.936589104609261,
             6.014702119143594,
             6.096211351701158,
-            6.33960697669944
+            6.33960697669944,
+            5.459986508682393,
+            5.136213723800957
         ],
         "type": "scatter"
     },
@@ -43080,7 +43522,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             99.0,
             100.0,
             101.0,
-            102.0
+            102.0,
+            103.0,
+            104.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -43191,7 +43635,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             0.2806199659830386,
             0.288118655326206,
             0.28906919341195964,
-            0.30005318906955686
+            0.30005318906955686,
+            0.2931881917835586,
+            0.3043834181268789
         ],
         "type": "scatter"
     },
@@ -43328,7 +43774,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             124.0,
             125.0,
             126.0,
-            127.0
+            127.0,
+            128.0,
+            129.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -43469,7 +43917,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             1.4163418320438879,
             1.4984232945667766,
             1.4792127395082284,
-            1.496676880470545
+            1.496676880470545,
+            1.5455764751650318,
+            1.620672281302994
         ],
         "type": "scatter"
     },
@@ -43809,7 +44259,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             100.0,
             101.0,
             102.0,
-            103.0
+            103.0,
+            106.0
         ],
         "showlegend": true,
         "mode": "lines",
@@ -43923,7 +44374,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             3.1168175641599,
             2.3586727512561407,
             2.4850302200734338,
-            2.4569507825584798
+            2.4569507825584798,
+            2.6394671264056813
         ],
         "type": "scatter"
     }
@@ -43943,7 +44395,7 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
         "ticks": "inside",
         "range": [
             0.0,
-            158.75
+            161.25
         ],
         "domain": [
             0.09094175728033996,
@@ -44108,9 +44560,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
         <script src="https://cdn.plot.ly/plotly-1.54.2.min.js"></script>
     </head>
     <body>
-            <div id="f0b8bba8-3929-43e9-b12a-6c1408e369b0" style="width:700px;height:400px;"></div>
+            <div id="d565f8c5-bb51-41ed-91ae-5570dabee59c" style="width:700px;height:400px;"></div>
     <script>
-    PLOT = document.getElementById('f0b8bba8-3929-43e9-b12a-6c1408e369b0');
+    PLOT = document.getElementById('d565f8c5-bb51-41ed-91ae-5570dabee59c');
     Plotly.plot(PLOT, [
     {
         "xaxis": "x1",
@@ -44235,7 +44687,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             367.7052654846268,
             370.31938447413785,
             372.90595420029337,
-            375.4505440965738
+            375.4505440965738,
+            377.99732044232695,
+            380.50648985715037
         ],
         "showlegend": true,
         "mode": "lines",
@@ -44366,7 +44820,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             1.8663532698616643,
             2.614118989511019,
             2.5865697261555165,
-            2.544589896280465
+            2.544589896280465,
+            2.5467763457531243,
+            2.50916941482339
         ],
         "type": "scatter"
     },
@@ -44477,7 +44933,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             242.11863304796302,
             247.044686556985,
             251.82342903763254,
-            256.6615051269308
+            256.6615051269308,
+            261.45661549961994,
+            266.2599098183299
         ],
         "showlegend": true,
         "mode": "lines",
@@ -44592,7 +45050,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             4.992207072690138,
             4.926053509021976,
             4.778742480647513,
-            4.8380760892983385
+            4.8380760892983385,
+            4.795110372689121,
+            4.8032943187099235
         ],
         "type": "scatter"
     },
@@ -44711,7 +45171,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             643.1697933174363,
             645.1924817860449,
             647.2388148594939,
-            649.2249616660769
+            649.2249616660769,
+            651.1960619059432,
+            653.1908067506499
         ],
         "showlegend": true,
         "mode": "lines",
@@ -44834,7 +45296,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             1.9925953351756864,
             2.0226884686087603,
             2.0463330734490333,
-            1.986146806582885
+            1.986146806582885,
+            1.971100239866348,
+            1.9947448447066205
         ],
         "type": "scatter"
     },
@@ -44968,7 +45432,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             572.4025819269651,
             573.253741698355,
             573.6012986050059,
-            573.8519178710261
+            573.8519178710261,
+            574.09780847165,
+            574.3035054164025
         ],
         "showlegend": true,
         "mode": "lines",
@@ -45106,7 +45572,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             0.6383698285423757,
             0.38775056252203555,
             0.347556906650849,
-            0.25061926602034007
+            0.25061926602034007,
+            0.24589060062372992,
+            0.20569694475254327
         ],
         "type": "scatter"
     },
@@ -45224,7 +45692,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             442.52220602566695,
             442.85494231846803,
             443.17274813659196,
-            443.5161490541622
+            443.5161490541622,
+            444.4397055591803
         ],
         "showlegend": true,
         "mode": "lines",
@@ -45346,7 +45815,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             0.3689960170164668,
             0.3327362928009758,
             0.31780581812400893,
-            0.34340091757023783
+            0.34340091757023783,
+            0.3199387430778613
         ],
         "type": "scatter"
     },
@@ -45448,7 +45918,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             601.6073593719292,
             605.252317494291,
             605.322530255442,
-            605.3805321016102
+            605.3805321016102,
+            605.441586676524,
+            605.5087467089294
         ],
         "showlegend": true,
         "mode": "lines",
@@ -45554,7 +46026,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             3.6357999361247035,
             3.644958122361794,
             0.07021276115102283,
-            0.058001846168236254
+            0.058001846168236254,
+            0.061054574913932895,
+            0.06716003240532617
         ],
         "type": "scatter"
     },
@@ -45661,7 +46135,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             173.24334551040513,
             179.2580476295487,
             185.35425898124987,
-            191.69386595794933
+            191.69386595794933,
+            197.15385246663172,
+            202.29006619043267
         ],
         "showlegend": true,
         "mode": "lines",
@@ -45772,7 +46248,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             5.936589104609261,
             6.014702119143594,
             6.096211351701158,
-            6.33960697669944
+            6.33960697669944,
+            5.459986508682393,
+            5.136213723800957
         ],
         "type": "scatter"
     },
@@ -45879,7 +46357,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             10.123758689990277,
             10.411877345316482,
             10.700946538728441,
-            11.000999727797998
+            11.000999727797998,
+            11.294187919581558,
+            11.598571337708437
         ],
         "showlegend": true,
         "mode": "lines",
@@ -45990,7 +46470,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             0.2806199659830386,
             0.288118655326206,
             0.28906919341195964,
-            0.30005318906955686
+            0.30005318906955686,
+            0.2931881917835586,
+            0.3043834181268789
         ],
         "type": "scatter"
     },
@@ -46127,7 +46609,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             117.6995780155337,
             119.19800131010047,
             120.6772140496087,
-            122.17389093007925
+            122.17389093007925,
+            123.71946740524429,
+            125.34013968654729
         ],
         "showlegend": true,
         "mode": "lines",
@@ -46268,7 +46752,9 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             1.4163418320438879,
             1.4984232945667766,
             1.4792127395082284,
-            1.496676880470545
+            1.496676880470545,
+            1.5455764751650318,
+            1.620672281302994
         ],
         "type": "scatter"
     },
@@ -46608,7 +47094,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             501.24603907944487,
             503.604711830701,
             506.08974205077436,
-            508.54669283333294
+            508.54669283333294,
+            515.9596643372807
         ],
         "showlegend": true,
         "mode": "lines",
@@ -46722,7 +47209,8 @@ The countries aren't all of the ones in the EU, but seem to be the largest contr
             3.1168175641599,
             2.3586727512561407,
             2.4850302200734338,
-            2.4569507825584798
+            2.4569507825584798,
+            2.6394671264056813
         ],
         "type": "scatter"
     }
